@@ -641,9 +641,9 @@
             "787fc347b068f019",
             "9cd52534dbdd13c0",
             "aff51114897bc23f",
-            "8b44c3bd3500776f",
             "fdeec454c34cfb51",
-            "6d696f493528be10"
+            "6d696f493528be10",
+            "8b44c3bd3500776f"
         ],
         "x": 114,
         "y": 339,
@@ -663,11 +663,11 @@
             "4e6d435701df7bee",
             "9717b3f7f7344de8",
             "fa57980e812bcb84",
-            "8e75e7ef56b9aaa3",
             "654b7acf8b96cfc8",
             "018fc89132fb5167",
             "cb9bb3ae69e8729a",
-            "46e9919ed00544c9"
+            "46e9919ed00544c9",
+            "8e75e7ef56b9aaa3"
         ],
         "x": 114,
         "y": 179,
@@ -7269,7 +7269,7 @@
         "y": 420,
         "wires": [
             [
-                "fdeec454c34cfb51"
+                "8b44c3bd3500776f"
             ]
         ],
         "l": true
@@ -7287,28 +7287,6 @@
         "x": 1225,
         "y": 420,
         "wires": []
-    },
-    {
-        "id": "8b44c3bd3500776f",
-        "type": "rbe",
-        "z": "2265eca0770dc1a8",
-        "g": "db4ae481e3d06f8f",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.status",
-        "topi": "flowName",
-        "x": 805,
-        "y": 420,
-        "wires": [
-            [
-                "a0d6731cbd32aff2"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "e1b2a9cb63004c27",
@@ -7425,28 +7403,6 @@
         "x": 1225,
         "y": 260,
         "wires": []
-    },
-    {
-        "id": "8e75e7ef56b9aaa3",
-        "type": "rbe",
-        "z": "2265eca0770dc1a8",
-        "g": "883a925e4edee11a",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.isHealthy",
-        "topi": "container",
-        "x": 805,
-        "y": 260,
-        "wires": [
-            [
-                "4e6d435701df7bee"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "44e7d632514fe5ff",
@@ -7921,7 +7877,7 @@
         "y": 260,
         "wires": [
             [
-                "cb9bb3ae69e8729a"
+                "8e75e7ef56b9aaa3"
             ]
         ]
     },
@@ -7973,11 +7929,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 670,
+        "x": 730,
         "y": 260,
         "wires": [
             [
-                "8e75e7ef56b9aaa3"
+                "4e6d435701df7bee"
             ]
         ]
     },
@@ -7999,11 +7955,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 670,
+        "x": 730,
         "y": 420,
         "wires": [
             [
-                "8b44c3bd3500776f"
+                "a0d6731cbd32aff2"
             ]
         ]
     },
@@ -8349,6 +8305,50 @@
         "x": 2200,
         "y": 220,
         "wires": []
+    },
+    {
+        "id": "8b44c3bd3500776f",
+        "type": "rbe",
+        "z": "2265eca0770dc1a8",
+        "g": "db4ae481e3d06f8f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.status",
+        "topi": "flowName",
+        "x": 585,
+        "y": 420,
+        "wires": [
+            [
+                "fdeec454c34cfb51"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8e75e7ef56b9aaa3",
+        "type": "rbe",
+        "z": "2265eca0770dc1a8",
+        "g": "883a925e4edee11a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.isHealthy",
+        "topi": "container",
+        "x": 585,
+        "y": 260,
+        "wires": [
+            [
+                "cb9bb3ae69e8729a"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "bc2df745eee38272",
