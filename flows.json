@@ -1309,6 +1309,11 @@
                 "name": "HTTP_MAX_RETRIES",
                 "value": "3",
                 "type": "num"
+            },
+            {
+                "name": "DASHBOARD_URL",
+                "value": "http://localhost:1880/dashboard",
+                "type": "str"
             }
         ]
     },
@@ -7815,7 +7820,7 @@
         "z": "2265eca0770dc1a8",
         "g": "2ef056442ba5e938",
         "name": "Prepare Email",
-        "func": "msg.topic = \"AWS Alert\";\nmsg.from = \"AWSMonitoringServices@riotinto.com\";\n\nmsg.payload =\n\n    `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;\">\n    <h2 style=\"color: #c00;\">Autonomous Water Stand (AWS) Service Alert</h2>\n    <p>Dear Team,</p>\n    <p>Please be advised that <strong>${msg.payload}</strong>.</p>\n    <p>This issue may require immediate attention to ensure the integrity of the AWS system. We kindly ask you to:</p>\n    <ul>\n        <li>Investigate the cause of the failure.</li>\n        <li>Take appropriate action as soon as possible.</li>\n    </ul>\n    <p>Thank you for your prompt response to this matter. For more information, please visit the <a href=\"https://ausydapd464.corp.riotinto.org:8880/dashboard/waterstand\" style=\"color: #0066cc;\">dashboard</a>.</p> \n    <div style=\"margin-top: 20px; font-size: 0.9em; color: #666;\">\n        AWS Monitoring Services<br>\n        (This is an automated monitoring alert)\n    </div>\n</body>\n</html>`;\n\nreturn msg;",
+        "func": "msg.topic = \"AWS Alert\";\nmsg.from = \"AWSMonitoringServices@riotinto.com\";\n\nconst dashboardUrl = env.get(\"DASHBOARD_URL\");\n\nmsg.payload =\n\n    `<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n</head>\n<body style=\"font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; padding: 20px; background-color: #f9f9f9; border: 1px solid #ddd; border-radius: 8px;\">\n    <h2 style=\"color: #c00;\">Autonomous Water Stand (AWS) Service Alert</h2>\n    <p>Dear Team,</p>\n    <p>Please be advised that <strong>${msg.payload}</strong>.</p>\n    <p>This issue may require immediate attention to ensure the integrity of the AWS system. We kindly ask you to:</p>\n    <ul>\n        <li>Investigate the cause of the failure.</li>\n        <li>Take appropriate action as soon as possible.</li>\n    </ul>\n    <p>Thank you for your prompt response to this matter. For more information, please visit the <a href=\"${dashboardUrl}\" style=\"color: #0066cc;\">dashboard</a>.</p> \n    <div style=\"margin-top: 20px; font-size: 0.9em; color: #666;\">\n        AWS Monitoring Services<br>\n        (This is an automated monitoring alert)\n    </div>\n</body>\n</html>`;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
