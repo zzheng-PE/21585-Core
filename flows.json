@@ -8124,9 +8124,51 @@
         "repair": false,
         "outputs": 2,
         "x": 1790,
-        "y": 200,
+        "y": 220,
         "wires": [
-            [],
+            [
+                "0d58e5d841f4e623"
+            ],
+            [
+                "9d33787c759211bf"
+            ]
+        ]
+    },
+    {
+        "id": "0d58e5d841f4e623",
+        "type": "flogger",
+        "z": "2265eca0770dc1a8",
+        "name": "",
+        "logfile": "/logs",
+        "inputchoice": "moustache",
+        "inputobject": "payload",
+        "inputobjectType": "msg",
+        "inputmoustache": "{{message}}",
+        "loglevel": "INFO",
+        "logconfig": "cfb3ca563f52bcac",
+        "sendpane": "",
+        "x": 1970,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9d33787c759211bf",
+        "type": "flogger",
+        "z": "2265eca0770dc1a8",
+        "name": "",
+        "logfile": "/logs",
+        "inputchoice": "moustache",
+        "inputobject": "payload",
+        "inputobjectType": "msg",
+        "inputmoustache": "{{message}}",
+        "loglevel": "WARN",
+        "logconfig": "cfb3ca563f52bcac",
+        "sendpane": "",
+        "x": 1970,
+        "y": 240,
+        "wires": [
             []
         ]
     },
