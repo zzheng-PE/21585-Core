@@ -2627,7 +2627,7 @@
         "id": "cfb3ca563f52bcac",
         "type": "config-log",
         "logname": "Logger",
-        "logdir": "/logs",
+        "logdir": "/data",
         "stamp": "local",
         "logstyle": "plain",
         "logrotate": true,
