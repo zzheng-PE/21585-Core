@@ -454,7 +454,7 @@
             "a1b17272082e9ae7",
             "fbdb9a32d2dd26ab",
             "ad76d6d67aa5b5ef",
-            "4c290a0a176a93b7"
+            "fbd710bb32deacc3"
         ],
         "x": 94,
         "y": 39,
@@ -6878,7 +6878,7 @@
         "y": 140,
         "wires": [
             [
-                "4c290a0a176a93b7"
+                "fbd710bb32deacc3"
             ]
         ]
     },
@@ -6947,19 +6947,6 @@
         "x": 470,
         "y": 80,
         "wires": []
-    },
-    {
-        "id": "4c290a0a176a93b7",
-        "type": "link out",
-        "z": "bcc3cc02ee57e49c",
-        "g": "fe262dd57a31f421",
-        "name": "System Log",
-        "mode": "link",
-        "links": [],
-        "x": 710,
-        "y": 140,
-        "wires": [],
-        "l": true
     },
     {
         "id": "2c3bbb831c0d0dd6",
@@ -7122,6 +7109,32 @@
             [
                 "45265736d409ade0"
             ]
+        ]
+    },
+    {
+        "id": "fbd710bb32deacc3",
+        "type": "change",
+        "z": "bcc3cc02ee57e49c",
+        "g": "fe262dd57a31f421",
+        "name": "Set Flow Varaible",
+        "rules": [
+            {
+                "t": "set",
+                "p": "containerStatus",
+                "pt": "flow",
+                "to": "payload.status",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 710,
+        "y": 140,
+        "wires": [
+            []
         ]
     },
     {
