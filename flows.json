@@ -8351,6 +8351,31 @@
         "l": false
     },
     {
+        "id": "47ec3d64da299db2",
+        "type": "inject",
+        "z": "2265eca0770dc1a8",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "test",
+        "payloadType": "str",
+        "x": 1550,
+        "y": 300,
+        "wires": [
+            [
+                "bdbad8fd7227032d"
+            ]
+        ]
+    },
+    {
         "id": "bc2df745eee38272",
         "type": "postgresql",
         "z": "4e3d795537c2edf7",
