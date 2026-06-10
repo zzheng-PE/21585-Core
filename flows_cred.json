@@ -1,0 +1,10 @@
+{
+    "82d204cedf415b5f": {
+        "map": {
+            "FR_API_CLIENT_SECRET": "__PWRD__",
+            "has_FR_API_CLIENT_SECRET": true,
+            "FR_API_CLIENT_SECRET_SIMULATOR": "__PWRD__",
+            "has_FR_API_CLIENT_SECRET_SIMULATOR": true
+        }
+    }
+}
