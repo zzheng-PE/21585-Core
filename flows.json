@@ -7730,7 +7730,7 @@
         "z": "4e3d795537c2edf7",
         "name": "postgres",
         "query": "",
-        "postgreSQLConfig": "c27e8ebf46fe847c",
+        "postgreSQLConfig": "b65ac7c74c76d542",
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
@@ -7820,8 +7820,7 @@
         "y": 260,
         "wires": [
             [
-                "0be998d4d04b41e1",
-                "1676b2eb81c1926c"
+                "0be998d4d04b41e1"
             ]
         ]
     },
@@ -7928,23 +7927,6 @@
                 "20e9c9d994dbc89f"
             ]
         ]
-    },
-    {
-        "id": "1676b2eb81c1926c",
-        "type": "debug",
-        "z": "4e3d795537c2edf7",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1000,
-        "y": 180,
-        "wires": []
     },
     {
         "id": "3bd5049ddcb31190",
