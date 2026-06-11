@@ -399,7 +399,7 @@
         ],
         "x": 114,
         "y": 39,
-        "w": 1192,
+        "w": 1272,
         "h": 122
     },
     {
@@ -488,7 +488,7 @@
             "fb6049189766f167"
         ],
         "x": 114,
-        "y": 199,
+        "y": 179,
         "w": 1272,
         "h": 282
     },
@@ -535,12 +535,14 @@
             "3b9c33fb1e7ea456",
             "0da04b368b9afc1a",
             "779921d67bc010a3",
-            "c05e65bf6a3a42b3"
+            "c05e65bf6a3a42b3",
+            "ed5a5a66a96e92ae",
+            "b66cbc6cd3b8f146"
         ],
         "x": 94,
         "y": 419,
         "w": 1092,
-        "h": 122
+        "h": 222
     },
     {
         "id": "94774a1c198b7883",
@@ -643,11 +645,11 @@
             "aff51114897bc23f",
             "fdeec454c34cfb51",
             "6d696f493528be10",
-            "8b44c3bd3500776f"
+            "71d5e6a8f05e5201"
         ],
         "x": 114,
         "y": 339,
-        "w": 1152,
+        "w": 1172,
         "h": 142
     },
     {
@@ -667,11 +669,11 @@
             "018fc89132fb5167",
             "cb9bb3ae69e8729a",
             "46e9919ed00544c9",
-            "8e75e7ef56b9aaa3"
+            "1b8601adca82dca5"
         ],
         "x": 114,
         "y": 179,
-        "w": 1152,
+        "w": 1172,
         "h": 142
     },
     {
@@ -692,8 +694,8 @@
             "280fcc43afe31507"
         ],
         "x": 114,
-        "y": 819,
-        "w": 892,
+        "y": 859,
+        "w": 1172,
         "h": 122
     },
     {
@@ -716,8 +718,8 @@
             "cf7a9f0a4acca133"
         ],
         "x": 114,
-        "y": 19,
-        "w": 1142,
+        "y": 39,
+        "w": 1172,
         "h": 122
     },
     {
@@ -769,12 +771,16 @@
             "c5536dfc2b08913d",
             "8d571d6428046fa2",
             "fe1e67539e7edfee",
-            "c0674acbac576951"
+            "c0674acbac576951",
+            "0a1e087903336cc3",
+            "70d1c4a3e6fc4b11",
+            "965bfbef2ab71169",
+            "936dc9b73a1dcb75"
         ],
         "x": 114,
-        "y": 519,
+        "y": 499,
         "w": 1172,
-        "h": 282
+        "h": 342
     },
     {
         "id": "fb0443a965510f6e",
@@ -886,8 +892,8 @@
             "b18ef8ef36f4c2bc",
             "67d087eaa7c3eec7"
         ],
-        "x": 104,
-        "y": 559,
+        "x": 94,
+        "y": 659,
         "w": 1082,
         "h": 162
     },
@@ -904,7 +910,8 @@
             "84744d60598a0ad8",
             "d86e338c0218afb4",
             "9fa4d3f0f58d551d",
-            "4fa61c50425255a6"
+            "4fa61c50425255a6",
+            "783448d59a80c873"
         ],
         "x": 114,
         "y": 1259,
@@ -947,8 +954,8 @@
             "b32220a35ed9a07a"
         ],
         "x": 114,
-        "y": 959,
-        "w": 772,
+        "y": 999,
+        "w": 1172,
         "h": 122
     },
     {
@@ -1006,8 +1013,8 @@
             "0d58e5d841f4e623",
             "9d33787c759211bf"
         ],
-        "x": 1514,
-        "y": 79,
+        "x": 1394,
+        "y": 19,
         "w": 552,
         "h": 202
     },
@@ -1025,26 +1032,14 @@
             "798f01877e20ba3e",
             "db097035746959f8",
             "575af3b77cdecdde",
-            "a184d354b2b13c2b"
+            "a184d354b2b13c2b",
+            "1048464dc3d75670",
+            "ce30cec7ab5e3d51"
         ],
-        "x": 1454,
-        "y": 339,
-        "w": 772,
-        "h": 142
-    },
-    {
-        "id": "5579c12f1872d38c",
-        "type": "tls-config",
-        "name": "Certs",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "mqtt.crt",
-        "keyname": "mqtt.key",
-        "caname": "ca.crt",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
+        "x": 1394,
+        "y": 259,
+        "w": 992,
+        "h": 202
     },
     {
         "id": "82d204cedf415b5f",
@@ -1081,19 +1076,24 @@
                 "type": "str"
             },
             {
-                "name": "FR_MODULARID_HOST",
-                "value": "https://ausydmasc54.corp.riotinto.org/modularid/connect/token?",
+                "name": "FR_API_TOKEN_URL",
+                "value": "https://gnamrm.local/keycloak/realms/ACOE/openid-connect/token?",
                 "type": "str"
             },
             {
                 "name": "FR_API_CLIENT_ID",
-                "value": "7da2c288-c613-4f1e-9690-e4b001aebc01",
+                "value": "gnam-frontrunner391-frapi ",
                 "type": "str"
             },
             {
                 "name": "FR_API_CLIENT_SECRET",
                 "value": "__PWRD__",
                 "type": "cred"
+            },
+            {
+                "name": "PLC_DISCONNECT_TIMEOUT",
+                "value": "20000",
+                "type": "num"
             },
             {
                 "name": "FR_API_SCOPE",
@@ -1106,49 +1106,14 @@
                 "type": "str"
             },
             {
-                "name": "PLC_HOST",
-                "value": "10.226.18.77",
+                "name": "FMSPLC_HOST",
+                "value": "192.168.51.107",
                 "type": "str"
             },
             {
-                "name": "PLC_PORT",
+                "name": "FMSPLC_PORT",
                 "value": "502",
                 "type": "str"
-            },
-            {
-                "name": "WATER_LEVEL_THRESHOLD",
-                "value": "90",
-                "type": "num"
-            },
-            {
-                "name": "WATER_STANDS",
-                "value": "[{\"name\":\"MEM_FUELBAY\",\"ipAddress\":\"10.226.18.77\",\"port\":502,\"logfile\":\"MEM_FUELBAY_aws.log\",\"plcAddress\":{\"read_heartbeat\":10000,\"read_trigger_status\":10100,\"read_fill_status\":10101,\"truck_data\":15100,\"truck_fill_control\":15111},\"geofence\":{\"minX\":3353.444,\"maxX\":3360.827,\"minY\":-795.91,\"maxY\":-792.878},\"wateringSetPoint\":98,\"finishRefillDelay\":10000},{\"name\":\"SOUTH_FUELBAY\",\"ipAddress\":\"10.226.18.77\",\"port\":502,\"logfile\":\"SOUTH_FUELBAY_aws.log\",\"plcAddress\":{\"read_heartbeat\":10000,\"read_trigger_status\":10200,\"read_fill_status\":10201,\"truck_data\":15200,\"truck_fill_control\":15211},\"geofence\":{\"minX\":310.265,\"maxX\":317.516,\"minY\":-3290.65,\"maxY\":-3286.431},\"wateringSetPoint\":90,\"finishRefillDelay\":90000},{\"name\":\"INSTATE_HOT_TYRE_BAY\",\"ipAddress\":\"10.226.18.77\",\"port\":502,\"logfile\":\"INSTATE_HOT_TYRE_BAY_aws.log\",\"plcAddress\":{\"read_heartbeat\":10000,\"read_trigger_status\":10300,\"read_fill_status\":10301,\"truck_data\":15300,\"truck_fill_control\":15311},\"geofence\":{\"minX\":-421.953,\"maxX\":-414.702,\"minY\":-2664.295,\"maxY\":-2660.077},\"wateringSetPoint\":95,\"finishRefillDelay\":90000},{\"name\":\"NL_01\",\"ipAddress\":\"10.226.18.77\",\"port\":502,\"logfile\":\"NL_01_aws.log\",\"plcAddress\":{\"read_heartbeat\":10000,\"read_trigger_status\":10400,\"read_fill_status\":10401,\"truck_data\":15400,\"truck_fill_control\":15411},\"geofence\":{\"minX\":1437.73,\"maxX\":1444.849,\"minY\":-186.167,\"maxY\":-182.08},\"wateringSetPoint\":92,\"finishRefillDelay\":90000}]",
-                "type": "json"
-            },
-            {
-                "name": "WATER_STOP_THRESHOLD",
-                "value": "95",
-                "type": "num"
-            },
-            {
-                "name": "REFRESH_THRESHOLD",
-                "value": "10",
-                "type": "num"
-            },
-            {
-                "name": "AWT_MODES",
-                "value": "[\"AutoRun\", \"AutoStop\"]",
-                "type": "jsonata"
-            },
-            {
-                "name": "AWS_MODES",
-                "value": "{\t   \"0\": \"FAULT\",\t   \"1\": \"DETECTED\",\t   \"2\": \"READY\",\t   \"3\": \"LOCKED\",\t   \"4\": \"REFILLING\",\t   \"5\": \"UNLOCKED\",\t   \"6\": \"COMPLETED\",\t   \"7\": \"FAILED\"\t}\t",
-                "type": "jsonata"
-            },
-            {
-                "name": "EDGEXPERT_CONTAINERS",
-                "value": "[\"device-websocket\",\"redis-2\",\"app-MQTT_HaulageCycle\",\"app-MQTT_Location_Status_Change\",\"app-HTTP_Motion_Start_Command\",\"app-MQTT_Interface_PLC_HS\",\"app-MQTT_Equipment_Cycle_state\",\"app-HTTP_Crusher_Location_Status\",\"app-MQTT_Equipment_Last_Known_Location\",\"portainer\",\"security-bootstrapper\",\"mqtt-broker\",\"vault\",\"sys-mgmt\",\"device-modbus\",\"nodered\",\"secretstore-setup\",\"redis\",\"core-keeper\",\"core-command\",\"core-metadata\",\"core-data\",\"central-ui\"]",
-                "type": "jsonata"
             },
             {
                 "name": "EVENT_CODES",
@@ -1156,64 +1121,9 @@
                 "type": "jsonata"
             },
             {
-                "name": "PLC_DISCONNECT_TIMEOUT",
-                "value": "20000",
-                "type": "num"
-            },
-            {
                 "name": "API_DISCONNECT_TIMEOUT",
                 "value": "5000",
                 "type": "num"
-            },
-            {
-                "name": "PLC_WRITE_HEARTBEAT",
-                "value": "15000",
-                "type": "num"
-            },
-            {
-                "name": "PLC_WRITE_FILL_REQUEST",
-                "value": "10104",
-                "type": "num"
-            },
-            {
-                "name": "PLC_WRITE_VALVE_COMMAND",
-                "value": "10101",
-                "type": "num"
-            },
-            {
-                "name": "PLC_READ_HEARTBEAT",
-                "value": "10000",
-                "type": "num"
-            },
-            {
-                "name": "PLC_READ_FILL_REQUEST",
-                "value": "10001",
-                "type": "num"
-            },
-            {
-                "name": "PLC_READ_FILL_STATUS",
-                "value": "10007",
-                "type": "num"
-            },
-            {
-                "name": "PLC_READ_ALARMS_STATUS",
-                "value": "10003",
-                "type": "num"
-            },
-            {
-                "name": "PLC_READ_SETPOINT",
-                "value": "10004",
-                "type": "num"
-            },
-            {
-                "name": "PLC_WRITE_WATER_LEVEL",
-                "value": "10103",
-                "type": "num"
-            },
-            {
-                "name": "AWT_ERROR_TRACKING",
-                "value": "{}",
-                "type": "json"
             },
             {
                 "name": "NOTIFICATION_ERROR_THRESH",
@@ -1246,34 +1156,9 @@
                 "type": "str"
             },
             {
-                "name": "PLC_READ_FILL_SEQUENCE",
-                "value": "10006",
-                "type": "num"
-            },
-            {
                 "name": "NOTIFICATION_ALERT_DOMAIN",
                 "value": "Corp",
                 "type": "str"
-            },
-            {
-                "name": "FUEL_BAYS",
-                "value": "[{\"name\":\"MEM_FUELBAY\",\"ipAddress\":\"10.226.18.77\",\"port\":502,\"logfile\":\"aws.log\",\"geofence\":{\"minX\":3353.444,\"maxX\":3360.827,\"minY\":-795.91,\"maxY\":-792.878},\"wateringSetPoint\":98,\"finishRefillDelay\":90000},{\"name\":\"LENC_SPIPE\",\"ipAddress\":\"10.226.xx.xx\",\"port\":502,\"logfile\":\"aws.log\",\"geofence\":{\"minX\":0,\"maxX\":0,\"minY\":0,\"maxY\":0},\"wateringSetPoint\":0,\"finishRefillDelay\":10000},{\"name\":\"LAS2_SPIPE\",\"ipAddress\":\"10.226.xx.xx\",\"port\":502,\"logfile\":\"aws.log\",\"geofence\":{\"minX\":0,\"maxX\":0,\"minY\":0,\"maxY\":0},\"wateringSetPoint\":0,\"finishRefillDelay\":90000}]",
-                "type": "json"
-            },
-            {
-                "name": "AWTS",
-                "value": "[WCH119, WCH72]",
-                "type": "jsonata"
-            },
-            {
-                "name": "TRUCK_STATUS_TIMEOUT",
-                "value": "10000",
-                "type": "num"
-            },
-            {
-                "name": "TRUCK_MODES",
-                "value": "{\t    \"AutoException\" : 0,\t    \"AutoRun\": 1,\t    \"AutoStop\" : 2,\t    \"AutoSuspend\" : 3\t}",
-                "type": "jsonata"
             },
             {
                 "name": "FR_API_URL_SIMULATOR",
@@ -1314,36 +1199,48 @@
                 "name": "DASHBOARD_URL",
                 "value": "http://localhost:1880/dashboard",
                 "type": "str"
+            },
+            {
+                "name": "ALM_INIT_MASK_SECONDS",
+                "value": "5",
+                "type": "num"
+            },
+            {
+                "name": "MQTT_SERVER",
+                "value": "mqtt-broker",
+                "type": "str"
+            },
+            {
+                "name": "MQTT_PORT",
+                "value": "1883",
+                "type": "num"
+            },
+            {
+                "name": "PG_HOST",
+                "value": "postgres",
+                "type": "str"
+            },
+            {
+                "name": "PG_PORT",
+                "value": "5432",
+                "type": "num"
+            },
+            {
+                "name": "PG_DATABASE",
+                "value": "postgres",
+                "type": "str"
+            },
+            {
+                "name": "PG_USER",
+                "value": "postgres",
+                "type": "str"
+            },
+            {
+                "name": "PG_PASSWORD",
+                "value": "__PWRD__",
+                "type": "cred"
             }
         ]
-    },
-    {
-        "id": "554913583855f3c4",
-        "type": "tls-config",
-        "name": "AUHD1ZFRRM",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "auhd1zfrrm.prodsys.riotinto.org_cert.cer",
-        "keyname": "auhd1zfrrm_cert_key.pem",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "5f1eb5199989273a",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "ausydapd464corpriotintoorg.cer",
-        "keyname": "ausydapd464_key.pem",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
     },
     {
         "id": "2a42cab402ef39fd",
@@ -1376,39 +1273,11 @@
         "wholemsg": "false"
     },
     {
-        "id": "6c60c791f4c09d50",
-        "type": "tls-config",
-        "name": "edgecentral-certs",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "mqtt-broker.crt",
-        "keyname": "mqtt-broker.key",
-        "caname": "ca.crt",
-        "servername": "mqtt-broker",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "799e76817f1a2010",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "mqtt.crt",
-        "keyname": "mqtt.key",
-        "caname": "ca.crt",
-        "servername": "",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
         "id": "93cc9cb093168fdd",
         "type": "mqtt-broker",
         "name": "mqtt",
-        "broker": "mqtt-broker",
-        "port": 1883,
+        "broker": "${MQTT_SERVER}",
+        "port": "${MQTT_PORT}",
         "clientid": "",
         "autoConnect": true,
         "usetls": false,
@@ -1433,360 +1302,6 @@
         "willMsg": {},
         "userProps": "",
         "sessionExpiry": ""
-    },
-    {
-        "id": "9892de396dea1d46",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "2",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "daaf0dbdbd51e748",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "4",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "e23a5421e2246a65",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "3",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "a3fbb2b7a91b42eb",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "1",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "6084dab1d57ec557",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "10",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "125318fc5e68d5e3",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "2",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "4a01615fe3a2d0f4",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "4",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "d3a90c4720257844",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "3",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "8e2ed7a623281dfa",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "1",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "2b38e8544d91e00a",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "10",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "03f9e7cf668942bb",
-        "type": "postgreSQLConfig",
-        "name": "DB_Read",
-        "host": "postgres",
-        "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "postgres",
-        "databaseFieldType": "str",
-        "ssl": "false",
-        "sslFieldType": "bool",
-        "applicationName": "",
-        "applicationNameType": "str",
-        "max": 10,
-        "maxFieldType": "num",
-        "idle": 1000,
-        "idleFieldType": "num",
-        "connectionTimeout": 10000,
-        "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "postgres",
-        "passwordFieldType": "str"
-    },
-    {
-        "id": "a44d3cc5c8e5037a",
-        "type": "modbus-client",
-        "d": true,
-        "name": "MEM_FUELBAY_PLC",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": true,
-        "failureLogEnabled": false,
-        "tcpHost": "10.226.18.77",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": true,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "7f9f227a63e8611c",
-        "type": "modbus-client",
-        "name": "AWS PLC DEFAULT",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": true,
-        "tcpHost": "10.226.18.77",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "e2ab8ee51458596f",
-        "type": "modbus-client",
-        "name": "Modbus Switch TCP",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": false,
-        "tcpHost": "127.0.0.1",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": false,
-        "showLogs": true
-    },
-    {
-        "id": "06690766abbe81e3",
-        "type": "modbus-client",
-        "d": true,
-        "name": "Local Modbus",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": true,
-        "tcpHost": "127.0.0.1",
-        "tcpPort": "10502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": true,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "2701e785aaa9688c",
-        "type": "modbus-client",
-        "name": "",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "tcpHost": "192.168.0.66",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "",
-        "unit_id": "0",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": false,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true
-    },
-    {
-        "id": "20ac78dc20a9cd46",
-        "type": "modbus-client",
-        "d": true,
-        "name": "MEM_FUELBAY_PLC",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": true,
-        "failureLogEnabled": false,
-        "tcpHost": "10.226.18.77",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": 1,
-        "commandDelay": 1,
-        "clientTimeout": 1000,
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": 2000,
-        "parallelUnitIdsAllowed": true,
-        "showErrors": true,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "2e571414401d280d",
-        "type": "modbus-client",
-        "name": "AWS PLC DEFAULT",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": true,
-        "tcpHost": "10.226.18.77",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": 1,
-        "commandDelay": 1,
-        "clientTimeout": 1000,
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": 2000,
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
-        "id": "1b0df3ca59437d34",
-        "type": "modbus-client",
-        "name": "Modbus Switch TCP",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": false,
-        "tcpHost": "127.0.0.1",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "",
-        "unit_id": "1",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": false,
-        "showLogs": true
     },
     {
         "id": "2894c968f482e145",
@@ -1819,75 +1334,8 @@
         "showLogs": true
     },
     {
-        "id": "23aeb35757e8e8a2",
-        "type": "modbus-client",
-        "name": "",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "tcpHost": "192.168.0.66",
-        "tcpPort": "502",
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": "9600",
-        "serialDatabits": "8",
-        "serialStopbits": "1",
-        "serialParity": "none",
-        "serialConnectionDelay": "100",
-        "serialAsciiResponseStartDelimiter": "",
-        "unit_id": "0",
-        "commandDelay": "1",
-        "clientTimeout": "1000",
-        "reconnectOnTimeout": false,
-        "reconnectTimeout": "2000",
-        "parallelUnitIdsAllowed": true
-    },
-    {
-        "id": "cc4eb98aef2b261e",
-        "type": "modbus-client",
-        "name": "Office PLC",
-        "clienttype": "tcp",
-        "bufferCommands": true,
-        "stateLogEnabled": false,
-        "queueLogEnabled": false,
-        "failureLogEnabled": true,
-        "tcpHost": "10.44.55.182",
-        "tcpPort": 502,
-        "tcpType": "DEFAULT",
-        "serialPort": "/dev/ttyUSB",
-        "serialType": "RTU-BUFFERD",
-        "serialBaudrate": 9600,
-        "serialDatabits": 8,
-        "serialStopbits": 1,
-        "serialParity": "none",
-        "serialConnectionDelay": 100,
-        "serialAsciiResponseStartDelimiter": "0x3A",
-        "unit_id": 1,
-        "commandDelay": 1,
-        "clientTimeout": 1000,
-        "reconnectOnTimeout": true,
-        "reconnectTimeout": 2000,
-        "parallelUnitIdsAllowed": true,
-        "showErrors": false,
-        "showWarnings": true,
-        "showLogs": true
-    },
-    {
         "id": "6272e8e14e7e5dd7",
         "type": "MySQLdatabase",
-        "name": "",
-        "host": "mysql",
-        "port": "3306",
-        "db": "aws_tracking_db",
-        "tz": "",
-        "charset": "UTF8"
-    },
-    {
-        "id": "2bb7538542c29384",
-        "type": "MySQLdatabase",
-        "d": true,
         "name": "",
         "host": "mysql",
         "port": "3306",
@@ -1993,14 +1441,6 @@
         }
     },
     {
-        "id": "e6c4a6cf281d572d",
-        "type": "ui_tab",
-        "name": "Container Status",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
         "id": "1e10be69f4bd3e23",
         "type": "ui-base",
         "name": "My Dashboard",
@@ -2015,79 +1455,6 @@
         "titleBarStyle": "default"
     },
     {
-        "id": "60d5a4ab96f27299",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#033048",
-            "primary": "#e6e6e6",
-            "bgPage": "#f5f5f5",
-            "groupBg": "#ffffff",
-            "groupOutline": "#c8c8c8"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "6px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "b89bcf3a0eb7b495",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "5d218b0b9e9b7d61",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#033048",
-            "primary": "#e6e6e6",
-            "bgPage": "#f5f5f5",
-            "groupBg": "#ffffff",
-            "groupOutline": "#c8c8c8"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "6px",
-            "widgetGap": "12px",
-            "density": "default"
-        }
-    },
-    {
-        "id": "70734fdafcc593e3",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
         "id": "7706b6a281fa3064",
         "type": "tls-config",
         "name": "Certs",
@@ -2097,34 +1464,6 @@
         "certname": "mqtt.crt",
         "keyname": "mqtt.key",
         "caname": "ca.crt",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "75eb71cae4b0fb50",
-        "type": "tls-config",
-        "name": "AUHD1ZFRRM",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "auhd1zfrrm.prodsys.riotinto.org_cert.cer",
-        "keyname": "auhd1zfrrm_cert_key.pem",
-        "caname": "",
-        "servername": "",
-        "verifyservercert": false,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "0acaeb681f2e3ca8",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "ausydapd464corpriotintoorg.cer",
-        "keyname": "ausydapd464_key.pem",
-        "caname": "",
         "servername": "",
         "verifyservercert": false,
         "alpnprotocol": ""
@@ -2174,20 +1513,6 @@
         "sessionExpiry": ""
     },
     {
-        "id": "957b1677dd9f7e9b",
-        "type": "tls-config",
-        "name": "edgecentral-certs",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "mqtt-broker.crt",
-        "keyname": "mqtt-broker.key",
-        "caname": "ca.crt",
-        "servername": "mqtt-broker",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
         "id": "3f3353e4860bb4ff",
         "type": "modbus-client",
         "name": "Office Testing_Soft PLC",
@@ -2220,13 +1545,13 @@
     {
         "id": "c27e8ebf46fe847c",
         "type": "postgreSQLConfig",
-        "name": "DB_Read",
+        "name": "fleetplant-postgres",
         "host": "postgres",
         "hostFieldType": "str",
-        "port": "5432",
-        "portFieldType": "num",
-        "database": "postgres",
-        "databaseFieldType": "str",
+        "port": "PG_PORT",
+        "portFieldType": "env",
+        "database": "PG_DATABASE",
+        "databaseFieldType": "env",
         "ssl": "false",
         "sslFieldType": "bool",
         "applicationName": "",
@@ -2237,43 +1562,10 @@
         "idleFieldType": "num",
         "connectionTimeout": 10000,
         "connectionTimeoutFieldType": "num",
-        "user": "postgres",
-        "userFieldType": "str",
-        "password": "postgres",
-        "passwordFieldType": "str"
-    },
-    {
-        "id": "bf9e51162662bd27",
-        "type": "tls-config",
-        "name": "",
-        "cert": "",
-        "key": "",
-        "ca": "",
-        "certname": "mqtt.crt",
-        "keyname": "mqtt.key",
-        "caname": "ca.crt",
-        "servername": "",
-        "verifyservercert": true,
-        "alpnprotocol": ""
-    },
-    {
-        "id": "4ff087978fccac90",
-        "type": "ui_tab",
-        "name": "Container Status",
-        "icon": "dashboard",
-        "disabled": false,
-        "hidden": false
-    },
-    {
-        "id": "8c676263daf042bd",
-        "type": "ui_group",
-        "name": "Container Status",
-        "tab": "4ff087978fccac90",
-        "order": 1,
-        "disp": true,
-        "width": 6,
-        "collapse": false,
-        "className": ""
+        "user": "PG_USER",
+        "userFieldType": "env",
+        "password": "PG_PASSWORD",
+        "passwordFieldType": "env"
     },
     {
         "id": "f079063f4b6434cf",
@@ -2290,84 +1582,9 @@
             "pagePadding": "12px",
             "groupGap": "12px",
             "groupBorderRadius": "6px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "8fc945f87bac2bdf",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "702cea13af1a3ca7",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#033048",
-            "primary": "#e6e6e6",
-            "bgPage": "#f5f5f5",
-            "groupBg": "#ffffff",
-            "groupOutline": "#c8c8c8"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "6px",
             "widgetGap": "12px",
             "density": "default"
         }
-    },
-    {
-        "id": "a3cbe033466e762e",
-        "type": "ui-theme",
-        "name": "Default Theme",
-        "colors": {
-            "surface": "#ffffff",
-            "primary": "#0094CE",
-            "bgPage": "#eeeeee",
-            "groupBg": "#ffffff",
-            "groupOutline": "#cccccc"
-        },
-        "sizes": {
-            "pagePadding": "12px",
-            "groupGap": "12px",
-            "groupBorderRadius": "4px",
-            "widgetGap": "12px"
-        }
-    },
-    {
-        "id": "b56f42509da8f3f9",
-        "type": "MySQLdatabase",
-        "name": "",
-        "host": "mysql",
-        "port": "3306",
-        "db": "aws_tracking_db",
-        "tz": "",
-        "charset": "UTF8"
-    },
-    {
-        "id": "bf3ee94a4d41dd25",
-        "type": "MySQLdatabase",
-        "d": true,
-        "name": "",
-        "host": "mysql",
-        "port": "3306",
-        "db": "aws_tracking_db",
-        "tz": "",
-        "charset": "UTF8"
     },
     {
         "id": "9e7e66abd2be52fd",
@@ -2470,37 +1687,6 @@
         "groupType": "default"
     },
     {
-        "id": "d3834677091f54df",
-        "type": "mqtt-broker",
-        "name": "mqtt",
-        "broker": "mqtt-broker",
-        "port": 1883,
-        "clientid": "",
-        "autoConnect": true,
-        "usetls": false,
-        "protocolVersion": "4",
-        "keepalive": 60,
-        "cleansession": true,
-        "autoUnsubscribe": true,
-        "birthTopic": "",
-        "birthQos": "0",
-        "birthRetain": "false",
-        "birthPayload": "",
-        "birthMsg": {},
-        "closeTopic": "",
-        "closeQos": "0",
-        "closeRetain": "false",
-        "closePayload": "",
-        "closeMsg": {},
-        "willTopic": "",
-        "willQos": "0",
-        "willRetain": "false",
-        "willPayload": "",
-        "willMsg": {},
-        "userProps": "",
-        "sessionExpiry": ""
-    },
-    {
         "id": "ed11eb6e7faca246",
         "type": "ui-page",
         "name": "System Overview",
@@ -2558,8 +1744,8 @@
         "stateLogEnabled": false,
         "queueLogEnabled": false,
         "failureLogEnabled": true,
-        "tcpHost": "192.168.51.107",
-        "tcpPort": 502,
+        "tcpHost": "${FMSPLC_HOST}",
+        "tcpPort": "${FMSPLC_PORT}",
         "tcpType": "DEFAULT",
         "serialPort": "/dev/ttyUSB",
         "serialType": "RTU-BUFFERD",
@@ -2580,96 +1766,6 @@
         "showLogs": true
     },
     {
-        "id": "9216aa0db4cefc54",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "2",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "94e8212bdf834f03",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "4",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "2b8aa5cd461c891e",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "3",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "1f114c59e71c0294",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "1",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "fc2b09eee22ada02",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "10",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "979f06c6516fdc49",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "2",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "72298e6c827aa861",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "4",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "78077eb482ff065a",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "3",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "a389eb64900cc476",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "1",
-        "pass": "",
-        "cert": ""
-    },
-    {
-        "id": "56d4df1be245b6a2",
-        "type": "redis-cfg",
-        "host": "${REDIS_SERVER}",
-        "port": "${REDIS_PORT}",
-        "dbase": "10",
-        "pass": "",
-        "cert": ""
-    },
-    {
         "id": "cfb3ca563f52bcac",
         "type": "config-log",
         "logname": "Logger",
@@ -2683,30 +1779,6 @@
     },
     {
         "id": "7f8ea2651094b951",
-        "type": "config-log",
-        "logname": "Logger",
-        "logdir": "/home/engineer/Documents",
-        "stamp": "local",
-        "logstyle": "plain",
-        "logrotate": true,
-        "logcompress": true,
-        "logrotatecount": "5",
-        "logsize": "100000"
-    },
-    {
-        "id": "cefda1c9bd923e9c",
-        "type": "config-log",
-        "logname": "Logger",
-        "logdir": "/logs",
-        "stamp": "local",
-        "logstyle": "plain",
-        "logrotate": true,
-        "logcompress": true,
-        "logrotatecount": "5",
-        "logsize": "100000"
-    },
-    {
-        "id": "439df8bacfde5d10",
         "type": "config-log",
         "logname": "Logger",
         "logdir": "/home/engineer/Documents",
@@ -2770,6 +1842,31 @@
         "server": "${BF_SQL_SERVER}",
         "encyption": true,
         "database": "${BF_SQL_SERVER_DB}"
+    },
+    {
+        "id": "b65ac7c74c76d542",
+        "type": "postgreSQLConfig",
+        "name": "test",
+        "host": "",
+        "hostFieldType": "str",
+        "port": "",
+        "portFieldType": "num",
+        "database": "",
+        "databaseFieldType": "str",
+        "ssl": "false",
+        "sslFieldType": "bool",
+        "applicationName": "",
+        "applicationNameType": "str",
+        "max": 10,
+        "maxFieldType": "num",
+        "idle": 1000,
+        "idleFieldType": "num",
+        "connectionTimeout": 10000,
+        "connectionTimeoutFieldType": "num",
+        "user": "",
+        "userFieldType": "str",
+        "password": "",
+        "passwordFieldType": "str"
     },
     {
         "id": "62df3f11ff79c2f7",
@@ -2839,7 +1936,7 @@
             }
         ],
         "x": 930,
-        "y": 280,
+        "y": 300,
         "wires": [
             []
         ]
@@ -2866,7 +1963,7 @@
             }
         ],
         "x": 940,
-        "y": 380,
+        "y": 340,
         "wires": [
             []
         ]
@@ -4747,7 +3844,6 @@
         "id": "a1efebb9586f44eb",
         "type": "modbus-server",
         "z": "b131a1b6b4a6634e",
-        "d": true,
         "g": "3f5804631168148d",
         "name": "",
         "logEnabled": false,
@@ -4918,7 +4014,7 @@
         "type": "function",
         "z": "88a6250cc92621e9",
         "g": "9422c69e854c0c98",
-        "name": "Simulation - with truck",
+        "name": "Simulation - with truck - Level 40",
         "func": "// Purpose: Simulate Postgres AWS status records as input for Message Prepare.js.\n// Output:  msg.payload - array of AWS status objects matching the Postgres query schema\n// Usage:   Wire an Inject node (repeat interval) → this node → Message Prepare\n\n// ---- Simulated AWS records ----\n// Each record represents one AWS unit as it would arrive from Postgres\nmsg.payload = [\n    {\n        LocationName: \"LENC_SPIPE\",\n        TruckName: \"WC101\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 90,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"CDS3_SPIPE\",\n        TruckName: \"WC102\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoTravel\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"CDS_SPIPE\",\n        TruckName: \"WC103\",\n        CoordinateX: 0.8,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 40,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"EF2_SPIPE\",\n        TruckName: \"WC104\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"LAS2_SPIPE\",\n        TruckName: \"WC105\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"LGA_SPIPE\",\n        TruckName: \"WC106\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n];\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
@@ -4926,7 +4022,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 690,
         "y": 460,
         "wires": [
             [
@@ -4949,14 +4045,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 210,
+        "x": 200,
         "y": 460,
         "wires": [
             [
@@ -4978,7 +4074,7 @@
         "finalize": "",
         "libs": [],
         "x": 660,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "6802cd8c294973dc"
@@ -5008,7 +4104,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 200,
-        "y": 500,
+        "y": 600,
         "wires": [
             [
                 "779921d67bc010a3"
@@ -5202,8 +4298,8 @@
         "g": "0f80759ce544e24d",
         "name": "",
         "scope": null,
-        "x": 145,
-        "y": 680,
+        "x": 135,
+        "y": 780,
         "wires": [
             [
                 "b18ef8ef36f4c2bc"
@@ -5222,8 +4318,8 @@
             "a1b17272082e9ae7",
             "9cd52534dbdd13c0"
         ],
-        "x": 1080,
-        "y": 680,
+        "x": 1070,
+        "y": 780,
         "wires": [],
         "l": true
     },
@@ -5234,8 +4330,8 @@
         "g": "0f80759ce544e24d",
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
-        "x": 440,
-        "y": 600,
+        "x": 430,
+        "y": 700,
         "wires": []
     },
     {
@@ -5251,8 +4347,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
-        "y": 680,
+        "x": 400,
+        "y": 780,
         "wires": [
             [
                 "67d087eaa7c3eec7"
@@ -5277,11 +4373,62 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 740,
-        "y": 680,
+        "x": 730,
+        "y": 780,
         "wires": [
             [
                 "c475eea5cddb0b66"
+            ]
+        ]
+    },
+    {
+        "id": "ed5a5a66a96e92ae",
+        "type": "function",
+        "z": "88a6250cc92621e9",
+        "g": "9422c69e854c0c98",
+        "name": "Simulation - with truck Level 90",
+        "func": "// Purpose: Simulate Postgres AWS status records as input for Message Prepare.js.\n// Output:  msg.payload - array of AWS status objects matching the Postgres query schema\n// Usage:   Wire an Inject node (repeat interval) → this node → Message Prepare\n\n// ---- Simulated AWS records ----\n// Each record represents one AWS unit as it would arrive from Postgres\nmsg.payload = [\n    {\n        LocationName: \"LENC_SPIPE\",\n        TruckName: \"WC101\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 90,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"CDS3_SPIPE\",\n        TruckName: \"WC102\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoTravel\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"CDS_SPIPE\",\n        TruckName: \"WC103\",\n        CoordinateX: 0.8,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 90,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"EF2_SPIPE\",\n        TruckName: \"WC104\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"LAS2_SPIPE\",\n        TruckName: \"WC105\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n    {\n        LocationName: \"LGA_SPIPE\",\n        TruckName: \"WC106\",\n        CoordinateX: 0.7,\n        CoordinateY: -0.5,\n        AutonomousTruckMode: \"AutoRun\",\n        WaterLevel: 23,\n        Speed: 12,\n        TruckAtSpotPoint: true,\n        MotionStopOwnerList: []\n    },\n];\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 500,
+        "wires": [
+            [
+                "6802cd8c294973dc"
+            ]
+        ]
+    },
+    {
+        "id": "b66cbc6cd3b8f146",
+        "type": "inject",
+        "z": "88a6250cc92621e9",
+        "g": "9422c69e854c0c98",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 200,
+        "y": 500,
+        "wires": [
+            [
+                "ed5a5a66a96e92ae"
             ]
         ]
     },
@@ -5300,7 +4447,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 360,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "f582f269ef6c1109"
@@ -5323,17 +4470,17 @@
             },
             {
                 "t": "set",
-                "p": "apiversion",
-                "pt": "msg",
-                "to": "FR_API_VERSION",
-                "tot": "env"
-            },
-            {
-                "t": "set",
                 "p": "token",
                 "pt": "msg",
                 "to": "FrontRunnerToken",
                 "tot": "global"
+            },
+            {
+                "t": "set",
+                "p": "endPoint",
+                "pt": "msg",
+                "to": "FrontRunner API",
+                "tot": "str"
             },
             {
                 "t": "set",
@@ -5348,6 +4495,13 @@
                 "pt": "msg",
                 "to": "payload.autonomousTruckName",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "commandType",
+                "pt": "msg",
+                "to": "POST",
+                "tot": "str"
             }
         ],
         "action": "",
@@ -5356,7 +4510,7 @@
         "to": "",
         "reg": false,
         "x": 750,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "ab0839b6c4e7628a",
@@ -5410,10 +4564,10 @@
         "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
-        "senderr": false,
+        "senderr": true,
         "headers": [],
         "x": 1020,
-        "y": 300,
+        "y": 280,
         "wires": [
             [
                 "1e087448e5a32a96"
@@ -5431,7 +4585,7 @@
         ],
         "uncaught": false,
         "x": 210,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
                 "a306b0faa91fe887"
@@ -5452,7 +4606,7 @@
         "finalize": "",
         "libs": [],
         "x": 500,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
                 "8bc7e29cac37b6c4"
@@ -5478,11 +4632,11 @@
         "allowrate": false,
         "outputs": 1,
         "x": 740,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
-                "ab0839b6c4e7628a",
-                "bf4bc9bc7797b89b"
+                "bf4bc9bc7797b89b",
+                "ab0839b6c4e7628a"
             ]
         ]
     },
@@ -5664,7 +4818,8 @@
         "y": 600,
         "wires": [
             [
-                "6b9be864c51af9e9"
+                "6b9be864c51af9e9",
+                "62560b8954ccee37"
             ]
         ]
     },
@@ -5698,16 +4853,30 @@
             },
             {
                 "t": "set",
-                "p": "Command",
+                "p": "endPoint",
+                "pt": "msg",
+                "to": "FrontRunner API",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "command",
                 "pt": "msg",
                 "to": "payload.commandType",
                 "tot": "msg"
             },
             {
                 "t": "set",
-                "p": "TruckName",
+                "p": "truckName",
                 "pt": "msg",
-                "to": "payload.autonomousTruckName",
+                "to": "payload.AwtName",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "commandType",
+                "pt": "msg",
+                "to": "POST",
                 "tot": "str"
             }
         ],
@@ -5729,7 +4898,6 @@
         "id": "5086638516f76c1a",
         "type": "http request",
         "z": "dfb6eb669d69a994",
-        "d": true,
         "g": "92e4755da2f44b04",
         "name": "POST Assignment Control",
         "method": "POST",
@@ -5741,7 +4909,7 @@
         "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
-        "senderr": false,
+        "senderr": true,
         "headers": [],
         "x": 1030,
         "y": 600,
@@ -5757,7 +4925,9 @@
         "z": "dfb6eb669d69a994",
         "g": "92e4755da2f44b04",
         "name": "HTTP Failed",
-        "scope": [],
+        "scope": [
+            "5086638516f76c1a"
+        ],
         "uncaught": false,
         "x": 210,
         "y": 680,
@@ -5832,16 +5002,23 @@
             },
             {
                 "t": "set",
-                "p": "Command",
+                "p": "endPoint",
                 "pt": "msg",
-                "to": "payload.commandType",
+                "to": "FrontRunner API",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "command",
+                "pt": "msg",
+                "to": "payload.bodySummary",
                 "tot": "msg"
             },
             {
                 "t": "set",
-                "p": "TruckName",
+                "p": "commandType",
                 "pt": "msg",
-                "to": "payload.autonomousTruckName",
+                "to": "Notification",
                 "tot": "str"
             }
         ],
@@ -5875,7 +5052,7 @@
         "proxy": "",
         "insecureHTTPParser": false,
         "authType": "",
-        "senderr": false,
+        "senderr": true,
         "headers": [],
         "x": 1010,
         "y": 900,
@@ -5891,7 +5068,9 @@
         "z": "dfb6eb669d69a994",
         "g": "2bc780c8985e2e6b",
         "name": "HTTP Failed",
-        "scope": [],
+        "scope": [
+            "f9d0afdc34c3d82e"
+        ],
         "uncaught": false,
         "x": 210,
         "y": 980,
@@ -5947,7 +5126,7 @@
         "name": "This section issues REST POST - AutonomousTruckRemoteCommands to FrontRunner API",
         "info": "",
         "x": 450,
-        "y": 240,
+        "y": 220,
         "wires": []
     },
     {
@@ -5982,8 +5161,8 @@
         "links": [
             "58df3f233b63de69"
         ],
-        "x": 990,
-        "y": 380,
+        "x": 1030,
+        "y": 360,
         "wires": [],
         "l": true
     },
@@ -5994,7 +5173,9 @@
         "g": "92e4755da2f44b04",
         "name": "System Log",
         "mode": "link",
-        "links": [],
+        "links": [
+            "58df3f233b63de69"
+        ],
         "x": 990,
         "y": 680,
         "wires": [],
@@ -6007,7 +5188,9 @@
         "g": "2bc780c8985e2e6b",
         "name": "System Log",
         "mode": "link",
-        "links": [],
+        "links": [
+            "58df3f233b63de69"
+        ],
         "x": 990,
         "y": 980,
         "wires": [],
@@ -6024,7 +5207,7 @@
             "1e52a75d8a57614a"
         ],
         "x": 1290,
-        "y": 300,
+        "y": 280,
         "wires": [],
         "l": true
     },
@@ -6035,7 +5218,9 @@
         "g": "92e4755da2f44b04",
         "name": "System Log",
         "mode": "link",
-        "links": [],
+        "links": [
+            "1e52a75d8a57614a"
+        ],
         "x": 1290,
         "y": 600,
         "wires": [],
@@ -6048,7 +5233,9 @@
         "g": "2bc780c8985e2e6b",
         "name": "System Log",
         "mode": "link",
-        "links": [],
+        "links": [
+            "1e52a75d8a57614a"
+        ],
         "x": 1290,
         "y": 900,
         "wires": [],
@@ -6064,8 +5251,8 @@
         "links": [
             "bf8973524ae6e633"
         ],
-        "x": 990,
-        "y": 440,
+        "x": 1030,
+        "y": 420,
         "wires": [],
         "l": true
     },
@@ -6077,7 +5264,7 @@
         "name": "Max Retry: 3",
         "info": "",
         "x": 490,
-        "y": 340,
+        "y": 320,
         "wires": []
     },
     {
@@ -6166,8 +5353,8 @@
         "name": "REST API Status",
         "scope": [
             "ab0839b6c4e7628a",
-            "5086638516f76c1a",
-            "f9d0afdc34c3d82e"
+            "f9d0afdc34c3d82e",
+            "5086638516f76c1a"
         ],
         "uncaught": false,
         "x": 220,
@@ -6522,22 +5709,22 @@
         "type": "oauth2",
         "z": "dfb6eb669d69a994",
         "g": "fa3fa2e934e0ce85",
-        "name": "FrontRunner ModularID RIO",
+        "name": "FrontRunner API Token",
         "container": "oauth2",
         "grant_type": "client_credentials",
-        "access_token_url": "${FR_MODULARID_HOST_SIMULATOR}",
+        "access_token_url": "${FR_API_TOKEN_URL}",
         "authorization_endpoint": "",
         "redirect_uri": "http://localhost:1880/oauth2/redirect",
         "open_authentication": "",
         "username": "",
         "password": "",
-        "client_id": "",
-        "client_secret": "",
+        "client_id": "${FR_API_CLIENT_ID}",
+        "client_secret": "${FR_API_CLIENT_SECRET}",
         "response_type": "",
         "access_type": "",
         "refresh_token": "",
         "prompt": "",
-        "scope": "modular-web-api",
+        "scope": "",
         "resource": "",
         "state": "",
         "proxy": "",
@@ -6547,7 +5734,7 @@
         "client_credentials_in_body": false,
         "rejectUnauthorized": false,
         "headers": {},
-        "x": 740,
+        "x": 730,
         "y": 120,
         "wires": [
             [
@@ -6603,7 +5790,7 @@
         "z": "dfb6eb669d69a994",
         "g": "fa3fa2e934e0ce85",
         "name": "",
-        "x": 1180,
+        "x": 1260,
         "y": 120,
         "wires": []
     },
@@ -6611,6 +5798,7 @@
         "id": "9a53234e9d62bc63",
         "type": "status",
         "z": "dfb6eb669d69a994",
+        "d": true,
         "g": "eed03c88c8bace25",
         "name": "",
         "scope": null,
@@ -6736,6 +5924,33 @@
         "info": "",
         "x": 400,
         "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "783448d59a80c873",
+        "type": "comment",
+        "z": "dfb6eb669d69a994",
+        "g": "eed03c88c8bace25",
+        "name": "Disabled due to too many error messages when REST Failed",
+        "info": "",
+        "x": 360,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "62560b8954ccee37",
+        "type": "debug",
+        "z": "dfb6eb669d69a994",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1560,
+        "y": 800,
         "wires": []
     },
     {
@@ -6881,7 +6096,7 @@
         "topic": "+/event/plcStatus/",
         "qos": "1",
         "datatype": "auto-detect",
-        "broker": "d3834677091f54df",
+        "broker": "93cc9cb093168fdd",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -7076,7 +6291,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 210,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "bb0cc9cdee35b86e"
@@ -7274,7 +6489,7 @@
         "y": 420,
         "wires": [
             [
-                "8b44c3bd3500776f"
+                "71d5e6a8f05e5201"
             ]
         ],
         "l": true
@@ -7289,7 +6504,7 @@
         "links": [
             "44e7d632514fe5ff"
         ],
-        "x": 1225,
+        "x": 1245,
         "y": 420,
         "wires": []
     },
@@ -7403,9 +6618,9 @@
         "mode": "link",
         "links": [
             "44e7d632514fe5ff",
-            "db097035746959f8"
+            "ce30cec7ab5e3d51"
         ],
-        "x": 1225,
+        "x": 1245,
         "y": 260,
         "wires": []
     },
@@ -7422,13 +6637,12 @@
             "2ee7213296678766",
             "37cae44a7e79cf11"
         ],
-        "x": 1600,
-        "y": 120,
+        "x": 1480,
+        "y": 60,
         "wires": [
             [
                 "7dd14bdfad371b7a",
-                "3d8cfb2b22b36b0f",
-                "1a731636ec8d37b4"
+                "3d8cfb2b22b36b0f"
             ]
         ],
         "l": true
@@ -7443,8 +6657,8 @@
         "links": [
             "44e257a10c9dad0c"
         ],
-        "x": 1980,
-        "y": 120,
+        "x": 1860,
+        "y": 60,
         "wires": [],
         "l": true
     },
@@ -7475,8 +6689,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 540,
-        "y": 900,
+        "x": 1020,
+        "y": 940,
         "wires": [
             [
                 "98eab5867ed60ba9"
@@ -7493,8 +6707,8 @@
         "links": [
             "44e7d632514fe5ff"
         ],
-        "x": 965,
-        "y": 900,
+        "x": 1245,
+        "y": 940,
         "wires": []
     },
     {
@@ -7507,8 +6721,8 @@
         "links": [
             "44e7d632514fe5ff"
         ],
-        "x": 1215,
-        "y": 100,
+        "x": 1245,
+        "y": 120,
         "wires": []
     },
     {
@@ -7518,13 +6732,15 @@
         "g": "476cd50dbe607463",
         "name": "REST Command",
         "links": [
-            "f9e44a9e238b37c8"
+            "f9e44a9e238b37c8",
+            "30689fd1d8a4fa4b",
+            "0c2b8bfa6e32802f"
         ],
         "x": 220,
-        "y": 600,
+        "y": 580,
         "wires": [
             [
-                "db7a2ea8767891cf"
+                "0a1e087903336cc3"
             ]
         ],
         "l": true
@@ -7536,7 +6752,9 @@
         "g": "476cd50dbe607463",
         "name": "REST Feedback",
         "links": [
-            "1e087448e5a32a96"
+            "1e087448e5a32a96",
+            "188f6dcf1d6ea426",
+            "abaeb3f50cf0b327"
         ],
         "x": 220,
         "y": 680,
@@ -7559,10 +6777,10 @@
             "b5b5b9ee091e9cb9"
         ],
         "x": 210,
-        "y": 760,
+        "y": 780,
         "wires": [
             [
-                "fe1e67539e7edfee"
+                "965bfbef2ab71169"
             ]
         ],
         "l": true
@@ -7585,7 +6803,7 @@
                 "t": "set",
                 "p": "message",
                 "pt": "msg",
-                "to": "\"Attempting to execute REST command - \" & command &\" for \"& truckName",
+                "to": "\"Attempting to execute REST Command to \"& endPoint & \" -  \" & command &\" for \"& truckName",
                 "tot": "jsonata"
             }
         ],
@@ -7595,7 +6813,7 @@
         "to": "",
         "reg": false,
         "x": 1030,
-        "y": 600,
+        "y": 560,
         "wires": [
             [
                 "2ee7213296678766"
@@ -7620,7 +6838,7 @@
                 "t": "set",
                 "p": "message",
                 "pt": "msg",
-                "to": "\"Successfully executed REST Command - \" & command &\" for \"& truckName",
+                "to": "\"Successfully executed REST Command to \" & endPoint & \" - \" & command &\" for \"& truckName",
                 "tot": "jsonata"
             }
         ],
@@ -7704,7 +6922,7 @@
                 "t": "set",
                 "p": "message",
                 "pt": "msg",
-                "to": "\"Failed to execute REST Command - \" & command &\" for \"& truckName & \". HTTP Status Code: \" & statusCode & \". Error Message: \" & error.message",
+                "to": "\"Failed to execute REST Command to \" & endPoint & \" - \" & command &\" for \"& truckName & \". HTTP Status Code: \" & statusCode & \". Error Message: \" & error.message",
                 "tot": "jsonata"
             }
         ],
@@ -7726,7 +6944,7 @@
         "type": "change",
         "z": "2265eca0770dc1a8",
         "g": "476cd50dbe607463",
-        "name": "Log - Command Issued",
+        "name": "Log - Command Retry",
         "rules": [
             {
                 "t": "set",
@@ -7739,7 +6957,7 @@
                 "t": "set",
                 "p": "message",
                 "pt": "msg",
-                "to": "\"HTTP POST Failed, Retrying - \" & command &\" for \"& truckName & \". Retry count: \" & retryCount",
+                "to": "\"HTTP Failed, Retrying - \" & command &\" for \"& truckName & \". Retry count: \" & retryCount",
                 "tot": "jsonata"
             }
         ],
@@ -7748,7 +6966,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1030,
+        "x": 1020,
         "y": 760,
         "wires": [
             [
@@ -7784,7 +7002,7 @@
         "to": "",
         "reg": false,
         "x": 990,
-        "y": 100,
+        "y": 120,
         "wires": [
             [
                 "37cae44a7e79cf11"
@@ -7805,12 +7023,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1550,
-        "y": 380,
+        "x": 1490,
+        "y": 300,
         "wires": [
             [
-                "798f01877e20ba3e",
-                "90114824d8b2c3ca"
+                "798f01877e20ba3e"
             ]
         ]
     },
@@ -7827,8 +7044,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1900,
-        "y": 440,
+        "x": 2060,
+        "y": 360,
         "wires": [
             [
                 "798f01877e20ba3e"
@@ -7882,7 +7099,7 @@
         "y": 260,
         "wires": [
             [
-                "8e75e7ef56b9aaa3"
+                "1b8601adca82dca5"
             ]
         ]
     },
@@ -7909,7 +7126,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 230,
-        "y": 900,
+        "y": 940,
         "wires": [
             [
                 "45916533817463c4"
@@ -7976,7 +7193,7 @@
         "name": "",
         "scope": null,
         "x": 155,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "eeb124ca8f3e86e5"
@@ -7995,8 +7212,8 @@
             "a1b17272082e9ae7",
             "9cd52534dbdd13c0"
         ],
-        "x": 780,
-        "y": 1040,
+        "x": 1180,
+        "y": 1080,
         "wires": [],
         "l": true
     },
@@ -8008,7 +7225,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 450,
-        "y": 1000,
+        "y": 1040,
         "wires": []
     },
     {
@@ -8025,7 +7242,7 @@
         "finalize": "",
         "libs": [],
         "x": 310,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "b32220a35ed9a07a"
@@ -8051,7 +7268,7 @@
         "to": "",
         "reg": false,
         "x": 540,
-        "y": 1040,
+        "y": 1080,
         "wires": [
             [
                 "fd171faae594d581"
@@ -8066,7 +7283,7 @@
         "name": "This section receives all logs from other use cases and send to core log",
         "info": "",
         "x": 390,
-        "y": 60,
+        "y": 80,
         "wires": []
     },
     {
@@ -8099,7 +7316,7 @@
         "name": "This section logs all REST commands that Node-RED issued to FrontRunner API",
         "info": "",
         "x": 420,
-        "y": 560,
+        "y": 540,
         "wires": []
     },
     {
@@ -8110,7 +7327,7 @@
         "name": "This section logs when Node-RED started",
         "info": "",
         "x": 300,
-        "y": 860,
+        "y": 900,
         "wires": []
     },
     {
@@ -8136,8 +7353,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1790,
-        "y": 220,
+        "x": 1670,
+        "y": 160,
         "wires": [
             [
                 "0d58e5d841f4e623"
@@ -8161,8 +7378,8 @@
         "loglevel": "INFO",
         "logconfig": "cfb3ca563f52bcac",
         "sendpane": "",
-        "x": 1970,
-        "y": 180,
+        "x": 1850,
+        "y": 120,
         "wires": [
             []
         ]
@@ -8181,8 +7398,8 @@
         "loglevel": "WARN",
         "logconfig": "cfb3ca563f52bcac",
         "sendpane": "",
-        "x": 1970,
-        "y": 240,
+        "x": 1850,
+        "y": 180,
         "wires": [
             []
         ]
@@ -8201,8 +7418,8 @@
         "tls": false,
         "name": "test@example.com",
         "dname": "",
-        "x": 2110,
-        "y": 380,
+        "x": 2270,
+        "y": 300,
         "wires": []
     },
     {
@@ -8210,18 +7427,18 @@
         "type": "link in",
         "z": "2265eca0770dc1a8",
         "g": "2ef056442ba5e938",
-        "name": "Email",
+        "name": "REST Command",
         "links": [
-            "fa57980e812bcb84",
             "2ee7213296678766"
         ],
-        "x": 1505,
-        "y": 440,
+        "x": 1500,
+        "y": 420,
         "wires": [
             [
-                "575af3b77cdecdde"
+                "1048464dc3d75670"
             ]
-        ]
+        ],
+        "l": true
     },
     {
         "id": "575af3b77cdecdde",
@@ -8229,20 +7446,20 @@
         "z": "2265eca0770dc1a8",
         "g": "2ef056442ba5e938",
         "name": "Filter By Alarms",
-        "property": "payload",
+        "property": "categories",
         "propertyType": "msg",
         "rules": [
             {
                 "t": "eq",
-                "v": "",
+                "v": "alarm",
                 "vt": "str"
             }
         ],
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1640,
-        "y": 440,
+        "x": 1780,
+        "y": 360,
         "wires": [
             [
                 "a184d354b2b13c2b"
@@ -8269,8 +7486,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1765,
-        "y": 440,
+        "x": 1925,
+        "y": 360,
         "wires": [
             [
                 "bdbad8fd7227032d"
@@ -8279,51 +7496,18 @@
         "l": false
     },
     {
-        "id": "90114824d8b2c3ca",
-        "type": "debug",
-        "z": "2265eca0770dc1a8",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2020,
-        "y": 560,
-        "wires": []
-    },
-    {
-        "id": "1a731636ec8d37b4",
-        "type": "debug",
-        "z": "2265eca0770dc1a8",
-        "name": "debug 2",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2200,
-        "y": 220,
-        "wires": []
-    },
-    {
-        "id": "8b44c3bd3500776f",
-        "type": "rbe",
+        "id": "71d5e6a8f05e5201",
+        "type": "function",
         "z": "2265eca0770dc1a8",
         "g": "db4ae481e3d06f8f",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.status",
-        "topi": "flowName",
+        "name": "Filter",
+        "func": "// This code is a replacement of a Filter Node, achieving same functionality but with presistent memory\n\nconst blockUnlessValueChanges = msg.payload.status;\nconst applyModeSeparatelyForEach = msg.flowName;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 585,
         "y": 420,
         "wires": [
@@ -8334,18 +7518,18 @@
         "l": false
     },
     {
-        "id": "8e75e7ef56b9aaa3",
-        "type": "rbe",
+        "id": "1b8601adca82dca5",
+        "type": "function",
         "z": "2265eca0770dc1a8",
         "g": "883a925e4edee11a",
-        "name": "",
-        "func": "rbe",
-        "gap": "",
-        "start": "",
-        "inout": "out",
-        "septopics": true,
-        "property": "payload.isHealthy",
-        "topi": "container",
+        "name": "Filter",
+        "func": "// This code is a replacement of a Filter Node, achieving same functionality but with presistent memory\n\nconst blockUnlessValueChanges = msg.payload.isHealthy;\nconst applyModeSeparatelyForEach = msg.container;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
         "x": 585,
         "y": 260,
         "wires": [
@@ -8356,29 +7540,189 @@
         "l": false
     },
     {
-        "id": "47ec3d64da299db2",
-        "type": "inject",
+        "id": "0a1e087903336cc3",
+        "type": "switch",
         "z": "2265eca0770dc1a8",
+        "g": "476cd50dbe607463",
         "name": "",
-        "props": [
+        "property": "commandType",
+        "propertyType": "msg",
+        "rules": [
             {
-                "p": "payload"
+                "t": "eq",
+                "v": "POST",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Notification",
+                "vt": "str"
             }
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "test",
-        "payloadType": "str",
-        "x": 1550,
-        "y": 300,
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 865,
+        "y": 580,
         "wires": [
             [
-                "bdbad8fd7227032d"
+                "db7a2ea8767891cf"
+            ],
+            [
+                "70d1c4a3e6fc4b11"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "70d1c4a3e6fc4b11",
+        "type": "change",
+        "z": "2265eca0770dc1a8",
+        "g": "476cd50dbe607463",
+        "name": "Log - Notification Issued",
+        "rules": [
+            {
+                "t": "set",
+                "p": "categories",
+                "pt": "msg",
+                "to": "event",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "msg",
+                "to": "\"Attempting to execute REST Notification to \" & endPoint & \" - \" & command",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 600,
+        "wires": [
+            [
+                "2ee7213296678766"
             ]
         ]
+    },
+    {
+        "id": "965bfbef2ab71169",
+        "type": "switch",
+        "z": "2265eca0770dc1a8",
+        "g": "476cd50dbe607463",
+        "name": "",
+        "property": "commandType",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "POST",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "Notification",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 865,
+        "y": 780,
+        "wires": [
+            [
+                "fe1e67539e7edfee"
+            ],
+            [
+                "936dc9b73a1dcb75"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "936dc9b73a1dcb75",
+        "type": "change",
+        "z": "2265eca0770dc1a8",
+        "g": "476cd50dbe607463",
+        "name": "Log - Notification Retry",
+        "rules": [
+            {
+                "t": "set",
+                "p": "categories",
+                "pt": "msg",
+                "to": "event",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "message",
+                "pt": "msg",
+                "to": "\"Notification Failed, Retrying - \" & command & \". Retry count: \" & retryCount",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1020,
+        "y": 800,
+        "wires": [
+            [
+                "2ee7213296678766"
+            ]
+        ]
+    },
+    {
+        "id": "1048464dc3d75670",
+        "type": "switch",
+        "z": "2265eca0770dc1a8",
+        "g": "2ef056442ba5e938",
+        "name": "Retry = 3",
+        "property": "retryCount",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 1635,
+        "y": 420,
+        "wires": [
+            [
+                "575af3b77cdecdde"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "ce30cec7ab5e3d51",
+        "type": "link in",
+        "z": "2265eca0770dc1a8",
+        "g": "2ef056442ba5e938",
+        "name": "General Alarms",
+        "links": [
+            "fa57980e812bcb84"
+        ],
+        "x": 1500,
+        "y": 360,
+        "wires": [
+            [
+                "575af3b77cdecdde"
+            ]
+        ],
+        "l": true
     },
     {
         "id": "bc2df745eee38272",
@@ -8447,14 +7791,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 230,
+        "x": 220,
         "y": 260,
         "wires": [
             [
@@ -8468,7 +7812,7 @@
         "z": "4e3d795537c2edf7",
         "name": "",
         "query": "        SELECT \"Categories\", \"Message\", \"Time\"\n        FROM public.\"core_system_log\"\n        ORDER BY \"Time\" DESC\n        LIMIT 500;",
-        "postgreSQLConfig": "c27e8ebf46fe847c",
+        "postgreSQLConfig": "b65ac7c74c76d542",
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
@@ -8476,7 +7820,8 @@
         "y": 260,
         "wires": [
             [
-                "0be998d4d04b41e1"
+                "0be998d4d04b41e1",
+                "1676b2eb81c1926c"
             ]
         ]
     },
@@ -8583,6 +7928,23 @@
                 "20e9c9d994dbc89f"
             ]
         ]
+    },
+    {
+        "id": "1676b2eb81c1926c",
+        "type": "debug",
+        "z": "4e3d795537c2edf7",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1000,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "3bd5049ddcb31190",
