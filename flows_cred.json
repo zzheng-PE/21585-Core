@@ -1,11 +1,21 @@
 {
     "82d204cedf415b5f": {
         "map": {
-            "FR_API_CLIENT_SECRET": "__PWRD__",
+            "FR_API_CLIENT_SECRET": "P1qMArsHC6HWKeDUr5h7IfwEDqekxURC",
             "has_FR_API_CLIENT_SECRET": true,
             "FR_API_CLIENT_SECRET_SIMULATOR": "__PWRD__",
-            "has_FR_API_CLIENT_SECRET_SIMULATOR": true
+            "has_FR_API_CLIENT_SECRET_SIMULATOR": true,
+            "PG_PASSWORD": "__PWRD__",
+            "has_PG_PASSWORD": true
         }
     },
-    "798f01877e20ba3e": {}
+    "798f01877e20ba3e": {},
+    "5086638516f76c1a": {},
+    "54a50ff0fc440b16": {
+        "client_id": "${FR_API_CLIENT_ID}",
+        "client_secret": "${FR_API_CLIENT_SECRET}"
+    },
+    "93cc9cb093168fdd": {},
+    "ab0839b6c4e7628a": {},
+    "f9d0afdc34c3d82e": {}
 }
