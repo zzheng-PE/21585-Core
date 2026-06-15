@@ -1,12 +1,12 @@
 {
     "82d204cedf415b5f": {
         "map": {
-            "FR_API_CLIENT_SECRET": "P1qMArsHC6HWKeDUr5h7IfwEDqekxURC",
-            "has_FR_API_CLIENT_SECRET": true,
             "FR_API_CLIENT_SECRET_SIMULATOR": "__PWRD__",
             "has_FR_API_CLIENT_SECRET_SIMULATOR": true,
             "PG_PASSWORD": "__PWRD__",
-            "has_PG_PASSWORD": true
+            "has_PG_PASSWORD": true,
+            "FR_API_CLIENT_SECRET": "__PWRD__",
+            "has_FR_API_CLIENT_SECRET": true
         }
     },
     "798f01877e20ba3e": {},

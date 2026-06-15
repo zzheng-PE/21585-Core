@@ -271,7 +271,7 @@
         ],
         "x": 54,
         "y": 339,
-        "w": 1672,
+        "w": 1522,
         "h": 402
     },
     {
@@ -595,7 +595,7 @@
         ],
         "x": 94,
         "y": 39,
-        "w": 1092,
+        "w": 1132,
         "h": 342
     },
     {
@@ -645,7 +645,7 @@
             "aff51114897bc23f",
             "fdeec454c34cfb51",
             "6d696f493528be10",
-            "71d5e6a8f05e5201"
+            "2064cdeaa20c5bcd"
         ],
         "x": 114,
         "y": 339,
@@ -669,7 +669,7 @@
             "018fc89132fb5167",
             "cb9bb3ae69e8729a",
             "46e9919ed00544c9",
-            "1b8601adca82dca5"
+            "1b2d49dcc741642a"
         ],
         "x": 114,
         "y": 179,
@@ -688,7 +688,6 @@
             "color": "#aaaaaa"
         },
         "nodes": [
-            "45916533817463c4",
             "98eab5867ed60ba9",
             "199d6a53ea8c27c3",
             "280fcc43afe31507"
@@ -775,7 +774,8 @@
             "0a1e087903336cc3",
             "70d1c4a3e6fc4b11",
             "965bfbef2ab71169",
-            "936dc9b73a1dcb75"
+            "936dc9b73a1dcb75",
+            "5e44837538926e45"
         ],
         "x": 114,
         "y": 499,
@@ -815,7 +815,7 @@
             "c4999ae6be3ba179"
         ],
         "x": 114,
-        "y": 1439,
+        "y": 1259,
         "w": 1672,
         "h": 202
     },
@@ -873,7 +873,7 @@
             "753f7e588992ec6c"
         ],
         "x": 54,
-        "y": 339,
+        "y": 519,
         "w": 1152,
         "h": 162
     },
@@ -895,27 +895,6 @@
         "x": 94,
         "y": 659,
         "w": 1082,
-        "h": 162
-    },
-    {
-        "id": "eed03c88c8bace25",
-        "type": "group",
-        "z": "dfb6eb669d69a994",
-        "name": "Node Status Detection & Logging",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "9a53234e9d62bc63",
-            "84744d60598a0ad8",
-            "d86e338c0218afb4",
-            "9fa4d3f0f58d551d",
-            "4fa61c50425255a6",
-            "783448d59a80c873"
-        ],
-        "x": 114,
-        "y": 1259,
-        "w": 1272,
         "h": 162
     },
     {
@@ -973,8 +952,8 @@
             "161f28dc8bb0a4ae",
             "6ee053b0157b748e"
         ],
-        "x": 124,
-        "y": 379,
+        "x": 134,
+        "y": 479,
         "w": 772,
         "h": 162
     },
@@ -1011,12 +990,14 @@
             "7dd14bdfad371b7a",
             "3d8cfb2b22b36b0f",
             "0d58e5d841f4e623",
-            "9d33787c759211bf"
+            "9d33787c759211bf",
+            "aebd5f03e486e9f6",
+            "04ca6088eea62df3"
         ],
-        "x": 1394,
-        "y": 19,
-        "w": 552,
-        "h": 202
+        "x": 1374,
+        "y": 99,
+        "w": 652,
+        "h": 262
     },
     {
         "id": "2ef056442ba5e938",
@@ -1034,12 +1015,39 @@
             "575af3b77cdecdde",
             "a184d354b2b13c2b",
             "1048464dc3d75670",
-            "ce30cec7ab5e3d51"
+            "ce30cec7ab5e3d51",
+            "18f428db82651f23"
         ],
-        "x": 1394,
-        "y": 259,
-        "w": 992,
+        "x": 1374,
+        "y": 379,
+        "w": 912,
         "h": 202
+    },
+    {
+        "id": "d424ff0c3eaa464e",
+        "type": "group",
+        "z": "4e3d795537c2edf7",
+        "name": "Postgres",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "bc2df745eee38272",
+            "957dbd802ccbb461",
+            "44e257a10c9dad0c",
+            "a12649d0baf9de92",
+            "7a895fbfc635cad4",
+            "0be998d4d04b41e1",
+            "1752a4b3b44ee9b1",
+            "bc9071b86d0286ae",
+            "470c8ae86033c7d8",
+            "f792bfd4bb15f305",
+            "6e87db194dc6e16e"
+        ],
+        "x": 134,
+        "y": 79,
+        "w": 712,
+        "h": 302
     },
     {
         "id": "82d204cedf415b5f",
@@ -1187,7 +1195,7 @@
             },
             {
                 "name": "CONTAINER_NAME",
-                "value": "CORE",
+                "value": "Core",
                 "type": "str"
             },
             {
@@ -3908,7 +3916,7 @@
         "name": "",
         "scope": null,
         "x": 95,
-        "y": 460,
+        "y": 640,
         "wires": [
             [
                 "64bdab926f37750b"
@@ -3928,7 +3936,7 @@
             "9cd52534dbdd13c0"
         ],
         "x": 1100,
-        "y": 460,
+        "y": 640,
         "wires": [],
         "l": true
     },
@@ -3940,7 +3948,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 390,
-        "y": 380,
+        "y": 560,
         "wires": []
     },
     {
@@ -3957,7 +3965,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 460,
+        "y": 640,
         "wires": [
             [
                 "753f7e588992ec6c"
@@ -3983,7 +3991,7 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 460,
+        "y": 640,
         "wires": [
             [
                 "66ecce77c7a656f5"
@@ -4117,7 +4125,7 @@
         "z": "88a6250cc92621e9",
         "g": "9bafd798c8053e90",
         "name": "",
-        "topic": "LocationUpdates_Client_01",
+        "topic": "fr/ws/event/locationUpdateInfo_01/raw",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "93cc9cb093168fdd",
@@ -4125,7 +4133,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
+        "x": 270,
         "y": 140,
         "wires": [
             [
@@ -4159,7 +4167,7 @@
         "z": "88a6250cc92621e9",
         "g": "9bafd798c8053e90",
         "name": "",
-        "topic": "LocationUpdates_Client_02",
+        "topic": "fr/ws/event/locationUpdateInfo_02/raw",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "93cc9cb093168fdd",
@@ -4167,7 +4175,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
+        "x": 270,
         "y": 200,
         "wires": [
             [
@@ -4181,7 +4189,7 @@
         "z": "88a6250cc92621e9",
         "g": "9bafd798c8053e90",
         "name": "",
-        "topic": "LocationUpdates_Client_03",
+        "topic": "fr/ws/event/locationUpdateInfo_03/raw",
         "qos": "2",
         "datatype": "auto-detect",
         "broker": "93cc9cb093168fdd",
@@ -4189,7 +4197,7 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 240,
+        "x": 270,
         "y": 260,
         "wires": [
             [
@@ -4249,7 +4257,7 @@
         "d": true,
         "g": "9bafd798c8053e90",
         "name": "",
-        "topic": "fr/ws/event/locationUpdateInfo",
+        "topic": "fr/ws/event/locationUpdateInfo_01/prased",
         "qos": "0",
         "retain": "false",
         "respTopic": "",
@@ -4258,7 +4266,7 @@
         "correl": "",
         "expiry": "",
         "broker": "93cc9cb093168fdd",
-        "x": 1010,
+        "x": 1040,
         "y": 340,
         "wires": []
     },
@@ -4431,6 +4439,16 @@
                 "ed5a5a66a96e92ae"
             ]
         ]
+    },
+    {
+        "id": "a346d3b1638dd526",
+        "type": "comment",
+        "z": "88a6250cc92621e9",
+        "name": "Maybe use case subscribe the Edge Central topic",
+        "info": "",
+        "x": 1420,
+        "y": 120,
+        "wires": []
     },
     {
         "id": "7d094bfd2295f368",
@@ -4819,7 +4837,7 @@
         "wires": [
             [
                 "6b9be864c51af9e9",
-                "62560b8954ccee37"
+                "1459ef0a8dede60e"
             ]
         ]
     },
@@ -5303,7 +5321,7 @@
         "finalize": "",
         "libs": [],
         "x": 570,
-        "y": 1560,
+        "y": 1380,
         "wires": [
             [
                 "98ec863e5b56d894",
@@ -5334,7 +5352,7 @@
         "repair": false,
         "outputs": 2,
         "x": 390,
-        "y": 1580,
+        "y": 1400,
         "wires": [
             [
                 "2a25d2c76d86e832"
@@ -5358,7 +5376,7 @@
         ],
         "uncaught": false,
         "x": 220,
-        "y": 1580,
+        "y": 1400,
         "wires": [
             [
                 "5a404e8a7764e02e"
@@ -5374,7 +5392,7 @@
         "mode": "link",
         "links": [],
         "x": 495,
-        "y": 1600,
+        "y": 1420,
         "wires": []
     },
     {
@@ -5401,7 +5419,7 @@
         "repair": false,
         "outputs": 2,
         "x": 750,
-        "y": 1500,
+        "y": 1320,
         "wires": [
             [
                 "8eefc8151b985350"
@@ -5420,7 +5438,7 @@
         "mode": "link",
         "links": [],
         "x": 845,
-        "y": 1480,
+        "y": 1300,
         "wires": []
     },
     {
@@ -5432,7 +5450,7 @@
         "mode": "link",
         "links": [],
         "x": 845,
-        "y": 1520,
+        "y": 1340,
         "wires": []
     },
     {
@@ -5459,7 +5477,7 @@
         "repair": false,
         "outputs": 2,
         "x": 1160,
-        "y": 1540,
+        "y": 1360,
         "wires": [
             [
                 "ecedf2bbeabf5d41"
@@ -5488,7 +5506,7 @@
         "repair": false,
         "outputs": 1,
         "x": 1430,
-        "y": 1560,
+        "y": 1380,
         "wires": [
             [
                 "43898e51f2b7621f"
@@ -5535,7 +5553,7 @@
         "to": "",
         "reg": false,
         "x": 1640,
-        "y": 1520,
+        "y": 1340,
         "wires": [
             [
                 "da2861738e0fb8fb"
@@ -5582,7 +5600,7 @@
         "to": "",
         "reg": false,
         "x": 1640,
-        "y": 1560,
+        "y": 1380,
         "wires": [
             [
                 "da2861738e0fb8fb"
@@ -5598,7 +5616,7 @@
         "mode": "link",
         "links": [],
         "x": 1745,
-        "y": 1540,
+        "y": 1360,
         "wires": []
     },
     {
@@ -5609,7 +5627,7 @@
         "name": "Health State Change of the REST API Endpoints",
         "info": "",
         "x": 1580,
-        "y": 1480,
+        "y": 1300,
         "wires": []
     },
     {
@@ -5636,7 +5654,7 @@
         "repair": false,
         "outputs": 2,
         "x": 800,
-        "y": 1560,
+        "y": 1380,
         "wires": [
             [
                 "57097abffe8ce78d"
@@ -5667,7 +5685,7 @@
         "to": "",
         "reg": false,
         "x": 975,
-        "y": 1540,
+        "y": 1360,
         "wires": [
             [
                 "ed1267933ba5accb"
@@ -5696,7 +5714,7 @@
         "to": "",
         "reg": false,
         "x": 975,
-        "y": 1580,
+        "y": 1400,
         "wires": [
             [
                 "ed1267933ba5accb"
@@ -5795,97 +5813,6 @@
         "wires": []
     },
     {
-        "id": "9a53234e9d62bc63",
-        "type": "status",
-        "z": "dfb6eb669d69a994",
-        "d": true,
-        "g": "eed03c88c8bace25",
-        "name": "",
-        "scope": null,
-        "x": 155,
-        "y": 1380,
-        "wires": [
-            [
-                "9fa4d3f0f58d551d"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "84744d60598a0ad8",
-        "type": "link out",
-        "z": "dfb6eb669d69a994",
-        "g": "eed03c88c8bace25",
-        "name": "System Status",
-        "mode": "link",
-        "links": [
-            "a1b17272082e9ae7",
-            "9cd52534dbdd13c0"
-        ],
-        "x": 1280,
-        "y": 1380,
-        "wires": [],
-        "l": true
-    },
-    {
-        "id": "d86e338c0218afb4",
-        "type": "comment",
-        "z": "dfb6eb669d69a994",
-        "g": "eed03c88c8bace25",
-        "name": "This section check all Nodes status of the current flow and create a summaries flow status",
-        "info": "",
-        "x": 450,
-        "y": 1300,
-        "wires": []
-    },
-    {
-        "id": "9fa4d3f0f58d551d",
-        "type": "function",
-        "z": "dfb6eb669d69a994",
-        "g": "eed03c88c8bace25",
-        "name": "Check Node Status",
-        "func": "// Purpose: Summarise a flow's node status messages into one flow health value.\n// Input:   msg from a Node-RED Status node, with msg.status and msg.source.\n// Output:  msg.payload = { timestamp, status }\n// Notes:   Health is also written to global.sysStatus.Flow[flowName].isHealthy.\n\nconst nodeStatuses = context.get(\"nodeStatuses\") || {};\nconst now = Date.now();\nconst flowName = env.get(\"FLOW_NAME\");\n\nconst sourceId = msg.status?.source?.id;\nconst statusFill = (msg.status?.fill || \"\").toLowerCase();\n\nnodeStatuses[sourceId] = {\n    fill: statusFill,\n    lastUpdate: now,\n};\n\ncontext.set(\"nodeStatuses\", nodeStatuses);\n\nconst hasFault = Object.values(nodeStatuses).some(\n    (nodeStatus) => nodeStatus.fill === \"red\",\n);\nconst summaryIsHealthy = !hasFault;\nconst summary = summaryIsHealthy ? \"healthy\" : \"unhealthy\";\n\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.Flow ??= {};\nsysStatus.Flow[flowName] ??= {};\nsysStatus.Flow[flowName].isHealthy = summaryIsHealthy;\nsysStatus.Flow[flowName].lastUpdate = now;\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = {\n    lastUpdate: now,\n    status: summary,\n};\n\nmsg.flowName = flowName;\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 1380,
-        "wires": [
-            [
-                "4fa61c50425255a6"
-            ]
-        ]
-    },
-    {
-        "id": "4fa61c50425255a6",
-        "type": "change",
-        "z": "dfb6eb669d69a994",
-        "g": "eed03c88c8bace25",
-        "name": "Remove msg.status",
-        "rules": [
-            {
-                "t": "delete",
-                "p": "status",
-                "pt": "msg"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 540,
-        "y": 1380,
-        "wires": [
-            [
-                "84744d60598a0ad8"
-            ]
-        ]
-    },
-    {
         "id": "5ecaab3ed6dfff38",
         "type": "link out",
         "z": "dfb6eb669d69a994",
@@ -5923,22 +5850,11 @@
         "name": "This section monitors each REST responds and record in Global Variable",
         "info": "",
         "x": 400,
-        "y": 1480,
+        "y": 1300,
         "wires": []
     },
     {
-        "id": "783448d59a80c873",
-        "type": "comment",
-        "z": "dfb6eb669d69a994",
-        "g": "eed03c88c8bace25",
-        "name": "Disabled due to too many error messages when REST Failed",
-        "info": "",
-        "x": 360,
-        "y": 1340,
-        "wires": []
-    },
-    {
-        "id": "62560b8954ccee37",
+        "id": "1459ef0a8dede60e",
         "type": "debug",
         "z": "dfb6eb669d69a994",
         "name": "debug 1",
@@ -5949,8 +5865,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1560,
-        "y": 800,
+        "x": 1520,
+        "y": 760,
         "wires": []
     },
     {
@@ -6029,12 +5945,12 @@
         "name": "Inject Container Status",
         "props": [
             {
-                "p": "payload.status",
-                "v": "containerStatus",
-                "vt": "flow"
+                "p": "payload.isHealthy",
+                "v": "true",
+                "vt": "bool"
             },
             {
-                "p": "payload.timestamp",
+                "p": "payload.lastUpdate",
                 "v": "",
                 "vt": "date"
             },
@@ -6063,7 +5979,7 @@
         "z": "bcc3cc02ee57e49c",
         "g": "6769af881029a77d",
         "name": "Summary Container Status",
-        "func": "// Purpose: Track validated container health messages and write the result to global.sysStatus.container[source].\n// Input:   validated msg from Container Status.js\n// Output:  msg.payload = current container summary map\n// Notes:   Validation and payload normalisation are handled upstream.\n\nconst timeoutMs = Number(env.get(\"CONTAINER_STATUS_TIMEOUT_MS\") || 30000);\n\nconst now = Date.now();\nconst input = msg.payload;\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.container ??= {};\n\nsysStatus.container[input.source] ??= {};\nsysStatus.container[input.source].isHealthy =\n    input.status === \"healthy\" ? true : false;\nsysStatus.container[input.source].lastUpdate = input.timestamp;\n\nObject.values(sysStatus.container).forEach((container) => {\n    if (now - container.lastUpdate > timeoutMs) {\n        container.status = \"failed\";\n    }\n});\n\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = sysStatus.container;\nreturn msg;\n",
+        "func": "// Purpose: Track validated container health messages and write the result to global.sysStatus.container[source].\n// Input:   validated msg from Container Status.js\n// Output:  msg.payload = current container summary map\n// Notes:   Validation and payload normalisation are handled upstream.\n\nconst timeoutMs = Number(env.get(\"CONTAINER_STATUS_TIMEOUT_MS\") || 30000);\n\nconst now = Date.now();\nconst input = msg.payload;\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.container ??= {};\n\nsysStatus.container[input.source] ??= {};\nsysStatus.container[input.source].isHealthy = input.isHealthy;\nsysStatus.container[input.source].lastUpdate = input.lastUpdate;\n\nObject.values(sysStatus.container).forEach((container) => {\n    if (now - container.lastUpdate > timeoutMs) {\n        container.status = \"failed\";\n    }\n});\n\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = sysStatus.container;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6145,7 +6061,7 @@
         "z": "bcc3cc02ee57e49c",
         "g": "6769af881029a77d",
         "name": "Input Validation",
-        "func": "// Validate container/system monitor health messages before they are summarised.\n// Expected payload: { source: string, status: string, timestamp: number }\n// Invalid payloads are blocked by setting payload to 0 and msg.validPayload to false.\n\nconst input = msg.payload;\nlet validPayload = true;\n\n// Check required fields and basic types.\nif (!input || typeof input !== \"object\") {\n    validPayload = false;\n} else if (typeof input.source !== \"string\" || input.source.trim() === \"\") {\n    validPayload = false;\n} else if (typeof input.status !== \"string\" || input.status.trim() === \"\") {\n    validPayload = false;\n} else if (!Number.isFinite(Number(input.timestamp)) || Number(input.timestamp) <= 0) {\n    validPayload = false;\n}\n\nmsg.validPayload = validPayload;\n\n// Show validation result in the Node-RED editor.\nif (!validPayload) {\n    node.warn(\"Invalid system monitor payload\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n    msg.payload = 0;\n} else {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n}\n\nreturn msg;\n",
+        "func": "// Validate container/system monitor health messages before they are summarised.\n// Expected payload: { source: string, isHealty: boolean, timestamp: number }\n// Invalid payloads are blocked by setting payload to 0 and msg.validPayload to false.\n\nconst input = msg.payload;\nlet validPayload = true;\n\n// Check required fields and basic types.\nif (!input || typeof input !== \"object\" || Array.isArray(input)) {\n    validPayload = false;\n} else if (typeof input.source !== \"string\" || input.source.trim() === \"\") {\n    validPayload = false;\n} else if (typeof input.isHealthy !== \"boolean\") {\n    validPayload = false;\n} else if (!Number.isFinite(Number(input.lastUpdate)) || Number(input.lastUpdate) <= 0) {\n    validPayload = false;\n}\n\nmsg.validPayload = validPayload;\n\n// Show validation result in the Node-RED editor.\nif (!validPayload) {\n    node.warn(\"Invalid system monitor payload\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n    msg.payload = 0;\n} else {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6327,30 +6243,9 @@
                 "tot": "jsonata"
             },
             {
-                "t": "set",
-                "p": "payload.source",
-                "pt": "msg",
-                "to": "CONTAINER_NAME",
-                "tot": "env"
-            },
-            {
                 "t": "delete",
                 "p": "payload.status",
                 "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "categories",
-                "pt": "msg",
-                "to": "payload.level",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "message",
-                "pt": "msg",
-                "to": "payload.description",
-                "tot": "msg"
             }
         ],
         "action": "",
@@ -6430,30 +6325,9 @@
                 "tot": "jsonata"
             },
             {
-                "t": "set",
-                "p": "payload.source",
-                "pt": "msg",
-                "to": "CONTAINER_NAME",
-                "tot": "env"
-            },
-            {
                 "t": "delete",
                 "p": "payload.status",
                 "pt": "msg"
-            },
-            {
-                "t": "set",
-                "p": "categories",
-                "pt": "msg",
-                "to": "payload.level",
-                "tot": "msg"
-            },
-            {
-                "t": "set",
-                "p": "message",
-                "pt": "msg",
-                "to": "payload.description",
-                "tot": "msg"
             }
         ],
         "action": "",
@@ -6489,7 +6363,7 @@
         "y": 420,
         "wires": [
             [
-                "71d5e6a8f05e5201"
+                "2064cdeaa20c5bcd"
             ]
         ],
         "l": true
@@ -6517,14 +6391,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "event",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Node-RED \" & container & \" Container Healthy\"",
                 "tot": "jsonata"
@@ -6583,14 +6457,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "alarm",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Node-RED \" & container & \" Container Unhealthy\"",
                 "tot": "jsonata"
@@ -6631,18 +6505,17 @@
         "g": "2f220f603db16b5d",
         "name": "Local Log",
         "links": [
+            "2ee7213296678766",
             "98eab5867ed60ba9",
             "aff51114897bc23f",
-            "fa57980e812bcb84",
-            "2ee7213296678766",
-            "37cae44a7e79cf11"
+            "fa57980e812bcb84"
         ],
-        "x": 1480,
-        "y": 60,
+        "x": 1460,
+        "y": 200,
         "wires": [
             [
-                "7dd14bdfad371b7a",
-                "3d8cfb2b22b36b0f"
+                "3d8cfb2b22b36b0f",
+                "04ca6088eea62df3"
             ]
         ],
         "l": true
@@ -6657,45 +6530,10 @@
         "links": [
             "44e257a10c9dad0c"
         ],
-        "x": 1860,
-        "y": 60,
+        "x": 1940,
+        "y": 140,
         "wires": [],
         "l": true
-    },
-    {
-        "id": "45916533817463c4",
-        "type": "change",
-        "z": "2265eca0770dc1a8",
-        "g": "0f20d278e171550d",
-        "name": "Log - System Started",
-        "rules": [
-            {
-                "t": "set",
-                "p": "categories",
-                "pt": "msg",
-                "to": "event",
-                "tot": "str"
-            },
-            {
-                "t": "set",
-                "p": "message",
-                "pt": "msg",
-                "to": "Node-RED Core Container Started",
-                "tot": "str"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 1020,
-        "y": 940,
-        "wires": [
-            [
-                "98eab5867ed60ba9"
-            ]
-        ]
     },
     {
         "id": "98eab5867ed60ba9",
@@ -6718,9 +6556,7 @@
         "g": "12a2abf979c2cad1",
         "name": "link out 8",
         "mode": "link",
-        "links": [
-            "44e7d632514fe5ff"
-        ],
+        "links": [],
         "x": 1245,
         "y": 120,
         "wires": []
@@ -6794,14 +6630,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "event",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Attempting to execute REST Command to \"& endPoint & \" -  \" & command &\" for \"& truckName",
                 "tot": "jsonata"
@@ -6829,14 +6665,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "event",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Successfully executed REST Command to \" & endPoint & \" - \" & command &\" for \"& truckName",
                 "tot": "jsonata"
@@ -6913,14 +6749,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "alarm",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Failed to execute REST Command to \" & endPoint & \" - \" & command &\" for \"& truckName & \". HTTP Status Code: \" & statusCode & \". Error Message: \" & error.message",
                 "tot": "jsonata"
@@ -6948,14 +6784,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
-                "to": "event",
+                "to": "alarm",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"HTTP Failed, Retrying - \" & command &\" for \"& truckName & \". Retry count: \" & retryCount",
                 "tot": "jsonata"
@@ -7023,11 +6859,11 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 1490,
-        "y": 300,
+        "x": 1470,
+        "y": 420,
         "wires": [
             [
-                "798f01877e20ba3e"
+                "18f428db82651f23"
             ]
         ]
     },
@@ -7044,8 +6880,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2060,
-        "y": 360,
+        "x": 2040,
+        "y": 480,
         "wires": [
             [
                 "798f01877e20ba3e"
@@ -7099,7 +6935,7 @@
         "y": 260,
         "wires": [
             [
-                "1b8601adca82dca5"
+                "1b2d49dcc741642a"
             ]
         ]
     },
@@ -7108,13 +6944,16 @@
         "type": "inject",
         "z": "2265eca0770dc1a8",
         "g": "0f20d278e171550d",
-        "name": "",
+        "name": "Inject when Node-RED started",
         "props": [
             {
-                "p": "payload"
+                "p": "payload.level",
+                "v": "event",
+                "vt": "str"
             },
             {
-                "p": "topic",
+                "p": "payload.description",
+                "v": "Node-RED Core Container Started",
                 "vt": "str"
             }
         ],
@@ -7123,13 +6962,11 @@
         "once": true,
         "onceDelay": 0.1,
         "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 230,
+        "x": 290,
         "y": 940,
         "wires": [
             [
-                "45916533817463c4"
+                "98eab5867ed60ba9"
             ]
         ]
     },
@@ -7353,8 +7190,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 1670,
-        "y": 160,
+        "x": 1710,
+        "y": 300,
         "wires": [
             [
                 "0d58e5d841f4e623"
@@ -7378,8 +7215,8 @@
         "loglevel": "INFO",
         "logconfig": "cfb3ca563f52bcac",
         "sendpane": "",
-        "x": 1850,
-        "y": 120,
+        "x": 1890,
+        "y": 260,
         "wires": [
             []
         ]
@@ -7398,8 +7235,8 @@
         "loglevel": "WARN",
         "logconfig": "cfb3ca563f52bcac",
         "sendpane": "",
-        "x": 1850,
-        "y": 180,
+        "x": 1890,
+        "y": 320,
         "wires": [
             []
         ]
@@ -7416,10 +7253,10 @@
         "token": "oauth2Response.access_token",
         "secure": false,
         "tls": false,
-        "name": "test@example.com",
+        "name": "",
         "dname": "",
-        "x": 2270,
-        "y": 300,
+        "x": 2210,
+        "y": 420,
         "wires": []
     },
     {
@@ -7431,8 +7268,8 @@
         "links": [
             "2ee7213296678766"
         ],
-        "x": 1500,
-        "y": 420,
+        "x": 1480,
+        "y": 540,
         "wires": [
             [
                 "1048464dc3d75670"
@@ -7458,8 +7295,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1780,
-        "y": 360,
+        "x": 1760,
+        "y": 480,
         "wires": [
             [
                 "a184d354b2b13c2b"
@@ -7486,55 +7323,11 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 1925,
-        "y": 360,
+        "x": 1905,
+        "y": 480,
         "wires": [
             [
                 "bdbad8fd7227032d"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "71d5e6a8f05e5201",
-        "type": "function",
-        "z": "2265eca0770dc1a8",
-        "g": "db4ae481e3d06f8f",
-        "name": "Filter",
-        "func": "// This code is a replacement of a Filter Node, achieving same functionality but with presistent memory\n\nconst blockUnlessValueChanges = msg.payload.status;\nconst applyModeSeparatelyForEach = msg.flowName;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 585,
-        "y": 420,
-        "wires": [
-            [
-                "fdeec454c34cfb51"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "1b8601adca82dca5",
-        "type": "function",
-        "z": "2265eca0770dc1a8",
-        "g": "883a925e4edee11a",
-        "name": "Filter",
-        "func": "// This code is a replacement of a Filter Node, achieving same functionality but with presistent memory\n\nconst blockUnlessValueChanges = msg.payload.isHealthy;\nconst applyModeSeparatelyForEach = msg.container;\n\nconst previousValueByGroup = context.get(\"previousValueByGroup\") || {};\nconst previousValue = previousValueByGroup[applyModeSeparatelyForEach];\n\nif (previousValue === blockUnlessValueChanges) {\n    return null;\n}\n\npreviousValueByGroup[applyModeSeparatelyForEach] = blockUnlessValueChanges;\ncontext.set(\"previousValueByGroup\", previousValueByGroup);\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 585,
-        "y": 260,
-        "wires": [
-            [
-                "cb9bb3ae69e8729a"
             ]
         ],
         "l": false
@@ -7583,14 +7376,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
                 "to": "event",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Attempting to execute REST Notification to \" & endPoint & \" - \" & command",
                 "tot": "jsonata"
@@ -7653,14 +7446,14 @@
         "rules": [
             {
                 "t": "set",
-                "p": "categories",
+                "p": "payload.level",
                 "pt": "msg",
-                "to": "event",
+                "to": "alarm",
                 "tot": "str"
             },
             {
                 "t": "set",
-                "p": "message",
+                "p": "payload.description",
                 "pt": "msg",
                 "to": "\"Notification Failed, Retrying - \" & command & \". Retry count: \" & retryCount",
                 "tot": "jsonata"
@@ -7697,8 +7490,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 1635,
-        "y": 420,
+        "x": 1615,
+        "y": 540,
         "wires": [
             [
                 "575af3b77cdecdde"
@@ -7715,8 +7508,8 @@
         "links": [
             "fa57980e812bcb84"
         ],
-        "x": 1500,
-        "y": 360,
+        "x": 1480,
+        "y": 480,
         "wires": [
             [
                 "575af3b77cdecdde"
@@ -7725,9 +7518,178 @@
         "l": true
     },
     {
+        "id": "1b2d49dcc741642a",
+        "type": "rbe",
+        "z": "2265eca0770dc1a8",
+        "g": "883a925e4edee11a",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.isHealthy",
+        "topi": "container",
+        "x": 585,
+        "y": 260,
+        "wires": [
+            [
+                "cb9bb3ae69e8729a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "aebd5f03e486e9f6",
+        "type": "mqtt in",
+        "z": "2265eca0770dc1a8",
+        "g": "2f220f603db16b5d",
+        "name": "",
+        "topic": "+/event/log/",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "93cc9cb093168fdd",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 1470,
+        "y": 140,
+        "wires": [
+            [
+                "7dd14bdfad371b7a"
+            ]
+        ]
+    },
+    {
+        "id": "04ca6088eea62df3",
+        "type": "change",
+        "z": "2265eca0770dc1a8",
+        "g": "2f220f603db16b5d",
+        "name": "Set Container Name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.source",
+                "pt": "msg",
+                "to": "CONTAINER_NAME",
+                "tot": "env"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1680,
+        "y": 200,
+        "wires": [
+            [
+                "7dd14bdfad371b7a"
+            ]
+        ]
+    },
+    {
+        "id": "2064cdeaa20c5bcd",
+        "type": "rbe",
+        "z": "2265eca0770dc1a8",
+        "g": "db4ae481e3d06f8f",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload.status",
+        "topi": "flowName",
+        "x": 555,
+        "y": 420,
+        "wires": [
+            [
+                "fdeec454c34cfb51"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "18f428db82651f23",
+        "type": "change",
+        "z": "2265eca0770dc1a8",
+        "g": "2ef056442ba5e938",
+        "name": "Set Payload",
+        "rules": [
+            {
+                "t": "set",
+                "p": "from",
+                "pt": "msg",
+                "to": "payload.from",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "to",
+                "pt": "msg",
+                "to": "payload.to",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "cc",
+                "pt": "msg",
+                "to": "payload.cc",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "bcc",
+                "pt": "msg",
+                "to": "payload.bcc",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "payload.subject",
+                "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.body",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1750,
+        "y": 420,
+        "wires": [
+            [
+                "798f01877e20ba3e"
+            ]
+        ]
+    },
+    {
+        "id": "5e44837538926e45",
+        "type": "comment",
+        "z": "2265eca0770dc1a8",
+        "g": "476cd50dbe607463",
+        "name": "have a think of this, probably can replace the faiiled condition with when retry coount = 3 ",
+        "info": "",
+        "x": 880,
+        "y": 720,
+        "wires": []
+    },
+    {
         "id": "bc2df745eee38272",
         "type": "postgresql",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "postgres",
         "query": "",
         "postgreSQLConfig": "b65ac7c74c76d542",
@@ -7735,7 +7697,7 @@
         "rowsPerMsg": 1,
         "outputs": 1,
         "x": 720,
-        "y": 140,
+        "y": 160,
         "wires": [
             []
         ]
@@ -7744,8 +7706,9 @@
         "id": "957dbd802ccbb461",
         "type": "function",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "Generate SQL",
-        "func": "// Node-RED Function: Generate SQL for system_log (subflow instance props)\n\nconst categories = msg?.categories ?? \"\";\nconst message = msg?.message ?? \"\";\n\nconst query =\n    'INSERT INTO public.\"core_system_log\" (\"Categories\", \"Message\", \"Time\") ' +\n    \"VALUES ($1, $2, now());\";\n\nmsg.query = query;\nmsg.params = [categories, message,];\n\nreturn msg;\n",
+        "func": "// Node-RED Function: Generate SQL for system_log (subflow instance props)\n\nconst categories = msg.payload.level ?? \"\";\nconst message = msg.payload.description ?? \"\";\nconst service = msg.payload.source ?? \"\";\n\nconst query =\n    'INSERT INTO public.\"system_log\" (\"Service\",\"Categories\", \"Message\", \"Time\") ' +\n    \"VALUES ($1, $2, $3, now());\";\n\nmsg.query = query;\nmsg.params = [service, categories, message,];\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -7753,7 +7716,7 @@
         "finalize": "",
         "libs": [],
         "x": 460,
-        "y": 140,
+        "y": 160,
         "wires": [
             [
                 "bc2df745eee38272"
@@ -7764,12 +7727,13 @@
         "id": "44e257a10c9dad0c",
         "type": "link in",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "Log Engine",
         "links": [
             "7dd14bdfad371b7a"
         ],
         "x": 230,
-        "y": 140,
+        "y": 160,
         "wires": [
             [
                 "957dbd802ccbb461"
@@ -7781,6 +7745,7 @@
         "id": "a12649d0baf9de92",
         "type": "inject",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "",
         "props": [
             {
@@ -7791,15 +7756,15 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 220,
-        "y": 260,
+        "x": 250,
+        "y": 340,
         "wires": [
             [
                 "7a895fbfc635cad4"
@@ -7810,14 +7775,15 @@
         "id": "7a895fbfc635cad4",
         "type": "postgresql",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "",
-        "query": "        SELECT \"Categories\", \"Message\", \"Time\"\n        FROM public.\"core_system_log\"\n        ORDER BY \"Time\" DESC\n        LIMIT 500;",
+        "query": "        SELECT \"Categories\", \"Message\", \"Time\",\"Service\"\n        FROM public.\"system_log\"\n        ORDER BY \"Time\" DESC\n        LIMIT 500;",
         "postgreSQLConfig": "b65ac7c74c76d542",
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 450,
-        "y": 260,
+        "x": 470,
+        "y": 340,
         "wires": [
             [
                 "0be998d4d04b41e1"
@@ -7828,13 +7794,14 @@
         "id": "0be998d4d04b41e1",
         "type": "link out",
         "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
         "name": "Dashboard",
         "mode": "link",
         "links": [
             "6192e185799ed5b8"
         ],
-        "x": 730,
-        "y": 260,
+        "x": 750,
+        "y": 340,
         "wires": [],
         "l": true
     },
@@ -7845,8 +7812,8 @@
         "g": "a71447a474b8d78c",
         "name": "",
         "scope": null,
-        "x": 165,
-        "y": 500,
+        "x": 175,
+        "y": 600,
         "wires": [
             [
                 "161f28dc8bb0a4ae"
@@ -7865,8 +7832,8 @@
             "a1b17272082e9ae7",
             "9cd52534dbdd13c0"
         ],
-        "x": 790,
-        "y": 500,
+        "x": 800,
+        "y": 600,
         "wires": [],
         "l": true
     },
@@ -7877,8 +7844,8 @@
         "g": "a71447a474b8d78c",
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
-        "x": 460,
-        "y": 420,
+        "x": 470,
+        "y": 520,
         "wires": []
     },
     {
@@ -7894,8 +7861,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 500,
+        "x": 330,
+        "y": 600,
         "wires": [
             [
                 "6ee053b0157b748e"
@@ -7920,13 +7887,97 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 550,
-        "y": 500,
+        "x": 560,
+        "y": 600,
         "wires": [
             [
                 "20e9c9d994dbc89f"
             ]
         ]
+    },
+    {
+        "id": "1752a4b3b44ee9b1",
+        "type": "comment",
+        "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
+        "name": "Write to postgres",
+        "info": "",
+        "x": 240,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "bc9071b86d0286ae",
+        "type": "comment",
+        "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
+        "name": "Read from postgres",
+        "info": "",
+        "x": 250,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "470c8ae86033c7d8",
+        "type": "inject",
+        "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "86400",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 240,
+        "wires": [
+            [
+                "f792bfd4bb15f305"
+            ]
+        ]
+    },
+    {
+        "id": "f792bfd4bb15f305",
+        "type": "function",
+        "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
+        "name": "Generate SQL",
+        "func": "/**\n * Cleans up system_log table\n * Keeps only the latest rows within the retention period\n */\nconst RETENTION_DAYS = 7;\nconst MAX_ROWS = 1000;\n\nmsg.payload = `\n  DELETE FROM system_log\n  WHERE id NOT IN (\n    SELECT id FROM system_log\n    WHERE \"Time\" >= NOW() - INTERVAL '${RETENTION_DAYS} days'\n    ORDER BY \"Time\" DESC\n    LIMIT ${MAX_ROWS}\n  )\n`;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 240,
+        "wires": [
+            [
+                "bc2df745eee38272"
+            ]
+        ]
+    },
+    {
+        "id": "6e87db194dc6e16e",
+        "type": "comment",
+        "z": "4e3d795537c2edf7",
+        "g": "d424ff0c3eaa464e",
+        "name": "Clean up database to aviod file size keep building up",
+        "info": "",
+        "x": 350,
+        "y": 200,
+        "wires": []
     },
     {
         "id": "3bd5049ddcb31190",
@@ -8056,7 +8107,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <!-- ===== TOP SYSTEM TILES ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-handshake</v-icon>\n      <strong>System Interface Status</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-5\">\n      <!-- FR WebSocket -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner WebSocket API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frWSHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frWSHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frWSLast) }}</div>\n          <div class=\"status-text last-update\">ResetWS: {{ boolText(frWSReset) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frWSReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- FR REST -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner REST API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frRESTHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frRESTHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frRESTLast) }}</div>\n          <div class=\"status-text last-update\">RestFault: {{ boolText(frRESTRestFault) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frRESTReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- Dispatch WebSocket -->\n      <v-card class=\"pa-6 light-grey-tile status-card future-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">Dispatch WebSocket API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(dspWSHealthy)\" class=\"white--text prominent-chip\">\n            {{ dspWSFutureText }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(dspWSLast) }}</div>\n          <div class=\"status-text last-update muted\">(Reserved for future integration)</div>\n        </div>\n      </v-card>\n\n      <!-- Dispatch REST -->\n      <v-card class=\"pa-6 light-grey-tile status-card future-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">Dispatch REST API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(dspRESTHealthy)\" class=\"white--text prominent-chip\">\n            {{ dspRESTFutureText }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(dspRESTLast) }}</div>\n          <div class=\"status-text last-update muted\">(Reserved for future integration)</div>\n        </div>\n      </v-card>\n\n      <!-- FMS PLC -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-server-network</v-icon>\n          <strong style=\"color:#2F5D9F;\">FMS PLC</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(fmsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(fmsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(fmsLastUpdate) }}</div>\n        </div>\n      </v-card>\n    </div>\n  </v-card>\n\n  <!-- ===== FleetPlant Runtime  ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-database-cog</v-icon>\n      <strong>FleetPlant Applications Station</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-5\">\n      <!-- Postgres  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('POSTGRES')\" @keydown.enter.prevent=\"openUseCase('POSTGRES')\"\n        @keydown.space.prevent=\"openUseCase('POSTGRES')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-database</v-icon>\n          <strong style=\"color:#2F5D9F;\">fleetplant-postgreSQL</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('POSTGRES')\"\n            @click.stop=\"openUseCase('POSTGRES')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(pgHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(pgHealthy) }}\n          </v-chip>\n\n          <div class=\"status-text last-update\">\n            Last Update: {{ formatDate(pgLast) }}\n          </div>\n\n          <div class=\"status-text last-update\">\n            Reason: {{ pgReason }}\n          </div>\n          <div class=\"status-text link-preview\">\n            Open: {{ useCaseUrl('POSTGRES') }}\n          </div>\n        </div>\n      </v-card>\n\n      <!--  AWS -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('AWS')\" @keydown.enter.prevent=\"openUseCase('AWS')\"\n        @keydown.space.prevent=\"openUseCase('AWS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#00796B\">mdi-sitemap</v-icon>\n          <strong style=\"color:#00796B;\">Autonomous Water Stand [AWS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('AWS')\"\n            @click.stop=\"openUseCase('AWS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrAwsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrAwsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrAwsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrAwsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('AWS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  EDS -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('EDS')\" @keydown.enter.prevent=\"openUseCase('EDS')\"\n        @keydown.space.prevent=\"openUseCase('EDS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#6A1B9A\">mdi-sitemap</v-icon>\n          <strong style=\"color:#6A1B9A;\">En. Dust Suppression [EDS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('EDS')\"\n            @click.stop=\"openUseCase('EDS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrEdsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrEdsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrEdsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrEdsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('EDS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  TAMS  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('TAMS')\" @keydown.enter.prevent=\"openUseCase('TAMS')\"\n        @keydown.space.prevent=\"openUseCase('TAMS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#C62828\">mdi-sitemap</v-icon>\n          <strong style=\"color:#C62828;\">Time &amp; Material Status [TAMS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('TAMS')\"\n            @click.stop=\"openUseCase('TAMS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrTamsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrTamsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrTamsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrTamsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('TAMS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  RBIS  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('RBIS')\" @keydown.enter.prevent=\"openUseCase('RBIS')\"\n        @keydown.space.prevent=\"openUseCase('RBIS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#EF6C00\">mdi-sitemap</v-icon>\n          <strong style=\"color:#EF6C00;\">Rock Breaker Integration [RBIS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('RBIS')\"\n            @click.stop=\"openUseCase('RBIS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrRbisHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrRbisHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrRbisLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrRbisReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('RBIS') }}</div>\n        </div>\n      </v-card>\n    </div>\n  </v-card>\n\n  <!-- ===== FrontRunner Locations ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-map-marker-multiple</v-icon>\n      <strong>FrontRunner Location Definitions</strong>\n    </v-card-title>\n\n    <v-card-text>\n      <div class=\"grid grid-5\">\n        <v-card v-for=\"loc in locationTiles\" :key=\"loc.key\" class=\"pa-3 location-card\" elevation=\"1\">\n          <div class=\"location-header\">\n            <div class=\"location-name\">\n              <strong>{{ loc.slot }}:</strong>\n              <span class=\"ml-1\">{{ loc.name || \"N/A\" }}</span>\n            </div>\n            <v-chip class=\"type-chip\" size=\"small\" variant=\"tonal\">\n              {{ loc.assetType || \"N/A\" }}\n            </v-chip>\n          </div>\n\n          <div class=\"status-blocks\">\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">API Status</div>\n              <v-chip :color=\"statusChipColor(loc.apiHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.apiHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.apiLast) }}</div>\n            </div>\n\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">PLC Status</div>\n              <v-chip :color=\"statusChipColor(loc.plcHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.plcHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.plcLast) }}</div>\n            </div>\n          </div>\n        </v-card>\n      </div>\n    </v-card-text>\n  </v-card>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      dashboardTab: \"status\",\n      LastRefreshTime: \"N/A\",\n\n      // payload-bound state\n      SystemStatus: {},\n      FleetPlantStatus: {},\n      LocationStatus: {},\n      EnabledList: [],\n      PodmanContainers: [],\n\n      // central UI hostname\n      centralUiUrl: null,\n\n      //\n      useCaseMap: {\n        POSTGRES: { port: 5050, path: \"\" },\n        \n        AWS:  { port: 1881, path: \"aws\"  },\n        EDS:  { port: 1882, path: \"eds\"  },\n        TAMS: { port: 1883, path: \"tams\" },\n        RBIS: { port: 1884, path: \"rbis\" }\n      }\n    };\n  },\n\n  computed: {\n    // ---- System_Status / FrontRunner ----\n    frWSHealthy() { return this.SystemStatus?.API_Status?.frWS?.isHealthy ?? null; },\n    frWSLast() { return this.SystemStatus?.API_Status?.frWS?.lastUpdatedTimestamp ?? null; },\n    frWSReset() { return this.SystemStatus?.API_Status?.frWS?.resetWS ?? null; },\n    frWSReasonText() { return this.SystemStatus?.API_Status?.frWS?.reason ?? \"N/A\"; },\n\n    frRESTHealthy() { return this.SystemStatus?.API_Status?.frREST?.isHealthy ?? null; },\n    frRESTLast() { return this.SystemStatus?.API_Status?.frREST?.lastUpdatedTimestamp ?? null; },\n    frRESTRestFault() { return this.SystemStatus?.API_Status?.frREST?.restFault ?? null; },\n    frRESTReasonText() { return this.SystemStatus?.API_Status?.frREST?.reason ?? \"N/A\"; },\n\n    dspWSHealthy() { return this.SystemStatus?.API_Status?.dspWS?.isHealthy ?? null; },\n    dspWSLast() { return this.SystemStatus?.API_Status?.dspWS?.lastUpdatedTimestamp ?? null; },\n    dspWSFutureText() {\n      return (typeof this.dspWSHealthy === \"boolean\") ? this.statusLabel(this.dspWSHealthy) : \"Future\";\n    },\n\n    dspRESTHealthy() { return this.SystemStatus?.API_Status?.dspREST?.isHealthy ?? null; },\n    dspRESTLast() { return this.SystemStatus?.API_Status?.dspREST?.lastUpdatedTimestamp ?? null; },\n    dspRESTFutureText() {\n      return (typeof this.dspRESTHealthy === \"boolean\") ? this.statusLabel(this.dspRESTHealthy) : \"Future\";\n    },\n\n    fmsHealthy() {\n      const f = this.SystemStatus?.FMS_PLC_Status;\n      return f?.isHealthy ?? (typeof f?.CommsFailure === \"boolean\" ? !f.CommsFailure : null);\n    },\n    fmsLastUpdate() {\n      return this.SystemStatus?.FMS_PLC_Status?.LastUpdateTime ?? this.SystemStatus?.FMS_PLC_Status?.lastUpdatedTimestamp ?? null;\n    },\n\n    // ---- FleetPlant Runtime ----\n    pgHealthy() { return this.FleetPlantStatus?.postgres?.isHealthy ?? null; },\n    pgLast() { return this.FleetPlantStatus?.postgres?.lastUpdated ?? null; },\n    pgReason() { return this.FleetPlantStatus?.postgres?.reason ?? \"N/A\"; },\n\n    nrAwsHealthy() { return this.FleetPlantStatus?.nodered?.AWS?.isHealthy ?? null; },\n    nrAwsLast() { return this.FleetPlantStatus?.nodered?.AWS?.lastUpdated ?? null; },\n    nrAwsReason() { return this.FleetPlantStatus?.nodered?.AWS?.reason ?? \"N/A\"; },\n\n    nrEdsHealthy() { return this.FleetPlantStatus?.nodered?.EDS?.isHealthy ?? null; },\n    nrEdsLast() { return this.FleetPlantStatus?.nodered?.EDS?.lastUpdated ?? null; },\n    nrEdsReason() { return this.FleetPlantStatus?.nodered?.EDS?.reason ?? \"N/A\"; },\n\n    nrTamsHealthy() { return this.FleetPlantStatus?.nodered?.TAMS?.isHealthy ?? null; },\n    nrTamsLast() { return this.FleetPlantStatus?.nodered?.TAMS?.lastUpdated ?? null; },\n    nrTamsReason() { return this.FleetPlantStatus?.nodered?.TAMS?.reason ?? \"N/A\"; },\n\n    nrRbisHealthy() { return this.FleetPlantStatus?.nodered?.RBIS?.isHealthy ?? null; },\n    nrRbisLast() { return this.FleetPlantStatus?.nodered?.RBIS?.lastUpdated ?? null; },\n    nrRbisReason() { return this.FleetPlantStatus?.nodered?.RBIS?.reason ?? \"N/A\"; },\n\n    // ---- Containers ----\n    podmanContainers() { return Array.isArray(this.PodmanContainers) ? this.PodmanContainers : []; },\n\n    // ---- Locations ----\n    locationTiles() {\n      const list = Array.isArray(this.EnabledList) ? this.EnabledList : [];\n      const enabled = list.filter((n) => typeof n === \"string\" && n.trim().length > 0).slice(0, 15);\n\n      return enabled.map((name, idx) => {\n        const obj = this.LocationStatus?.[name] || null;\n        const apiHealthy = obj?.apiStatus?.isHealthy;\n        const plcHealthy = obj?.plcStatus?.isHealthy;\n\n        return {\n          key: `loc-${idx + 1}-${name}`,\n          slot: idx + 1,\n          name,\n          assetType: obj?.meta?.assetType || obj?.meta?.AssetType || null,\n          apiHealthy: (typeof apiHealthy === \"boolean\") ? apiHealthy : null,\n          plcHealthy: (typeof plcHealthy === \"boolean\") ? plcHealthy : null,\n          apiLast: obj?.apiStatus?.lastUpdatedTimestamp ?? null,\n          plcLast: obj?.plcStatus?.lastUpdatedTimestamp ?? null\n        };\n      });\n    }\n  },\n\n  methods: {\n    // --- central ui config\n    normalizeHost(input) {\n      if (!input) return null;\n      let s = String(input).trim();\n      s = s.replace(/^https?:\\/\\//i, \"\");   \n      s = s.replace(/\\/+$/g, \"\");           \n      s = s.replace(/:\\d+$/g, \"\");         \n      return s || null;\n    },\n\n    useCaseUrl(useCaseKey) {\n      const m = this.useCaseMap?.[useCaseKey];\n      if (!m) return \"N/A\";\n\n      const hostFromPayload = this.normalizeHost(this.centralUiUrl);\n      const fallbackHost = window?.location?.hostname || null;\n      const host = hostFromPayload || fallbackHost || \"localhost\";\n\n      const path = String(m.path || \"\").replace(/^\\/+/, \"\");\n      return `https://${host}:${m.port}/${path}`;\n    },\n\n    // ---  open use case in new tab\n    openUseCase(useCaseKey) {\n      const url = this.useCaseUrl(useCaseKey);\n      if (!url || url === \"N/A\") return;\n      window.open(url, \"_blank\", \"noopener,noreferrer\");\n    },\n\n    formatDate(ts) {\n      if (!ts) return \"N/A\";\n      const d = new Date(Number(ts));\n      if (Number.isNaN(d.getTime())) return \"N/A\";\n      return d.toLocaleString();\n    },\n\n    statusLabel(isHealthy) {\n      if (isHealthy === true) return \"Healthy\";\n      if (isHealthy === false) return \"Unhealthy\";\n      return \"Not Available\";\n    },\n\n    statusChipColor(isHealthy) {\n      if (isHealthy === true) return \"rgb(0, 200, 0)\";\n      if (isHealthy === false) return \"red\";\n      return \"rgb(200, 200, 200)\";\n    },\n\n    boolText(v) {\n      if (v === true) return \"True\";\n      if (v === false) return \"False\";\n      return \"N/A\";\n    }\n  },\n\n  watch: {\n    msg: {\n      handler(newMsg) {\n        const p = newMsg?.payload || {};\n\n        // payload contract:\n        // p.System_Status, p.locationStatus, p.enabledList, p.podmanContainers, p.fleetplantStatus, p.LastRefreshTime\n        this.SystemStatus = p.System_Status || {};\n        this.LocationStatus = p.locationStatus || {};\n        this.EnabledList = p.enabledList || [];\n        this.PodmanContainers = p.podmanContainers || [];\n        this.FleetPlantStatus = p.fleetplantStatus || {};\n\n        // read central UI host from payload\n        // supports centraluiurl, centralUiUrl, centralUIUrl\n        this.centralUiUrl = p.centraluiurl ?? p.centralUiUrl ?? p.centralUIUrl ?? this.centralUiUrl;\n\n        this.LastRefreshTime = p.LastRefreshTime ? this.formatDate(p.LastRefreshTime) : new Date().toLocaleString();\n      },\n      deep: true,\n      immediate: true\n    }\n  }\n};\n</script>\n\n<style scoped>\n  * {\n    font-family: Roboto, sans-serif;\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .center-align-text {\n    text-align: center;\n  }\n\n  .grid {\n    width: 100%;\n    display: grid;\n    gap: 12px;\n    grid-template-columns: 1fr;\n  }\n\n  @media (min-width: 600px) {\n    .grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (min-width: 960px) {\n    .grid {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n\n  @media (min-width: 1280px) {\n    .grid.grid-5 {\n      grid-template-columns: repeat(5, minmax(220px, 1fr));\n    }\n  }\n\n  .status-card {\n    min-height: 260px;\n    border-radius: 14px;\n    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;\n  }\n\n  .status-card:hover {\n    background-color: #ededed;\n    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);\n    transform: translateY(-2px);\n  }\n\n  .future-card {\n    opacity: 0.88;\n  }\n\n  .tile-title {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    gap: 4px;\n    margin-bottom: 8px;\n  }\n\n  .prominent-chip {\n    font-size: 1.05rem !important;\n    padding: 18px !important;\n    font-weight: 800 !important;\n    border: 2px solid #d0d0d0;\n    border-radius: 22px;\n  }\n\n  .status-text {\n    font-size: 0.95rem;\n    margin-top: 8px;\n  }\n\n  .status-text.last-update {\n    color: #757575;\n  }\n\n  .muted {\n    color: #777;\n    font-size: 0.85rem;\n  }\n\n  .usecase-card {\n    cursor: pointer;\n    outline: none;\n  }\n\n  .usecase-card:focus-visible {\n    box-shadow: 0 0 0 3px rgba(47, 93, 159, 0.35);\n  }\n\n  /* open icon button placement */\n  .open-btn {\n    margin-top: 2px;\n  }\n\n  /*  URL hint */\n  .link-preview {\n    color: #8a8a8a;\n    font-size: 0.80rem;\n    margin-top: 10px;\n    word-break: break-all;\n  }\n\n  /* Location cards */\n  .location-card {\n    border-radius: 14px;\n    border: 1px solid #e4e4e4;\n    background: #ffffff;\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n\n  .location-card:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);\n  }\n\n  .location-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 10px;\n    padding-bottom: 6px;\n    border-bottom: 1px dashed #e6e6e6;\n  }\n\n  .location-name {\n    font-size: 0.95rem;\n  }\n\n  .type-chip {\n    font-weight: 700;\n  }\n\n  .status-blocks {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 10px;\n    margin-top: 10px;\n  }\n\n  .status-block {\n    background: #fafafa;\n    border: 1px solid #efefef;\n    border-radius: 12px;\n    padding: 10px;\n    text-align: center;\n  }\n\n  .status-block-title {\n    font-size: 0.85rem;\n    color: #666;\n    font-weight: 800;\n    margin-bottom: 6px;\n  }\n\n  .mid-chip {\n    font-weight: 800 !important;\n    border-radius: 18px !important;\n  }\n\n  .timestamp-text {\n    margin-top: 6px;\n    font-size: 0.80rem;\n    color: #888;\n  }\n</style>",
+        "format": "<template>\n  <!-- ===== TOP SYSTEM TILES ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-handshake</v-icon>\n      <strong>System Interface Status</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-5\">\n      <!-- FR WebSocket -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner WebSocket API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frWSHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frWSHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frWSLast) }}</div>\n          <div class=\"status-text last-update\">ResetWS: {{ boolText(frWSReset) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frWSReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- FR REST -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">FrontRunner REST API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(frRESTHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(frRESTHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(frRESTLast) }}</div>\n          <div class=\"status-text last-update\">RestFault: {{ boolText(frRESTRestFault) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ frRESTReasonText }}</div>\n        </div>\n      </v-card>\n\n      <!-- Dispatch WebSocket -->\n      <v-card class=\"pa-6 light-grey-tile status-card future-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">Dispatch WebSocket API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(dspWSHealthy)\" class=\"white--text prominent-chip\">\n            {{ dspWSFutureText }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(dspWSLast) }}</div>\n          <div class=\"status-text last-update muted\">(Reserved for future integration)</div>\n        </div>\n      </v-card>\n\n      <!-- Dispatch REST -->\n      <v-card class=\"pa-6 light-grey-tile status-card future-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-api</v-icon>\n          <strong style=\"color:#2F5D9F;\">Dispatch REST API</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(dspRESTHealthy)\" class=\"white--text prominent-chip\">\n            {{ dspRESTFutureText }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(dspRESTLast) }}</div>\n          <div class=\"status-text last-update muted\">(Reserved for future integration)</div>\n        </div>\n      </v-card>\n\n      <!-- FMS PLC -->\n      <v-card class=\"pa-6 light-grey-tile status-card\" elevation=\"2\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-server-network</v-icon>\n          <strong style=\"color:#2F5D9F;\">FMS PLC</strong>\n        </div>\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(fmsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(fmsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(fmsLastUpdate) }}</div>\n        </div>\n      </v-card>\n    </div>\n  </v-card>\n\n  <!-- ===== FleetPlant Runtime  ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-database-cog</v-icon>\n      <strong>FleetPlant Applications Station</strong>\n    </v-card-title>\n\n    <div class=\"grid grid-5\">\n      <!-- Postgres  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('POSTGRES')\" @keydown.enter.prevent=\"openUseCase('POSTGRES')\"\n        @keydown.space.prevent=\"openUseCase('POSTGRES')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#2F5D9F\">mdi-database</v-icon>\n          <strong style=\"color:#2F5D9F;\">fleetplant-postgreSQL</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('POSTGRES')\"\n            @click.stop=\"openUseCase('POSTGRES')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(pgHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(pgHealthy) }}\n          </v-chip>\n\n          <div class=\"status-text last-update\">\n            Last Update: {{ formatDate(pgLast) }}\n          </div>\n\n          <div class=\"status-text last-update\">\n            Reason: {{ pgReason }}\n          </div>\n          <div class=\"status-text link-preview\">\n            Open: {{ useCaseUrl('POSTGRES') }}\n          </div>\n        </div>\n      </v-card>\n\n      <!--  AWS -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('AWS')\" @keydown.enter.prevent=\"openUseCase('AWS')\"\n        @keydown.space.prevent=\"openUseCase('AWS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#00796B\">mdi-sitemap</v-icon>\n          <strong style=\"color:#00796B;\">Autonomous Water Stand [AWS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('AWS')\"\n            @click.stop=\"openUseCase('AWS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrAwsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrAwsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrAwsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrAwsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('AWS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  EDS -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('EDS')\" @keydown.enter.prevent=\"openUseCase('EDS')\"\n        @keydown.space.prevent=\"openUseCase('EDS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#6A1B9A\">mdi-sitemap</v-icon>\n          <strong style=\"color:#6A1B9A;\">En. Dust Suppression [EDS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('EDS')\"\n            @click.stop=\"openUseCase('EDS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrEdsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrEdsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrEdsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrEdsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('EDS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  TAMS  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('TAMS')\" @keydown.enter.prevent=\"openUseCase('TAMS')\"\n        @keydown.space.prevent=\"openUseCase('TAMS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#C62828\">mdi-sitemap</v-icon>\n          <strong style=\"color:#C62828;\">Time &amp; Material Status [TAMS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('TAMS')\"\n            @click.stop=\"openUseCase('TAMS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrTamsHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrTamsHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrTamsLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrTamsReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('TAMS') }}</div>\n        </div>\n      </v-card>\n\n      <!--  RBIS  -->\n      <v-card class=\"pa-5 light-grey-tile status-card usecase-card\" elevation=\"2\" role=\"button\" tabindex=\"0\"\n        @click=\"openUseCase('RBIS')\" @keydown.enter.prevent=\"openUseCase('RBIS')\"\n        @keydown.space.prevent=\"openUseCase('RBIS')\">\n        <div class=\"tile-title\">\n          <v-icon class=\"mr-2\" color=\"#EF6C00\">mdi-sitemap</v-icon>\n          <strong style=\"color:#EF6C00;\">Rock Breaker Integration [RBIS]</strong>\n\n          <v-btn class=\"open-btn\" size=\"small\" variant=\"text\" icon=\"mdi-open-in-new\" :title=\"useCaseUrl('RBIS')\"\n            @click.stop=\"openUseCase('RBIS')\" />\n        </div>\n\n        <div class=\"center-align-text\">\n          <v-chip :color=\"statusChipColor(nrRbisHealthy)\" class=\"white--text prominent-chip\">\n            {{ statusLabel(nrRbisHealthy) }}\n          </v-chip>\n          <div class=\"status-text last-update\">Last Update: {{ formatDate(nrRbisLast) }}</div>\n          <div class=\"status-text last-update\">Reason: {{ nrRbisReason }}</div>\n          <div class=\"status-text link-preview\">Open: {{ useCaseUrl('RBIS') }}</div>\n        </div>\n      </v-card>\n    </div>\n  </v-card>\n\n  <!-- ===== FrontRunner Locations ===== -->\n  <v-card class=\"pa-4 light-grey-tile mt-4\" elevation=\"1\">\n    <v-card-title class=\"pb-2\">\n      <v-icon class=\"mr-2\" color=\"#333\">mdi-map-marker-multiple</v-icon>\n      <strong>FrontRunner Location Definitions</strong>\n    </v-card-title>\n\n    <v-card-text>\n      <div class=\"grid grid-5\">\n        <v-card v-for=\"loc in locationTiles\" :key=\"loc.key\" class=\"pa-3 location-card\" elevation=\"1\">\n          <div class=\"location-header\">\n            <div class=\"location-name\">\n              <strong>{{ loc.slot }}:</strong>\n              <span class=\"ml-1\">{{ loc.name || \"N/A\" }}</span>\n            </div>\n            <v-chip class=\"type-chip\" size=\"small\" variant=\"tonal\">\n              {{ loc.assetType || \"N/A\" }}\n            </v-chip>\n          </div>\n\n          <div class=\"status-blocks\">\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">API Status</div>\n              <v-chip :color=\"statusChipColor(loc.apiHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.apiHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.apiLast) }}</div>\n            </div>\n\n            <div class=\"status-block\">\n              <div class=\"status-block-title\">PLC Status</div>\n              <v-chip :color=\"statusChipColor(loc.plcHealthy)\" class=\"white--text mid-chip\" size=\"small\">\n                {{ statusLabel(loc.plcHealthy) }}\n              </v-chip>\n              <div class=\"timestamp-text\">{{ formatDate(loc.plcLast) }}</div>\n            </div>\n          </div>\n        </v-card>\n      </div>\n    </v-card-text>\n  </v-card>\n</template>\n\n<script>\n  export default {\n  data() {\n    return {\n      dashboardTab: \"status\",\n      LastRefreshTime: \"N/A\",\n\n      // payload-bound state\n      SystemStatus: {},\n      FleetPlantStatus: {},\n      LocationStatus: {},\n      EnabledList: [],\n      PodmanContainers: [],\n\n      // central UI hostname\n      centralUiUrl: null,\n\n      //\n      useCaseMap: {\n        POSTGRES: { port: 5050, path: \"\" },\n        \n        AWS:  { port: 1881, path: \"aws\"  },\n        EDS:  { port: 1882, path: \"eds\"  },\n        TAMS: { port: 1883, path: \"tams\" },\n        RBIS: { port: 1884, path: \"rbis\" }\n      }\n    };\n  },\n\n  computed: {\n    // ---- System_Status / FrontRunner ----\n    frWSHealthy() { return this.SystemStatus?.API_Status?.frWS?.isHealthy ?? null; },\n    frWSLast() { return this.SystemStatus?.API_Status?.frWS?.lastUpdatedTimestamp ?? null; },\n    frWSReset() { return this.SystemStatus?.API_Status?.frWS?.resetWS ?? null; },\n    frWSReasonText() { return this.SystemStatus?.API_Status?.frWS?.reason ?? \"N/A\"; },\n\n    frRESTHealthy() { return this.SystemStatus?.API_Status?.frREST?.isHealthy ?? null; },\n    frRESTLast() { return this.SystemStatus?.API_Status?.frREST?.lastUpdatedTimestamp ?? null; },\n    frRESTRestFault() { return this.SystemStatus?.API_Status?.frREST?.restFault ?? null; },\n    frRESTReasonText() { return this.SystemStatus?.API_Status?.frREST?.reason ?? \"N/A\"; },\n\n    dspWSHealthy() { return this.SystemStatus?.API_Status?.dspWS?.isHealthy ?? null; },\n    dspWSLast() { return this.SystemStatus?.API_Status?.dspWS?.lastUpdatedTimestamp ?? null; },\n    dspWSFutureText() {\n      return (typeof this.dspWSHealthy === \"boolean\") ? this.statusLabel(this.dspWSHealthy) : \"Future\";\n    },\n\n    dspRESTHealthy() { return this.SystemStatus?.API_Status?.dspREST?.isHealthy ?? null; },\n    dspRESTLast() { return this.SystemStatus?.API_Status?.dspREST?.lastUpdatedTimestamp ?? null; },\n    dspRESTFutureText() {\n      return (typeof this.dspRESTHealthy === \"boolean\") ? this.statusLabel(this.dspRESTHealthy) : \"Future\";\n    },\n\n    fmsHealthy() {\n      const f = this.SystemStatus?.FMS_PLC_Status;\n      return f?.isHealthy ?? (typeof f?.CommsFailure === \"boolean\" ? !f.CommsFailure : null);\n    },\n    fmsLastUpdate() {\n      return this.SystemStatus?.FMS_PLC_Status?.LastUpdateTime ?? this.SystemStatus?.FMS_PLC_Status?.lastUpdatedTimestamp ?? null;\n    },\n\n    // ---- FleetPlant Runtime ----\n    pgHealthy() { return this.FleetPlantStatus?.postgres?.isHealthy ?? null; },\n    pgLast() { return this.FleetPlantStatus?.postgres?.lastUpdated ?? null; },\n    pgReason() { return this.FleetPlantStatus?.postgres?.reason ?? \"N/A\"; },\n\n    nrAwsHealthy() { return this.FleetPlantStatus?.nodered?.AWS?.isHealthy ?? null; },\n    nrAwsLast() { return this.FleetPlantStatus?.nodered?.AWS?.lastUpdated ?? null; },\n    nrAwsReason() { return this.FleetPlantStatus?.nodered?.AWS?.reason ?? \"N/A\"; },\n\n    nrEdsHealthy() { return this.FleetPlantStatus?.nodered?.EDS?.isHealthy ?? null; },\n    nrEdsLast() { return this.FleetPlantStatus?.nodered?.EDS?.lastUpdated ?? null; },\n    nrEdsReason() { return this.FleetPlantStatus?.nodered?.EDS?.reason ?? \"N/A\"; },\n\n    nrTamsHealthy() { return this.FleetPlantStatus?.nodered?.TAMS?.isHealthy ?? null; },\n    nrTamsLast() { return this.FleetPlantStatus?.nodered?.TAMS?.lastUpdated ?? null; },\n    nrTamsReason() { return this.FleetPlantStatus?.nodered?.TAMS?.reason ?? \"N/A\"; },\n\n    nrRbisHealthy() { return this.FleetPlantStatus?.nodered?.RBIS?.isHealthy ?? null; },\n    nrRbisLast() { return this.FleetPlantStatus?.nodered?.RBIS?.lastUpdated ?? null; },\n    nrRbisReason() { return this.FleetPlantStatus?.nodered?.RBIS?.reason ?? \"N/A\"; },\n\n    // ---- Containers ----\n    podmanContainers() { return Array.isArray(this.PodmanContainers) ? this.PodmanContainers : []; },\n\n    // ---- Locations ----\n    locationTiles() {\n      const list = Array.isArray(this.EnabledList) ? this.EnabledList : [];\n      const enabled = list.filter((n) => typeof n === \"string\" && n.trim().length > 0).slice(0, 15);\n\n      return enabled.map((name, idx) => {\n        const obj = this.LocationStatus?.[name] || null;\n        const apiHealthy = obj?.apiStatus?.isHealthy;\n        const plcHealthy = obj?.plcStatus?.isHealthy;\n\n        return {\n          key: `loc-${idx + 1}-${name}`,\n          slot: idx + 1,\n          name,\n          assetType: obj?.meta?.assetType || obj?.meta?.AssetType || null,\n          apiHealthy: (typeof apiHealthy === \"boolean\") ? apiHealthy : null,\n          plcHealthy: (typeof plcHealthy === \"boolean\") ? plcHealthy : null,\n          apiLast: obj?.apiStatus?.lastUpdatedTimestamp ?? null,\n          plcLast: obj?.plcStatus?.lastUpdatedTimestamp ?? null\n        };\n      });\n    }\n  },\n\n  methods: {\n    // --- central ui config\n    normalizeHost(input) {\n      if (!input) return null;\n      let s = String(input).trim();\n      s = s.replace(/^https?:\\/\\//i, \"\");   \n      s = s.replace(/\\/+$/g, \"\");           \n      s = s.replace(/:\\d+$/g, \"\");         \n      return s || null;\n    },\n\n    useCaseUrl(useCaseKey) {\n      const m = this.useCaseMap?.[useCaseKey];\n      if (!m) return \"N/A\";\n\n      const hostFromPayload = this.normalizeHost(this.centralUiUrl);\n      const fallbackHost = window?.location?.hostname || null;\n      const host = hostFromPayload || fallbackHost || \"localhost\";\n\n      const path = String(m.path || \"\").replace(/^\\/+/, \"\");\n      //return `https://${host}:${m.port}/${path}`;\n      return `http://${host}:${m.port}/dashboard`;\n    },\n\n    // ---  open use case in new tab\n    openUseCase(useCaseKey) {\n      const url = this.useCaseUrl(useCaseKey);\n      if (!url || url === \"N/A\") return;\n      window.open(url, \"_blank\", \"noopener,noreferrer\");\n    },\n\n    formatDate(ts) {\n      if (!ts) return \"N/A\";\n      const d = new Date(Number(ts));\n      if (Number.isNaN(d.getTime())) return \"N/A\";\n      return d.toLocaleString();\n    },\n\n    statusLabel(isHealthy) {\n      if (isHealthy === true) return \"Healthy\";\n      if (isHealthy === false) return \"Unhealthy\";\n      return \"Not Available\";\n    },\n\n    statusChipColor(isHealthy) {\n      if (isHealthy === true) return \"rgb(0, 200, 0)\";\n      if (isHealthy === false) return \"red\";\n      return \"rgb(200, 200, 200)\";\n    },\n\n    boolText(v) {\n      if (v === true) return \"True\";\n      if (v === false) return \"False\";\n      return \"N/A\";\n    }\n  },\n\n  watch: {\n    msg: {\n      handler(newMsg) {\n        const p = newMsg?.payload || {};\n\n        // payload contract:\n        // p.System_Status, p.locationStatus, p.enabledList, p.podmanContainers, p.fleetplantStatus, p.LastRefreshTime\n        this.SystemStatus = p.System_Status || {};\n        this.LocationStatus = p.locationStatus || {};\n        this.EnabledList = p.enabledList || [];\n        this.PodmanContainers = p.podmanContainers || [];\n        this.FleetPlantStatus = p.fleetplantStatus || {};\n\n        // read central UI host from payload\n        // supports centraluiurl, centralUiUrl, centralUIUrl\n        this.centralUiUrl = p.centraluiurl ?? p.centralUiUrl ?? p.centralUIUrl ?? this.centralUiUrl;\n\n        this.LastRefreshTime = p.LastRefreshTime ? this.formatDate(p.LastRefreshTime) : new Date().toLocaleString();\n      },\n      deep: true,\n      immediate: true\n    }\n  }\n};\n</script>\n\n<style scoped>\n  * {\n    font-family: Roboto, sans-serif;\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .center-align-text {\n    text-align: center;\n  }\n\n  .grid {\n    width: 100%;\n    display: grid;\n    gap: 12px;\n    grid-template-columns: 1fr;\n  }\n\n  @media (min-width: 600px) {\n    .grid {\n      grid-template-columns: repeat(2, 1fr);\n    }\n  }\n\n  @media (min-width: 960px) {\n    .grid {\n      grid-template-columns: repeat(3, 1fr);\n    }\n  }\n\n  @media (min-width: 1280px) {\n    .grid.grid-5 {\n      grid-template-columns: repeat(5, minmax(220px, 1fr));\n    }\n  }\n\n  .status-card {\n    min-height: 260px;\n    border-radius: 14px;\n    transition: background-color 0.25s ease, box-shadow 0.25s ease, transform 0.2s ease;\n  }\n\n  .status-card:hover {\n    background-color: #ededed;\n    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);\n    transform: translateY(-2px);\n  }\n\n  .future-card {\n    opacity: 0.88;\n  }\n\n  .tile-title {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    flex-direction: column;\n    gap: 4px;\n    margin-bottom: 8px;\n  }\n\n  .prominent-chip {\n    font-size: 1.05rem !important;\n    padding: 18px !important;\n    font-weight: 800 !important;\n    border: 2px solid #d0d0d0;\n    border-radius: 22px;\n  }\n\n  .status-text {\n    font-size: 0.95rem;\n    margin-top: 8px;\n  }\n\n  .status-text.last-update {\n    color: #757575;\n  }\n\n  .muted {\n    color: #777;\n    font-size: 0.85rem;\n  }\n\n  .usecase-card {\n    cursor: pointer;\n    outline: none;\n  }\n\n  .usecase-card:focus-visible {\n    box-shadow: 0 0 0 3px rgba(47, 93, 159, 0.35);\n  }\n\n  /* open icon button placement */\n  .open-btn {\n    margin-top: 2px;\n  }\n\n  /*  URL hint */\n  .link-preview {\n    color: #8a8a8a;\n    font-size: 0.80rem;\n    margin-top: 10px;\n    word-break: break-all;\n  }\n\n  /* Location cards */\n  .location-card {\n    border-radius: 14px;\n    border: 1px solid #e4e4e4;\n    background: #ffffff;\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n\n  .location-card:hover {\n    transform: translateY(-2px);\n    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.10);\n  }\n\n  .location-header {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 10px;\n    padding-bottom: 6px;\n    border-bottom: 1px dashed #e6e6e6;\n  }\n\n  .location-name {\n    font-size: 0.95rem;\n  }\n\n  .type-chip {\n    font-weight: 700;\n  }\n\n  .status-blocks {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 10px;\n    margin-top: 10px;\n  }\n\n  .status-block {\n    background: #fafafa;\n    border: 1px solid #efefef;\n    border-radius: 12px;\n    padding: 10px;\n    text-align: center;\n  }\n\n  .status-block-title {\n    font-size: 0.85rem;\n    color: #666;\n    font-weight: 800;\n    margin-bottom: 6px;\n  }\n\n  .mid-chip {\n    font-weight: 800 !important;\n    border-radius: 18px !important;\n  }\n\n  .timestamp-text {\n    margin-top: 6px;\n    font-size: 0.80rem;\n    color: #888;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
@@ -8106,7 +8157,7 @@
         "width": 0,
         "height": 0,
         "head": "",
-        "format": "<template>\n  <v-container fluid>\n    <v-card class=\"mb-4\">\n      <v-card-text class=\"title-actions\">\n        <div class=\"title-text\">\n          <strong>System Log</strong>\n        </div>\n        <div class=\"last-updated\">\n          Last Refresh: {{ lastUpdatedTimeStamp }}\n        </div>\n        <div class=\"center-actions\">\n          <v-btn color=\"primary\" @click=\"downloadCSV\">Download CSV</v-btn>\n        </div>\n      </v-card-text>\n    </v-card>\n\n    <template v-if=\"all.length > 0\">\n      <v-card class=\"mb-4\">\n        <v-card-text>\n          <v-row justify=\"space-between\" class=\"mb-4\">\n            <v-col cols=\"12\" md=\"4\">\n              <v-text-field v-model=\"filter.startDate\" label=\"Start Date\" type=\"date\" class=\"mr-2\" outlined>\n              </v-text-field>\n            </v-col>\n            <v-col cols=\"12\" md=\"4\">\n              <v-text-field v-model=\"filter.endDate\" label=\"End Date\" type=\"date\" outlined></v-text-field>\n            </v-col>\n            <v-col cols=\"12\" md=\"4\">\n              <v-select v-model=\"filter.categories\" :items=\"categoryOptions\" label=\"Filter by Categories\" outlined\n                multiple></v-select>\n            </v-col>\n          </v-row>\n\n          <v-data-table :items=\"filteredLogs()\" items-per-page=\"10\" class=\"elevation-1 bordered-table\" dense outlined>\n            <template v-slot:headers>\n              <tr>\n                <th class=\"font-weight-bold\">Categories</th>\n                <th class=\"font-weight-bold\">Message</th>\n                <th class=\"font-weight-bold\">Time</th>\n              </tr>\n            </template>\n\n            <template v-slot:body=\"{ items }\">\n              <tr v-for=\"(record, recIdx) in items\" :key=\"recIdx\">\n                <td>\n                  <v-chip :color=\"categoryColor(record.Categories)\" class=\"white--text font-weight-bold\">\n                    {{ record.Categories ?? \"N/A\" }}\n                  </v-chip>\n                </td>\n                <td>{{ record.Message ?? \"NULL\" }}</td>\n                <td>{{ formatDate(record.Time) }}</td>\n              </tr>\n            </template>\n          </v-data-table>\n        </v-card-text>\n      </v-card>\n    </template>\n\n    <template v-else>\n      <v-card>\n        <v-card-title>No System Log Data Available</v-card-title>\n      </v-card>\n    </template>\n  </v-container>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        all: [],\n        lastUpdatedTimeStamp: \"\",\n        filter: {\n          startDate: \"\",\n          endDate: \"\",\n          categories: []\n        },\n        categoryOptions: []\n      };\n    },\n    methods: {\n      formatDate(timestamp) {\n        if (!timestamp) return \"N/A\";\n\n        const date = new Date(timestamp);\n\n        const options = {\n          timeZone: \"Australia/Perth\",\n          year: \"numeric\",\n          month: \"2-digit\",\n          day: \"2-digit\",\n          hour: \"2-digit\",\n          minute: \"2-digit\",\n          second: \"2-digit\",\n          hour12: true\n        };\n\n        const formatter = new Intl.DateTimeFormat(\"en-AU\", options);\n        const parts = formatter.formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || \"\";\n        const day = getPart(\"day\");\n        const month = getPart(\"month\");\n        const year = getPart(\"year\");\n        const hour = getPart(\"hour\");\n        const minute = getPart(\"minute\");\n        const second = getPart(\"second\");\n        const dayPeriod = getPart(\"dayPeriod\");\n\n        return `${day}/${month}/${year}, ${hour}:${minute}:${second} ${dayPeriod}`;\n      },\n      categoryColor(category) {\n        const normalized = String(category ?? \"\").trim().toLowerCase();\n        if (normalized === \"event\" || normalized === \"events\") return \"green\";\n        if (normalized === \"alarm\" || normalized === \"alarms\") return \"red\";\n        return \"grey\";\n      },\n      filteredLogs() {\n        const start = this.filter.startDate ? new Date(this.filter.startDate).getTime() : null;\n        const end = this.filter.endDate ? new Date(this.filter.endDate).getTime() : null;\n        const categories = this.filter.categories || [];\n\n        const rows = Array.isArray(this.all) ? this.all : [];\n        const filtered = rows.filter(record => {\n          const timestamp = record?.Time ? new Date(record.Time).getTime() : null;\n          const matchesDate = (!start || !end) ? true : (timestamp !== null && timestamp >= start && timestamp <= end);\n          const recordCategory = record?.Categories ?? null;\n          const matchesCategory = !categories.length || categories.includes(recordCategory);\n          return matchesDate && matchesCategory;\n        });\n\n        return filtered.sort((a, b) => {\n          const timeA = a?.Time ? new Date(a.Time).getTime() : 0;\n          const timeB = b?.Time ? new Date(b.Time).getTime() : 0;\n          return timeB - timeA;\n        });\n      },\n      downloadCSV() {\n        const rows = Array.isArray(this.all) ? this.all : [];\n        if (!rows.length) {\n          alert(\"No data to download.\");\n          return;\n        }\n\n        const headers = Object.keys(rows[0]);\n        const csvContent = [\n          headers.join(\",\"),\n          ...rows.map(record =>\n            headers.map(header => JSON.stringify(record[header] ?? \"\")).join(\",\")\n          )\n        ].join(\"\\n\");\n\n        const blob = new Blob([csvContent], { type: \"text/csv;charset=utf-8;\" });\n        const link = document.createElement(\"a\");\n        link.href = URL.createObjectURL(blob);\n        link.setAttribute(\"download\", \"SYSTEM_LOG.csv\");\n        document.body.appendChild(link);\n        link.click();\n        document.body.removeChild(link);\n      }\n    },\n    watch: {\n      msg: {\n        handler(newMsg) {\n          if (!newMsg || !newMsg.payload) return;\n          const payload = newMsg.payload;\n          const rows = Array.isArray(payload)\n            ? payload\n            : (payload.rows || payload.data || payload.all || []);\n\n          this.all = rows;\n\n          const meta = Array.isArray(payload) ? {} : payload;\n          const lastUpdated = meta.LastUpdated || meta.LastRefreshTime || Date.now();\n          this.lastUpdatedTimeStamp = this.formatDate(lastUpdated);\n\n          this.categoryOptions = [\n            ...new Set(rows.map(row => row.Categories).filter(Boolean))\n          ];\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  };\n</script>\n\n<style scoped>\n  * {\n    font-family: 'Roboto', sans-serif;\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .last-updated {\n    margin-left: 0;\n    font-size: 0.9rem;\n    color: #666;\n    text-align: center;\n  }\n\n  .header-title {\n    flex: 1;\n  }\n\n  .title-actions {\n    padding-top: 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n  }\n\n  .center-actions {\n    display: flex;\n    justify-content: center;\n  }\n\n  .title-text {\n    font-size: 1.2rem;\n    text-align: center;\n  }\n\n  .bordered-table table {\n    border-collapse: collapse;\n    width: 100%;\n  }\n\n  .bordered-table th,\n  .bordered-table td {\n    border: 2px solid #d3d3d3;\n    padding: 8px;\n    text-align: left;\n  }\n\n  .bordered-table th {\n    background-color: #f5f5f5;\n    font-weight: bold;\n  }\n</style>",
+        "format": "<template>\n  <v-container fluid>\n    <v-card class=\"mb-4\">\n      <v-card-text class=\"title-actions\">\n        <div class=\"title-text\">\n          <strong>System Log</strong>\n        </div>\n        <div class=\"last-updated\">\n          Last Refresh: {{ lastUpdatedTimeStamp }}\n        </div>\n        <div class=\"center-actions\">\n          <v-btn color=\"primary\" @click=\"downloadCSV\">Download CSV</v-btn>\n        </div>\n      </v-card-text>\n    </v-card>\n\n    <template v-if=\"all.length > 0\">\n      <v-card class=\"mb-4\">\n        <v-card-text>\n          <v-row justify=\"space-between\" class=\"mb-4\">\n            <v-col cols=\"12\" md=\"3\">\n              <v-text-field v-model=\"filter.startDate\" label=\"Start Date\" type=\"date\" class=\"mr-2\" outlined>\n              </v-text-field>\n            </v-col>\n            <v-col cols=\"12\" md=\"3\">\n              <v-text-field v-model=\"filter.endDate\" label=\"End Date\" type=\"date\" outlined></v-text-field>\n            </v-col>\n            <v-col cols=\"12\" md=\"3\">\n              <v-select v-model=\"filter.services\" :items=\"serviceOptions\" label=\"Filter by Service\" outlined\n                multiple></v-select>\n            </v-col>\n            <v-col cols=\"12\" md=\"3\">\n              <v-select v-model=\"filter.categories\" :items=\"categoryOptions\" label=\"Filter by Categories\" outlined\n                multiple></v-select>\n            </v-col>\n          </v-row>\n\n          <v-data-table :items=\"filteredLogs()\" items-per-page=\"10\" class=\"elevation-1 bordered-table\" dense outlined>\n            <template v-slot:headers>\n              <tr>\n                <th class=\"font-weight-bold\">Service</th>\n                <th class=\"font-weight-bold\">Categories</th>\n                <th class=\"font-weight-bold\">Message</th>\n                <th class=\"font-weight-bold\">Time</th>\n              </tr>\n            </template>\n\n            <template v-slot:body=\"{ items }\">\n              <tr v-for=\"(record, recIdx) in items\" :key=\"recIdx\">\n                <td>{{ record.Service ?? \"N/A\" }}</td>\n                <td>\n                  <v-chip :color=\"categoryColor(record.Categories)\" class=\"white--text font-weight-bold\">\n                    {{ record.Categories ?? \"N/A\" }}\n                  </v-chip>\n                </td>\n                <td>{{ record.Message ?? \"NULL\" }}</td>\n                <td>{{ formatDate(record.Time) }}</td>\n              </tr>\n            </template>\n          </v-data-table>\n        </v-card-text>\n      </v-card>\n    </template>\n\n    <template v-else>\n      <v-card>\n        <v-card-title>No System Log Data Available</v-card-title>\n      </v-card>\n    </template>\n  </v-container>\n</template>\n\n<script>\n  export default {\n    data() {\n      return {\n        all: [],\n        lastUpdatedTimeStamp: \"\",\n        filter: {\n          startDate: \"\",\n          endDate: \"\",\n          services: [],\n          categories: []\n        },\n        serviceOptions: [],\n        categoryOptions: []\n      };\n    },\n    methods: {\n      formatDate(timestamp) {\n        if (!timestamp) return \"N/A\";\n\n        const date = new Date(timestamp);\n\n        const options = {\n          timeZone: \"Australia/Perth\",\n          year: \"numeric\",\n          month: \"2-digit\",\n          day: \"2-digit\",\n          hour: \"2-digit\",\n          minute: \"2-digit\",\n          second: \"2-digit\",\n          hour12: true\n        };\n\n        const formatter = new Intl.DateTimeFormat(\"en-AU\", options);\n        const parts = formatter.formatToParts(date);\n\n        const getPart = (type) => parts.find(p => p.type === type)?.value || \"\";\n        const day = getPart(\"day\");\n        const month = getPart(\"month\");\n        const year = getPart(\"year\");\n        const hour = getPart(\"hour\");\n        const minute = getPart(\"minute\");\n        const second = getPart(\"second\");\n        const dayPeriod = getPart(\"dayPeriod\");\n\n        return `${day}/${month}/${year}, ${hour}:${minute}:${second} ${dayPeriod}`;\n      },\n      categoryColor(category) {\n        const normalized = String(category ?? \"\").trim().toLowerCase();\n        if (normalized === \"event\" || normalized === \"events\") return \"green\";\n        if (normalized === \"alarm\" || normalized === \"alarms\") return \"red\";\n        return \"grey\";\n      },\n      filteredLogs() {\n        const start = this.filter.startDate ? new Date(this.filter.startDate).getTime() : null;\n        const end = this.filter.endDate ? new Date(this.filter.endDate).getTime() : null;\n        const services = this.filter.services || [];\n        const categories = this.filter.categories || [];\n\n        const rows = Array.isArray(this.all) ? this.all : [];\n        const filtered = rows.filter(record => {\n          const timestamp = record?.Time ? new Date(record.Time).getTime() : null;\n          const matchesDate = (!start || !end) ? true : (timestamp !== null && timestamp >= start && timestamp <= end);\n          const recordService = record?.Service ?? null;\n          const matchesService = !services.length || services.includes(recordService);\n          const recordCategory = record?.Categories ?? null;\n          const matchesCategory = !categories.length || categories.includes(recordCategory);\n          return matchesDate && matchesService && matchesCategory;\n        });\n\n        return filtered.sort((a, b) => {\n          const timeA = a?.Time ? new Date(a.Time).getTime() : 0;\n          const timeB = b?.Time ? new Date(b.Time).getTime() : 0;\n          return timeB - timeA;\n        });\n      },\n      downloadCSV() {\n        const rows = Array.isArray(this.all) ? this.all : [];\n        if (!rows.length) {\n          alert(\"No data to download.\");\n          return;\n        }\n\n        const preferredHeaders = [\"Service\", \"Categories\", \"Message\", \"Time\"];\n        const headers = [\n          ...preferredHeaders.filter(header => Object.prototype.hasOwnProperty.call(rows[0], header)),\n          ...Object.keys(rows[0]).filter(header => !preferredHeaders.includes(header))\n        ];\n        const csvContent = [\n          headers.join(\",\"),\n          ...rows.map(record =>\n            headers.map(header => JSON.stringify(record[header] ?? \"\")).join(\",\")\n          )\n        ].join(\"\\n\");\n\n        const blob = new Blob([csvContent], { type: \"text/csv;charset=utf-8;\" });\n        const link = document.createElement(\"a\");\n        link.href = URL.createObjectURL(blob);\n        link.setAttribute(\"download\", \"SYSTEM_LOG.csv\");\n        document.body.appendChild(link);\n        link.click();\n        document.body.removeChild(link);\n      }\n    },\n    watch: {\n      msg: {\n        handler(newMsg) {\n          if (!newMsg || !newMsg.payload) return;\n          const payload = newMsg.payload;\n          const rows = Array.isArray(payload)\n            ? payload\n            : (payload.rows || payload.data || payload.all || []);\n\n          this.all = rows;\n\n          const meta = Array.isArray(payload) ? {} : payload;\n          const lastUpdated = meta.LastUpdated || meta.LastRefreshTime || Date.now();\n          this.lastUpdatedTimeStamp = this.formatDate(lastUpdated);\n\n          this.serviceOptions = [\n            ...new Set(rows.map(row => row.Service).filter(Boolean))\n          ];\n\n          this.categoryOptions = [\n            ...new Set(rows.map(row => row.Categories).filter(Boolean))\n          ];\n        },\n        deep: true,\n        immediate: true\n      }\n    }\n  };\n</script>\n\n<style scoped>\n  * {\n    font-family: 'Roboto', sans-serif;\n  }\n\n  .light-grey-tile {\n    background-color: #f7f7f7;\n  }\n\n  .last-updated {\n    margin-left: 0;\n    font-size: 0.9rem;\n    color: #666;\n    text-align: center;\n  }\n\n  .header-title {\n    flex: 1;\n  }\n\n  .title-actions {\n    padding-top: 0;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 8px;\n  }\n\n  .center-actions {\n    display: flex;\n    justify-content: center;\n  }\n\n  .title-text {\n    font-size: 1.2rem;\n    text-align: center;\n  }\n\n  .bordered-table table {\n    border-collapse: collapse;\n    width: 100%;\n  }\n\n  .bordered-table th,\n  .bordered-table td {\n    border: 2px solid #d3d3d3;\n    padding: 8px;\n    text-align: left;\n  }\n\n  .bordered-table th {\n    background-color: #f5f5f5;\n    font-weight: bold;\n  }\n</style>",
         "storeOutMessages": true,
         "passthru": true,
         "resendOnRefresh": true,
