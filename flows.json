@@ -271,7 +271,7 @@
         ],
         "x": 54,
         "y": 339,
-        "w": 1522,
+        "w": 1672,
         "h": 402
     },
     {
@@ -515,12 +515,15 @@
             "1e821d8785d23921",
             "487dc8a0e43ffac3",
             "2d5e1b50d26e9165",
-            "a1efebb9586f44eb"
+            "a1efebb9586f44eb",
+            "f742c14974da8a83",
+            "4bf573f9e2e884f6",
+            "d11554245a56a7fe"
         ],
         "x": 54,
         "y": 59,
         "w": 1152,
-        "h": 262
+        "h": 382
     },
     {
         "id": "9422c69e854c0c98",
@@ -873,7 +876,7 @@
             "753f7e588992ec6c"
         ],
         "x": 54,
-        "y": 519,
+        "y": 599,
         "w": 1152,
         "h": 162
     },
@@ -933,7 +936,7 @@
             "b32220a35ed9a07a"
         ],
         "x": 114,
-        "y": 999,
+        "y": 1119,
         "w": 1172,
         "h": 122
     },
@@ -952,8 +955,8 @@
             "161f28dc8bb0a4ae",
             "6ee053b0157b748e"
         ],
-        "x": 134,
-        "y": 479,
+        "x": 114,
+        "y": 379,
         "w": 772,
         "h": 162
     },
@@ -1044,8 +1047,8 @@
             "f792bfd4bb15f305",
             "6e87db194dc6e16e"
         ],
-        "x": 134,
-        "y": 79,
+        "x": 114,
+        "y": 59,
         "w": 712,
         "h": 302
     },
@@ -3715,7 +3718,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 190,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
                 "6e0c346638c1c35c"
@@ -3759,7 +3762,8 @@
         "y": 180,
         "wires": [
             [
-                "dc63fc07ef25e037"
+                "dc63fc07ef25e037",
+                "f742c14974da8a83"
             ]
         ]
     },
@@ -3776,7 +3780,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
+        "x": 420,
         "y": 180,
         "wires": [
             [
@@ -3798,7 +3802,7 @@
         "finalize": "",
         "libs": [],
         "x": 430,
-        "y": 280,
+        "y": 400,
         "wires": [
             [
                 "a1efebb9586f44eb"
@@ -3824,7 +3828,7 @@
         "name": "This section subscribe from all user case and send the data to Modbus Server",
         "info": "",
         "x": 350,
-        "y": 240,
+        "y": 360,
         "wires": []
     },
     {
@@ -3840,7 +3844,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 860,
         "y": 180,
         "wires": [
             [
@@ -3900,7 +3904,7 @@
         "swap3Type": "swap",
         "msgProperty": "payload",
         "msgPropertyType": "str",
-        "x": 590,
+        "x": 650,
         "y": 180,
         "wires": [
             [
@@ -3916,7 +3920,7 @@
         "name": "",
         "scope": null,
         "x": 95,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "64bdab926f37750b"
@@ -3936,7 +3940,7 @@
             "9cd52534dbdd13c0"
         ],
         "x": 1100,
-        "y": 640,
+        "y": 720,
         "wires": [],
         "l": true
     },
@@ -3948,7 +3952,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 390,
-        "y": 560,
+        "y": 640,
         "wires": []
     },
     {
@@ -3965,7 +3969,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "753f7e588992ec6c"
@@ -3991,10 +3995,85 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 640,
+        "y": 720,
         "wires": [
             [
                 "66ecce77c7a656f5"
+            ]
+        ]
+    },
+    {
+        "id": "f742c14974da8a83",
+        "type": "function",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "Get API Status",
+        "func": "// Purpose: Read FrontRunner WebSocket API health from global context\n// Input:   global.System_Status.API_Status.frWS.isHealthy\n// Output:  msg.payload - boolean health status\n\nconst systemStatus = global.get(\"System_Status\") || {};\n\nmsg.payload = 1;\n    //systemStatus?.API_Status?.frWS?.isHealthy === true && \n    //systemStatus?.API_Status?.frREST?.isHealthy === true? 1 : 0 ;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 240,
+        "wires": [
+            [
+                "4bf573f9e2e884f6"
+            ]
+        ]
+    },
+    {
+        "id": "4bf573f9e2e884f6",
+        "type": "buffer-maker",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "Encode Registers",
+        "specification": "spec",
+        "specificationType": "ui",
+        "items": [
+            {
+                "name": "item1",
+                "type": "uint16le",
+                "length": 1,
+                "dataType": "msg",
+                "data": "payload"
+            }
+        ],
+        "swap1": "",
+        "swap2": "",
+        "swap3": "",
+        "swap1Type": "swap",
+        "swap2Type": "swap",
+        "swap3Type": "swap",
+        "msgProperty": "payload",
+        "msgPropertyType": "str",
+        "x": 650,
+        "y": 240,
+        "wires": [
+            [
+                "d11554245a56a7fe"
+            ]
+        ]
+    },
+    {
+        "id": "d11554245a56a7fe",
+        "type": "function",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "Create Payload",
+        "func": "const value = msg.payload;\n\nmsg.payload = {\n    register: \"holding\",\n    address: 121,\n    quantity: value.length,\n    value: value,\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 240,
+        "wires": [
+            [
+                "a1efebb9586f44eb"
             ]
         ]
     },
@@ -4836,8 +4915,7 @@
         "y": 600,
         "wires": [
             [
-                "6b9be864c51af9e9",
-                "1459ef0a8dede60e"
+                "6b9be864c51af9e9"
             ]
         ]
     },
@@ -5854,22 +5932,6 @@
         "wires": []
     },
     {
-        "id": "1459ef0a8dede60e",
-        "type": "debug",
-        "z": "dfb6eb669d69a994",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1520,
-        "y": 760,
-        "wires": []
-    },
-    {
         "id": "18bf348bc3d7d95f",
         "type": "mqtt in",
         "z": "bcc3cc02ee57e49c",
@@ -5901,7 +5963,6 @@
             "39c2998e226d3bf7",
             "66ecce77c7a656f5",
             "c475eea5cddb0b66",
-            "84744d60598a0ad8",
             "45265736d409ade0",
             "fd171faae594d581",
             "20e9c9d994dbc89f",
@@ -5979,7 +6040,7 @@
         "z": "bcc3cc02ee57e49c",
         "g": "6769af881029a77d",
         "name": "Summary Container Status",
-        "func": "// Purpose: Track validated container health messages and write the result to global.sysStatus.container[source].\n// Input:   validated msg from Container Status.js\n// Output:  msg.payload = current container summary map\n// Notes:   Validation and payload normalisation are handled upstream.\n\nconst timeoutMs = Number(env.get(\"CONTAINER_STATUS_TIMEOUT_MS\") || 30000);\n\nconst now = Date.now();\nconst input = msg.payload;\nconst sysStatus = global.get(\"sysStatus\") || {};\nsysStatus.container ??= {};\n\nsysStatus.container[input.source] ??= {};\nsysStatus.container[input.source].isHealthy = input.isHealthy;\nsysStatus.container[input.source].lastUpdate = input.lastUpdate;\n\nObject.values(sysStatus.container).forEach((container) => {\n    if (now - container.lastUpdate > timeoutMs) {\n        container.status = \"failed\";\n    }\n});\n\nglobal.set(\"sysStatus\", sysStatus);\n\nmsg.payload = sysStatus.container;\nreturn msg;\n",
+        "func": "// Purpose: Track validated container health messages and write the result to global.fleetPlantStatus.container[source].\n// Input:   validated msg from Container Status.js\n// Output:  msg.payload = current container summary map\n// Notes:   Validation and payload normalisation are handled upstream.\n\nconst timeoutMs = Number(env.get(\"CONTAINER_STATUS_TIMEOUT_MS\") || 30000);\n\nconst now = Date.now();\nconst input = msg.payload;\nconst fleetPlantStatus = global.get(\"fleetplantStatus\") || {};\nfleetPlantStatus.nodered ??= {};\n\nfleetPlantStatus.nodered[input.source] ??= {};\nfleetPlantStatus.nodered[input.source].isHealthy = input.isHealthy;\nfleetPlantStatus.nodered[input.source].lastUpdated = input.lastUpdate;\nfleetPlantStatus.nodered[input.source].reason = input.isHealthy ? \"N/A\" : 1001;\n\nObject.values(fleetPlantStatus.nodered).forEach((nodered) => {\n    if (now - nodered.lastUpdate > timeoutMs) {\n        nodered.isHealthy = false;\n        nodered.reason = 1001;\n    }\n});\n\nglobal.set(\"fleetplantStatus\", fleetPlantStatus);\n\nmsg.payload = fleetPlantStatus.nodered;\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -6353,7 +6414,6 @@
             "39c2998e226d3bf7",
             "66ecce77c7a656f5",
             "c475eea5cddb0b66",
-            "84744d60598a0ad8",
             "45265736d409ade0",
             "fd171faae594d581",
             "20e9c9d994dbc89f",
@@ -7030,7 +7090,7 @@
         "name": "",
         "scope": null,
         "x": 155,
-        "y": 1080,
+        "y": 1200,
         "wires": [
             [
                 "eeb124ca8f3e86e5"
@@ -7050,7 +7110,7 @@
             "9cd52534dbdd13c0"
         ],
         "x": 1180,
-        "y": 1080,
+        "y": 1200,
         "wires": [],
         "l": true
     },
@@ -7062,7 +7122,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 450,
-        "y": 1040,
+        "y": 1160,
         "wires": []
     },
     {
@@ -7079,7 +7139,7 @@
         "finalize": "",
         "libs": [],
         "x": 310,
-        "y": 1080,
+        "y": 1200,
         "wires": [
             [
                 "b32220a35ed9a07a"
@@ -7105,7 +7165,7 @@
         "to": "",
         "reg": false,
         "x": 540,
-        "y": 1080,
+        "y": 1200,
         "wires": [
             [
                 "fd171faae594d581"
@@ -7686,6 +7746,16 @@
         "wires": []
     },
     {
+        "id": "e1ac9c39d116e992",
+        "type": "comment",
+        "z": "2265eca0770dc1a8",
+        "name": "Log API failure",
+        "info": "",
+        "x": 180,
+        "y": 1060,
+        "wires": []
+    },
+    {
         "id": "bc2df745eee38272",
         "type": "postgresql",
         "z": "4e3d795537c2edf7",
@@ -7696,8 +7766,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 720,
-        "y": 160,
+        "x": 700,
+        "y": 140,
         "wires": [
             []
         ]
@@ -7715,8 +7785,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 460,
-        "y": 160,
+        "x": 440,
+        "y": 140,
         "wires": [
             [
                 "bc2df745eee38272"
@@ -7732,8 +7802,8 @@
         "links": [
             "7dd14bdfad371b7a"
         ],
-        "x": 230,
-        "y": 160,
+        "x": 210,
+        "y": 140,
         "wires": [
             [
                 "957dbd802ccbb461"
@@ -7763,8 +7833,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 250,
-        "y": 340,
+        "x": 230,
+        "y": 320,
         "wires": [
             [
                 "7a895fbfc635cad4"
@@ -7782,8 +7852,8 @@
         "split": false,
         "rowsPerMsg": 1,
         "outputs": 1,
-        "x": 470,
-        "y": 340,
+        "x": 450,
+        "y": 320,
         "wires": [
             [
                 "0be998d4d04b41e1"
@@ -7800,8 +7870,8 @@
         "links": [
             "6192e185799ed5b8"
         ],
-        "x": 750,
-        "y": 340,
+        "x": 730,
+        "y": 320,
         "wires": [],
         "l": true
     },
@@ -7812,8 +7882,8 @@
         "g": "a71447a474b8d78c",
         "name": "",
         "scope": null,
-        "x": 175,
-        "y": 600,
+        "x": 155,
+        "y": 500,
         "wires": [
             [
                 "161f28dc8bb0a4ae"
@@ -7832,8 +7902,8 @@
             "a1b17272082e9ae7",
             "9cd52534dbdd13c0"
         ],
-        "x": 800,
-        "y": 600,
+        "x": 780,
+        "y": 500,
         "wires": [],
         "l": true
     },
@@ -7844,8 +7914,8 @@
         "g": "a71447a474b8d78c",
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
-        "x": 470,
-        "y": 520,
+        "x": 450,
+        "y": 420,
         "wires": []
     },
     {
@@ -7861,8 +7931,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 600,
+        "x": 310,
+        "y": 500,
         "wires": [
             [
                 "6ee053b0157b748e"
@@ -7887,8 +7957,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 560,
-        "y": 600,
+        "x": 540,
+        "y": 500,
         "wires": [
             [
                 "20e9c9d994dbc89f"
@@ -7902,8 +7972,8 @@
         "g": "d424ff0c3eaa464e",
         "name": "Write to postgres",
         "info": "",
-        "x": 240,
-        "y": 120,
+        "x": 220,
+        "y": 100,
         "wires": []
     },
     {
@@ -7913,8 +7983,8 @@
         "g": "d424ff0c3eaa464e",
         "name": "Read from postgres",
         "info": "",
-        "x": 250,
-        "y": 300,
+        "x": 230,
+        "y": 280,
         "wires": []
     },
     {
@@ -7939,8 +8009,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 250,
-        "y": 240,
+        "x": 230,
+        "y": 220,
         "wires": [
             [
                 "f792bfd4bb15f305"
@@ -7960,8 +8030,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 240,
+        "x": 440,
+        "y": 220,
         "wires": [
             [
                 "bc2df745eee38272"
@@ -7975,8 +8045,8 @@
         "g": "d424ff0c3eaa464e",
         "name": "Clean up database to aviod file size keep building up",
         "info": "",
-        "x": 350,
-        "y": 200,
+        "x": 330,
+        "y": 180,
         "wires": []
     },
     {
@@ -8011,7 +8081,7 @@
         "z": "8a5090703060cf52",
         "g": "6b2283aa5932ab94",
         "name": "System Health Parser",
-        "func": "const now = Date.now();\n\nmsg.payload = {\n  System_Status: global.get(\"System_Status\") || {},\n  locationStatus: global.get(\"locationStatus\") || {},\n  enabledList: global.get(\"FR_enabledLocationList\") || [],\n  WaterStands: global.get(\"WaterStands\") || {},\n  LastRefreshTime: now,\n  //edgecentraluiurl:global.env.get(\"EDGEXPERT_HOST\"),\n  useCaseDashPath: \"/dashboard\",  \n  containers: global.get(\"containerStatus\") || []\n};\n\nreturn msg;\n",
+        "func": "const now = Date.now();\n\nmsg.payload = {\n  System_Status: global.get(\"System_Status\") || {},\n  locationStatus: global.get(\"locationStatus\") || {},\n  enabledList: global.get(\"FR_enabledLocationList\") || [],\n  WaterStands: global.get(\"WaterStands\") || {},\n  LastRefreshTime: now,\n  //edgecentraluiurl:global.env.get(\"EDGEXPERT_HOST\"),\n  useCaseDashPath: \"/dashboard\",  \n  containers: global.get(\"containerStatus\") || [],\n  fleetplantStatus: global.get(\"fleetplantStatus\")\n};\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
