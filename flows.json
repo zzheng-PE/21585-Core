@@ -495,11 +495,14 @@
             "a1efebb9586f44eb",
             "f742c14974da8a83",
             "4bf573f9e2e884f6",
-            "d11554245a56a7fe"
+            "d11554245a56a7fe",
+            "f36bd798d392ce4e",
+            "a2ffa7f3905a207c",
+            "6952b739b9693888"
         ],
         "x": 54,
         "y": 59,
-        "w": 1152,
+        "w": 1132,
         "h": 382
     },
     {
@@ -856,7 +859,7 @@
         "x": 54,
         "y": 459,
         "w": 1152,
-        "h": 162
+        "h": 122
     },
     {
         "id": "0f80759ce544e24d",
@@ -4701,167 +4704,6 @@
         ]
     },
     {
-        "id": "a20759c2619f340b",
-        "type": "inject",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "fault",
-        "payloadType": "str",
-        "x": 290,
-        "y": 540,
-        "wires": [
-            [
-                "574136571658e0df"
-            ]
-        ]
-    },
-    {
-        "id": "574136571658e0df",
-        "type": "function",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "function 3",
-        "func": "// Purpose: Simulate a node status event for testing Check Node Status.js\n// Input:   msg.payload (string) - \"fault\" triggers red error indicator, \"healthy\" triggers green status indicator\n// Output:  msg shaped as a Node-RED status node event (msg.source + msg.status)\n\nif (msg.payload === \"fault\") {\n    node.error(\"Simulated fault\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n} else if (msg.payload === \"healthy\") {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n} else {\n    node.warn(`Unrecognised payload \"${msg.payload}\" — expected \"fault\" or \"healthy\"`);\n    return null;\n}\n\nmsg.source = {\n    id: \"sim-node-001\",\n    name: \"Simulated Node\",\n    type: \"function\",\n};\n\nmsg.status = {\n    fill: msg.payload === \"fault\" ? \"red\" : \"green\",\n    text: msg.payload === \"fault\" ? \"error\" : \"OK\",\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 560,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "a0de52175350b1db",
-        "type": "inject",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "healthy",
-        "payloadType": "str",
-        "x": 290,
-        "y": 580,
-        "wires": [
-            [
-                "574136571658e0df"
-            ]
-        ]
-    },
-    {
-        "id": "7bd99c4b9bc61e27",
-        "type": "inject",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "fault",
-        "payloadType": "str",
-        "x": 290,
-        "y": 640,
-        "wires": [
-            [
-                "1553413d3f1d42a7"
-            ]
-        ]
-    },
-    {
-        "id": "1553413d3f1d42a7",
-        "type": "function",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "function 4",
-        "func": "// Purpose: Simulate a node status event for testing Check Node Status.js\n// Input:   msg.payload (string) - \"fault\" triggers red error indicator, \"healthy\" triggers green status indicator\n// Output:  msg shaped as a Node-RED status node event (msg.source + msg.status)\n\nif (msg.payload === \"fault\") {\n    node.error(\"Simulated fault\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n} else if (msg.payload === \"healthy\") {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n} else {\n    node.warn(`Unrecognised payload \"${msg.payload}\" — expected \"fault\" or \"healthy\"`);\n    return null;\n}\n\nmsg.source = {\n    id: \"sim-node-001\",\n    name: \"Simulated Node\",\n    type: \"function\",\n};\n\nmsg.status = {\n    fill: msg.payload === \"fault\" ? \"red\" : \"green\",\n    text: msg.payload === \"fault\" ? \"error\" : \"OK\",\n};\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 500,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "6be77e2c5897f4fd",
-        "type": "inject",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "healthy",
-        "payloadType": "str",
-        "x": 290,
-        "y": 680,
-        "wires": [
-            [
-                "1553413d3f1d42a7"
-            ]
-        ]
-    },
-    {
-        "id": "5a54e2907635bb3f",
-        "type": "inject",
-        "z": "6c6cfc2fa9f9302b",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "healthy1",
-        "payloadType": "str",
-        "x": 300,
-        "y": 740,
-        "wires": [
-            [
-                "1553413d3f1d42a7"
-            ]
-        ]
-    },
-    {
         "id": "83225141a03ee4fc",
         "type": "mqtt in",
         "z": "b131a1b6b4a6634e",
@@ -4962,9 +4804,7 @@
         "x": 430,
         "y": 400,
         "wires": [
-            [
-                "a1efebb9586f44eb"
-            ]
+            []
         ]
     },
     {
@@ -5005,9 +4845,7 @@
         "x": 860,
         "y": 180,
         "wires": [
-            [
-                "a1efebb9586f44eb"
-            ]
+            []
         ]
     },
     {
@@ -5027,8 +4865,8 @@
         "discreteBufferSize": 10000,
         "showErrors": true,
         "showStatusActivities": true,
-        "x": 1100,
-        "y": 180,
+        "x": 1080,
+        "y": 280,
         "wires": [
             [],
             [],
@@ -5078,7 +4916,7 @@
         "name": "",
         "scope": null,
         "x": 95,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "4b5fc80219e9d64e"
@@ -5098,7 +4936,7 @@
             "9cd52534dbdd13c0"
         ],
         "x": 1100,
-        "y": 580,
+        "y": 540,
         "wires": [],
         "l": true
     },
@@ -5132,7 +4970,7 @@
         "to": "",
         "reg": false,
         "x": 820,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "66ecce77c7a656f5"
@@ -5153,7 +4991,7 @@
         "finalize": "",
         "libs": [],
         "x": 400,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "4bf573f9e2e884f6"
@@ -5186,7 +5024,7 @@
         "msgProperty": "payload",
         "msgPropertyType": "str",
         "x": 650,
-        "y": 240,
+        "y": 220,
         "wires": [
             [
                 "d11554245a56a7fe"
@@ -5207,11 +5045,9 @@
         "finalize": "",
         "libs": [],
         "x": 860,
-        "y": 240,
+        "y": 220,
         "wires": [
-            [
-                "a1efebb9586f44eb"
-            ]
+            []
         ]
     },
     {
@@ -5228,10 +5064,84 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 580,
+        "y": 540,
         "wires": [
             [
                 "753f7e588992ec6c"
+            ]
+        ]
+    },
+    {
+        "id": "f36bd798d392ce4e",
+        "type": "modbus-flex-write",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "",
+        "showStatusActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "server": "2894c968f482e145",
+        "emptyMsgOnFail": false,
+        "keepMsgProperties": false,
+        "delayOnStart": false,
+        "startDelayTime": "",
+        "x": 810,
+        "y": 300,
+        "wires": [
+            [
+                "a1efebb9586f44eb"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "a2ffa7f3905a207c",
+        "type": "function",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "Create Payload",
+        "func": "const value = msg.payload;\n\nmsg.payload = {\n    'fc': 16,\n    'unitid': 1,\n    'address': 2,\n    'quantity': 2,\n    value: [1,2]\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 300,
+        "wires": [
+            [
+                "f36bd798d392ce4e"
+            ]
+        ]
+    },
+    {
+        "id": "6952b739b9693888",
+        "type": "inject",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 400,
+        "y": 300,
+        "wires": [
+            [
+                "a2ffa7f3905a207c"
             ]
         ]
     },
