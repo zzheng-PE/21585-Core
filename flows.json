@@ -491,19 +491,19 @@
             "0d8425950e9f3a34",
             "1e821d8785d23921",
             "487dc8a0e43ffac3",
-            "2d5e1b50d26e9165",
             "a1efebb9586f44eb",
             "f742c14974da8a83",
-            "4bf573f9e2e884f6",
             "d11554245a56a7fe",
-            "f36bd798d392ce4e",
-            "a2ffa7f3905a207c",
-            "6952b739b9693888"
+            "60381d30ded55ab3",
+            "b880546f9727a45b",
+            "603102df27730c19",
+            "0fc6a869d5c51af5",
+            "f721ea99e3bf446b"
         ],
         "x": 54,
         "y": 59,
-        "w": 1132,
-        "h": 382
+        "w": 1592,
+        "h": 362
     },
     {
         "id": "9422c69e854c0c98",
@@ -857,8 +857,8 @@
             "4b5fc80219e9d64e"
         ],
         "x": 54,
-        "y": 459,
-        "w": 1152,
+        "y": 619,
+        "w": 1592,
         "h": 122
     },
     {
@@ -1364,7 +1364,19 @@
                 "value": "z.zheng@paradigmengineers.com.au",
                 "type": "str"
             }
-        ]
+        ],
+        "modules": {
+            "node-red-contrib-modbus": "5.45.2",
+            "node-red-node-mysql": "3.0.0",
+            "node-red-dashboard": "3.6.6",
+            "@flowfuse/node-red-dashboard": "1.30.2",
+            "node-red-contrib-postgresql": "0.15.4",
+            "node-red-contrib-flogger": "1.2.2",
+            "node-red-contrib-mssql-plus": "0.13.1",
+            "node-red-node-email": "5.2.4",
+            "node-red-contrib-buffer-parser": "3.2.2",
+            "node-red-contrib-oauth2": "6.2.1"
+        }
     },
     {
         "id": "2a42cab402ef39fd",
@@ -4718,7 +4730,7 @@
         "rh": 0,
         "inputs": 0,
         "x": 190,
-        "y": 400,
+        "y": 380,
         "wires": [
             [
                 "6e0c346638c1c35c"
@@ -4762,8 +4774,7 @@
         "y": 180,
         "wires": [
             [
-                "dc63fc07ef25e037",
-                "f742c14974da8a83"
+                "dc63fc07ef25e037"
             ]
         ]
     },
@@ -4780,7 +4791,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 420,
+        "x": 360,
         "y": 180,
         "wires": [
             [
@@ -4794,17 +4805,19 @@
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
         "name": "Input Validation",
-        "func": "// Validate Modbus server write requests before they are sent to the server node.\n// Expected payload: { register: string, address: number, quantity: number, value: number[] }\n// Invalid payloads are blocked by setting payload to 0 and msg.validPayload to false.\n\nconst input = msg.payload;\nlet validPayload = true;\n\n// Check required fields, array size, and Modbus register value range.\nif (typeof input.register !== \"string\") {\n  validPayload = false;\n} else if (!Number.isInteger(input.quantity)) {\n  validPayload = false;\n} else if (!Number.isInteger(input.address) || input.address <= 0) {\n  validPayload = false;\n} else if (!Array.isArray(input.value)) {\n  validPayload = false;\n} else if (input.quantity !== input.value.length) {\n  validPayload = false;\n} else if (!input.value.every((value) => Number.isInteger(value) && value >= 0 && value <= 65535)) {\n  validPayload = false;\n}\n\nmsg.validPayload = validPayload;\n\n// Show validation result in the Node-RED editor.\nif (!validPayload) {\n  node.warn(\"Invalid Modbus payload\");\n  node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n  msg.payload = 0;\n} else {\n  node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n}\n\nreturn msg;\n",
+        "func": "// Validate Modbus server write requests before they are sent to the server node.\n// Expected payload: { fc: 16, unitid: number, address: number, quantity: number, value: number[] }\n// Invalid payloads are blocked by setting payload to 0 and msg.validPayload to false.\n\nconst input = msg.payload;\nlet validPayload = true;\n\n// Check required fields, array size, and Modbus register value range.\nif (!input || typeof input !== \"object\" || Array.isArray(input)) {\n    validPayload = false;\n} else if (input.fc !== 16) {\n    validPayload = false;\n} else if (!Number.isInteger(input.unitid) || input.unitid < 1 || input.unitid > 247) {\n    validPayload = false;\n} else if (!Number.isInteger(input.address) || input.address < 0) {\n    validPayload = false;\n} else if (!Number.isInteger(input.quantity) || input.quantity <= 0) {\n    validPayload = false;\n} else if (!Array.isArray(input.value)) {\n    validPayload = false;\n} else if (input.quantity !== input.value.length) {\n    validPayload = false;\n} else if (!input.value.every((value) => Number.isInteger(value) && value >= 0 && value <= 65535)) {\n    validPayload = false;\n}\n\nmsg.validPayload = validPayload;\n\n// Show validation result in the Node-RED editor.\nif (!validPayload) {\n    node.warn(\"Invalid Modbus payload\");\n    node.status({ fill: \"red\", shape: \"dot\", text: \"error\" });\n    msg.payload = 0;\n} else {\n    node.status({ fill: \"green\", shape: \"dot\", text: \"OK\" });\n}\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 400,
+        "x": 1010,
+        "y": 380,
         "wires": [
-            []
+            [
+                "b880546f9727a45b"
+            ]
         ]
     },
     {
@@ -4826,27 +4839,8 @@
         "name": "This section subscribe from all user case and send the data to Modbus Server",
         "info": "",
         "x": 350,
-        "y": 360,
+        "y": 340,
         "wires": []
-    },
-    {
-        "id": "2d5e1b50d26e9165",
-        "type": "function",
-        "z": "b131a1b6b4a6634e",
-        "g": "3f5804631168148d",
-        "name": "Create Payload",
-        "func": "// Purpose: Create heartbeat Modbus write payloads from a Buffer\n// Input:   msg.payload - heartbeat Buffer\n// Output:  msg.payload - Modbus holding register write payload\n\nconst START_ADDRESS = 0;\nconst ADDRESS_OFFSET = 125;\nconst MAX_ADDRESS = 376;\n\nconst input = msg.payload;\nconst value = Array.from(input);\n\nfor (let address = START_ADDRESS; address <= MAX_ADDRESS; address += ADDRESS_OFFSET) {\n    node.send({\n        ...msg,\n        payload: {\n            register: \"holding\",\n            address,\n            quantity: value.length,\n            value: [...value]\n        }\n    });\n}\n\nreturn null;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 860,
-        "y": 180,
-        "wires": [
-            []
-        ]
     },
     {
         "id": "a1efebb9586f44eb",
@@ -4865,8 +4859,8 @@
         "discreteBufferSize": 10000,
         "showErrors": true,
         "showStatusActivities": true,
-        "x": 1080,
-        "y": 280,
+        "x": 1540,
+        "y": 200,
         "wires": [
             [],
             [],
@@ -4880,7 +4874,7 @@
         "type": "buffer-maker",
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
-        "name": "Encode Registers",
+        "name": "Encode Bytes",
         "specification": "spec",
         "specificationType": "ui",
         "items": [
@@ -4900,11 +4894,11 @@
         "swap3Type": "swap",
         "msgProperty": "payload",
         "msgPropertyType": "str",
-        "x": 650,
+        "x": 580,
         "y": 180,
         "wires": [
             [
-                "2d5e1b50d26e9165"
+                "603102df27730c19"
             ]
         ]
     },
@@ -4916,7 +4910,7 @@
         "name": "",
         "scope": null,
         "x": 95,
-        "y": 540,
+        "y": 700,
         "wires": [
             [
                 "4b5fc80219e9d64e"
@@ -4935,8 +4929,8 @@
             "a1b17272082e9ae7",
             "9cd52534dbdd13c0"
         ],
-        "x": 1100,
-        "y": 540,
+        "x": 1540,
+        "y": 700,
         "wires": [],
         "l": true
     },
@@ -4948,7 +4942,7 @@
         "name": "This section check all Nodes status of the current flow and create a summaries flow status",
         "info": "",
         "x": 390,
-        "y": 500,
+        "y": 660,
         "wires": []
     },
     {
@@ -4969,8 +4963,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 820,
-        "y": 540,
+        "x": 920,
+        "y": 700,
         "wires": [
             [
                 "66ecce77c7a656f5"
@@ -4983,48 +4977,15 @@
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
         "name": "Get API Status",
-        "func": "// Purpose: Read FrontRunner WebSocket API health from global context\n// Input:   global.System_Status.API_Status.frWS.isHealthy\n// Output:  msg.payload - boolean health status\n\nconst systemStatus = global.get(\"System_Status\") || {};\n\nmsg.payload = 1;\n    //systemStatus?.API_Status?.frWS?.isHealthy === true && \n    //systemStatus?.API_Status?.frREST?.isHealthy === true? 1 : 0 ;\n\nreturn msg;",
+        "func": "// Purpose: Read FrontRunner WebSocket API health from global context\n// Input:   global.System_Status.API_Status.frWS.isHealthy\n// Output:  msg.payload - boolean health status\n\nconst systemStatus = global.get(\"System_Status\") || {};\n\nlet word = 0;\n\n// Bit 0: FrontRunner API health\n/*\nif (systemStatus?.API_Status?.frWS?.isHealthy === true && \n    systemStatus?.API_Status?.frREST?.isHealthy === true) {\n    word |= (1 << 0);\n}\n*/\nif (true){\n    word |= (1 << 0);\n}\n\n// Bit 1: (future use) \n// if (someCondition) {\n//     word |= (1 << 1);\n// }\n\n// Bit 2: (future use)\n// if (someCondition) {\n//     word |= (1 << 2);\n// }\n\nmsg.payload = [word];\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 400,
-        "y": 220,
-        "wires": [
-            [
-                "4bf573f9e2e884f6"
-            ]
-        ]
-    },
-    {
-        "id": "4bf573f9e2e884f6",
-        "type": "buffer-maker",
-        "z": "b131a1b6b4a6634e",
-        "g": "3f5804631168148d",
-        "name": "Encode Registers",
-        "specification": "spec",
-        "specificationType": "ui",
-        "items": [
-            {
-                "name": "item1",
-                "type": "uint16le",
-                "length": 1,
-                "dataType": "msg",
-                "data": "payload"
-            }
-        ],
-        "swap1": "",
-        "swap2": "",
-        "swap3": "",
-        "swap1Type": "swap",
-        "swap2Type": "swap",
-        "swap3Type": "swap",
-        "msgProperty": "payload",
-        "msgPropertyType": "str",
-        "x": 650,
-        "y": 220,
+        "x": 340,
+        "y": 280,
         "wires": [
             [
                 "d11554245a56a7fe"
@@ -5037,17 +4998,19 @@
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
         "name": "Create Payload",
-        "func": "const value = msg.payload;\n\nmsg.payload = {\n    register: \"holding\",\n    address: 121,\n    quantity: value.length,\n    value: value,\n    \n}\n\nreturn msg;",
+        "func": "const value = Array.from(msg.payload);\n\nmsg.payload = {\n    'fc': 16,\n    'unitid': 1,\n    'address': 121,\n    quantity: value.length,\n    value: value,\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 860,
-        "y": 220,
+        "x": 1000,
+        "y": 280,
         "wires": [
-            []
+            [
+                "b880546f9727a45b"
+            ]
         ]
     },
     {
@@ -5064,7 +5027,7 @@
         "finalize": "",
         "libs": [],
         "x": 370,
-        "y": 540,
+        "y": 700,
         "wires": [
             [
                 "753f7e588992ec6c"
@@ -5072,7 +5035,28 @@
         ]
     },
     {
-        "id": "f36bd798d392ce4e",
+        "id": "60381d30ded55ab3",
+        "type": "function",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "Create Payload",
+        "func": "// Purpose: Create heartbeat Modbus write payloads from a Buffer\n// Input:   msg.payload - heartbeat Buffer\n// Output:  msg.payload - Modbus holding register write payload\n\nconst START_ADDRESS = 0;\nconst ADDRESS_OFFSET = 125;\nconst MAX_ADDRESS = 376;\n\nconst input = msg.payload;\nconst value = Array.from(input);\n\nfor (let address = START_ADDRESS; address <= MAX_ADDRESS; address += ADDRESS_OFFSET) {\n    node.send({\n        ...msg,\n        payload: {\n            'fc': 16,\n            'unitid': 1,\n            address,\n            'quantity': value.length,\n            value: value\n        }\n    });\n}\n\nreturn null;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 180,
+        "wires": [
+            [
+                "b880546f9727a45b"
+            ]
+        ]
+    },
+    {
+        "id": "b880546f9727a45b",
         "type": "modbus-flex-write",
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
@@ -5085,38 +5069,36 @@
         "keepMsgProperties": false,
         "delayOnStart": false,
         "startDelayTime": "",
-        "x": 810,
-        "y": 300,
+        "x": 1250,
+        "y": 280,
         "wires": [
-            [
-                "a1efebb9586f44eb"
-            ],
+            [],
             []
         ]
     },
     {
-        "id": "a2ffa7f3905a207c",
+        "id": "603102df27730c19",
         "type": "function",
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
-        "name": "Create Payload",
-        "func": "const value = msg.payload;\n\nmsg.payload = {\n    'fc': 16,\n    'unitid': 1,\n    'address': 2,\n    'quantity': 2,\n    value: [1,2]\n    \n}\n\nreturn msg;",
+        "name": "Bytes to Registers",
+        "func": "// Store the incoming Buffer of raw bytes\nlet bytes = msg.payload;\nlet reg = [];\n\n// Combine every two bytes into a 16-bit register value (big-endian)\nfor (let i = 0; i < bytes.length; i += 2) {\n    reg.push(bytes[i] << 8 | bytes[i + 1]);\n}\n\n// Output the array of 16-bit register values\nmsg.payload = reg;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 300,
+        "x": 790,
+        "y": 180,
         "wires": [
             [
-                "f36bd798d392ce4e"
+                "60381d30ded55ab3"
             ]
         ]
     },
     {
-        "id": "6952b739b9693888",
+        "id": "0fc6a869d5c51af5",
         "type": "inject",
         "z": "b131a1b6b4a6634e",
         "g": "3f5804631168148d",
@@ -5130,20 +5112,80 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 400,
-        "y": 300,
+        "x": 170,
+        "y": 280,
         "wires": [
             [
-                "a2ffa7f3905a207c"
+                "f742c14974da8a83"
             ]
         ]
+    },
+    {
+        "id": "89fc53be4c283f72",
+        "type": "modbus-read",
+        "z": "b131a1b6b4a6634e",
+        "name": "",
+        "topic": "",
+        "showStatusActivities": false,
+        "logIOActivities": false,
+        "showErrors": false,
+        "showWarnings": true,
+        "unitid": "1",
+        "dataType": "HoldingRegister",
+        "adr": "0",
+        "quantity": "125",
+        "rate": "1",
+        "rateUnit": "s",
+        "delayOnStart": false,
+        "enableDeformedMessages": false,
+        "startDelayTime": "",
+        "server": "2894c968f482e145",
+        "useIOFile": false,
+        "ioFile": "",
+        "useIOForPayload": false,
+        "emptyMsgOnFail": false,
+        "x": 290,
+        "y": 500,
+        "wires": [
+            [
+                "e4bcd9defa556234"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "e4bcd9defa556234",
+        "type": "debug",
+        "z": "b131a1b6b4a6634e",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 520,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "f721ea99e3bf446b",
+        "type": "comment",
+        "z": "b131a1b6b4a6634e",
+        "g": "3f5804631168148d",
+        "name": "This section extract API status from Global Varaible and packed into a status word for PLC to read",
+        "info": "",
+        "x": 410,
+        "y": 240,
+        "wires": []
     },
     {
         "id": "6802cd8c294973dc",
@@ -5200,14 +5242,14 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "1",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 200,
+        "x": 210,
         "y": 460,
         "wires": [
             [
